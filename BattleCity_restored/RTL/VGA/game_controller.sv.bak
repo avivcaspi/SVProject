@@ -1,0 +1,23 @@
+
+
+module game_controller	(	
+					input	logic	clk,
+					input	logic	resetN,
+					input	logic	drawing_request_1, 
+					input	logic	drawing_request_2, 
+					output logic collision
+);
+
+
+always_ff@(posedge clk or negedge resetN)
+begin
+	if(!resetN) begin
+			collision	<= 1'b0;
+	end
+	else begin
+		collision <= drawing_request_1 && drawing_request_2;
+	end
+
+end
+
+endmodule

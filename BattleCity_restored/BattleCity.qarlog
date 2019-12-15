@@ -1,0 +1,54 @@
+Quartus Prime Archive log --	C:/Users/aviv_/Desktop/LabProject/BattleCity_restored/BattleCity.qarlog
+
+Archive:	C:/Users/aviv_/Desktop/LabProject/BattleCity_restored/BattleCity.qar
+Date:		Sun Dec 15 17:02:36 2019
+Quartus Prime		17.0.0 Build 595 04/25/2017 SJ Lite Edition
+
+	=========== Files Selected: ===========
+C:/Users/aviv_/Desktop/LabProject/BattleCity_restored/BattleCity.qpf
+C:/Users/aviv_/Desktop/LabProject/BattleCity_restored/BattleCity.qsf
+C:/Users/aviv_/Desktop/LabProject/BattleCity_restored/Const_0.bsf
+C:/Users/aviv_/Desktop/LabProject/BattleCity_restored/Const_0.qip
+C:/Users/aviv_/Desktop/LabProject/BattleCity_restored/Const_0.v
+C:/Users/aviv_/Desktop/LabProject/BattleCity_restored/Const_0_bb.v
+C:/Users/aviv_/Desktop/LabProject/BattleCity_restored/MiddleX.bsf
+C:/Users/aviv_/Desktop/LabProject/BattleCity_restored/MiddleX.qip
+C:/Users/aviv_/Desktop/LabProject/BattleCity_restored/MiddleX.v
+C:/Users/aviv_/Desktop/LabProject/BattleCity_restored/MiddleX_bb.v
+C:/Users/aviv_/Desktop/LabProject/BattleCity_restored/MiddleY.bsf
+C:/Users/aviv_/Desktop/LabProject/BattleCity_restored/MiddleY.qip
+C:/Users/aviv_/Desktop/LabProject/BattleCity_restored/MiddleY.v
+C:/Users/aviv_/Desktop/LabProject/BattleCity_restored/MiddleY_bb.v
+C:/Users/aviv_/Desktop/LabProject/BattleCity_restored/RTL/KEYBOARD/KBDINTF.bdf
+C:/Users/aviv_/Desktop/LabProject/BattleCity_restored/RTL/KEYBOARD/TOP_KBD_DEMOALL.bdf
+C:/Users/aviv_/Desktop/LabProject/BattleCity_restored/RTL/KEYBOARD/bitrec.sv
+C:/Users/aviv_/Desktop/LabProject/BattleCity_restored/RTL/KEYBOARD/byterec.sv
+C:/Users/aviv_/Desktop/LabProject/BattleCity_restored/RTL/KEYBOARD/keyPad_decoder.sv
+C:/Users/aviv_/Desktop/LabProject/BattleCity_restored/RTL/KEYBOARD/keyToggle_decoder.sv
+C:/Users/aviv_/Desktop/LabProject/BattleCity_restored/RTL/KEYBOARD/lpf.sv
+C:/Users/aviv_/Desktop/LabProject/BattleCity_restored/RTL/KEYBOARD/random.sv
+C:/Users/aviv_/Desktop/LabProject/BattleCity_restored/RTL/MSS/SinTable.sv
+C:/Users/aviv_/Desktop/LabProject/BattleCity_restored/RTL/MSS/TOP_MSS_DEMO.bdf
+C:/Users/aviv_/Desktop/LabProject/BattleCity_restored/RTL/MSS/ToneDecoder.sv
+C:/Users/aviv_/Desktop/LabProject/BattleCity_restored/RTL/MSS/addr_counter.sv
+C:/Users/aviv_/Desktop/LabProject/BattleCity_restored/RTL/MSS/data_conversion.sv
+C:/Users/aviv_/Desktop/LabProject/BattleCity_restored/RTL/MSS/prescaler.sv
+C:/Users/aviv_/Desktop/LabProject/BattleCity_restored/RTL/Seg7/SEG7.SV
+C:/Users/aviv_/Desktop/LabProject/BattleCity_restored/RTL/VGA/NumbersBitMap.sv
+C:/Users/aviv_/Desktop/LabProject/BattleCity_restored/RTL/VGA/TOP_VGA.bdf
+C:/Users/aviv_/Desktop/LabProject/BattleCity_restored/RTL/VGA/VGA_Controller.sv
+C:/Users/aviv_/Desktop/LabProject/BattleCity_restored/RTL/VGA/back_ground_draw.sv
+C:/Users/aviv_/Desktop/LabProject/BattleCity_restored/RTL/VGA/game_controller.sv
+C:/Users/aviv_/Desktop/LabProject/BattleCity_restored/RTL/VGA/objects_mux.sv
+C:/Users/aviv_/Desktop/LabProject/BattleCity_restored/RTL/VGA/smileyBitMap.sv
+C:/Users/aviv_/Desktop/LabProject/BattleCity_restored/RTL/VGA/smileyBitMap4Bit.sv
+C:/Users/aviv_/Desktop/LabProject/BattleCity_restored/RTL/VGA/smileyface_move.sv
+C:/Users/aviv_/Desktop/LabProject/BattleCity_restored/RTL/VGA/square_object.sv
+C:/Users/aviv_/Desktop/LabProject/BattleCity_restored/RTL/VGA/tank_move.sv
+C:/Users/aviv_/Desktop/LabProject/BattleCity_restored/RTL/audio_codec_controller/audio_codec_controller.qxp
+C:/Users/aviv_/Desktop/LabProject/BattleCity_restored/assignment_defaults.qdf
+C:/Users/aviv_/Desktop/LabProject/BattleCity_restored/pin.tcl
+	======= Total: 43 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.
