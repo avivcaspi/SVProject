@@ -17,7 +17,7 @@ module	back_ground_draw	(
 
 const int	xFrameSize	=	639;
 const int	yFrameSize	=	479;
-const int	bracketOffset =	10;
+const int	bracketOffset =	50;
 
 logic [2:0] redBits;
 logic [2:0] greenBits;
@@ -43,37 +43,17 @@ begin
 		redBits <= 3'b010 ;
 		blueBits <= LIGHT_COLOR;
 					
-	// draw the yellow borders 
-		if (pixelX == 0 || pixelY == 0  || pixelX == xFrameSize || pixelY == yFrameSize)
-			begin 
-				redBits <= DARK_COLOR ;	
-				greenBits <= DARK_COLOR ;	
-				blueBits <= LIGHT_COLOR ;	// 3rd bit will be truncked
-			end
 		// draw  four lines with "bracketOffset" offset from the border 
 		
 		if (pixelX == bracketOffset ||
 						pixelY == bracketOffset ||
-						pixelX == xFrameSize-bracketOffset || 
-						pixelY == yFrameSize-bracketOffset) 
+						pixelX == 320 + bracketOffset|| 
+						pixelY == 320 + bracketOffset) 
 			begin 
 					redBits <= DARK_COLOR ;	
 					greenBits <= DARK_COLOR  ;	
 					blueBits <= DARK_COLOR ;	 
-			end
-	
-	// note numbers can be used inline if they appear only once 
-			
-		if (pixelX > 156 && pixelY >= 256 ) // rectangles on part of the screen 
-					redBits <= DARK_COLOR ; 
-				 
-				
-		if (pixelX <  220 && pixelY < 350 ) 
-					greenBits <= 3'b011 ; 
-							
-		if (pixelX <  300 && pixelY < 200 )   
-					blueBits <= 2'b10  ; 
-				 	   
+			end	 	   
 		
 	end; 	
 end 

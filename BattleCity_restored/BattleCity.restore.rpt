@@ -1,5 +1,5 @@
 Restore Archived Project report for BattleCity
-Tue Dec 10 14:15:11 2019
+Tue Dec 17 14:20:39 2019
 Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
 
 
@@ -37,7 +37,7 @@ agreement for further details.
 +-------------------------------------------------------------------------+
 ; Restore Archived Project Summary                                        ;
 +---------------------------------+---------------------------------------+
-; Restore Archived Project Status ; Successful - Tue Dec 10 14:15:11 2019 ;
+; Restore Archived Project Status ; Successful - Tue Dec 17 14:20:39 2019 ;
 ; Revision Name                   ; BattleCity                            ;
 ; Top-level Entity Name           ; TOP_VGA                               ;
 ; Family                          ; Cyclone V                             ;
@@ -47,14 +47,14 @@ agreement for further details.
 +-----------------------------------+
 ; Restore Archived Project Messages ;
 +-----------------------------------+
-Info: Successfully restored 'C:/Users/aviv_/Desktop/LabProject/BattleCity.qar' into the 'C:/Users/aviv_/Desktop/LabProject/BattleCity_restored/' directory
+Info: Successfully restored 'C:/Users/aviv_/Documents/SVProject/BattleCity.qar' into the 'C:/Users/aviv_/Documents/SVProject/BattleCity_restored/' directory
 Info: Generated report 'BattleCity.restore.rpt'
 Info (23030): Evaluation of Tcl script c:/intelfpga_lite/17.0/quartus/common/tcl/apps/qpm/qar.tcl was successful
 Info: Quartus Prime Shell was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 4825 megabytes
-    Info: Processing ended: Tue Dec 10 14:15:11 2019
-    Info: Elapsed time: 00:00:02
-    Info: Total CPU time (on all processors): 00:00:02
+    Info: Peak virtual memory: 4835 megabytes
+    Info: Processing ended: Tue Dec 17 14:20:39 2019
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:01
 
 
 +-------------------------------------------------------+
@@ -69,6 +69,14 @@ Info: Quartus Prime Shell was successful. 0 errors, 0 warnings
 ; Const_0.qip                                           ;
 ; Const_0.v                                             ;
 ; Const_0_bb.v                                          ;
+; MiddleX.bsf                                           ;
+; MiddleX.qip                                           ;
+; MiddleX.v                                             ;
+; MiddleX_bb.v                                          ;
+; MiddleY.bsf                                           ;
+; MiddleY.qip                                           ;
+; MiddleY.v                                             ;
+; MiddleY_bb.v                                          ;
 ; RTL/KEYBOARD/KBDINTF.bdf                              ;
 ; RTL/KEYBOARD/TOP_KBD_DEMOALL.bdf                      ;
 ; RTL/KEYBOARD/bitrec.sv                                ;
@@ -88,16 +96,33 @@ Info: Quartus Prime Shell was successful. 0 errors, 0 warnings
 ; RTL/VGA/TOP_VGA.bdf                                   ;
 ; RTL/VGA/VGA_Controller.sv                             ;
 ; RTL/VGA/back_ground_draw.sv                           ;
+; RTL/VGA/bricks_matrix.sv                              ;
 ; RTL/VGA/game_controller.sv                            ;
+; RTL/VGA/missle_move.sv                                ;
 ; RTL/VGA/objects_mux.sv                                ;
 ; RTL/VGA/smileyBitMap.sv                               ;
 ; RTL/VGA/smileyBitMap4Bit.sv                           ;
 ; RTL/VGA/smileyface_move.sv                            ;
 ; RTL/VGA/square_object.sv                              ;
 ; RTL/VGA/tank_move.sv                                  ;
+; RTL/VGA/tank_square_object.sv                         ;
 ; RTL/audio_codec_controller/audio_codec_controller.qxp ;
-; pin.tcl                                               ;
 ; assignment_defaults.qdf                               ;
+; db/stp1_auto_stripped.stp                             ;
+; matrixX.bsf                                           ;
+; matrixX.qip                                           ;
+; matrixX.v                                             ;
+; matrixX_bb.v                                          ;
+; matrixY.bsf                                           ;
+; matrixY.qip                                           ;
+; matrixY.v                                             ;
+; matrixY_bb.v                                          ;
+; pin.tcl                                               ;
+; stp1.stp                                              ;
+; tankDirConst.bsf                                      ;
+; tankDirConst.qip                                      ;
+; tankDirConst.v                                        ;
+; tankDirConst_bb.v                                     ;
 +-------------------------------------------------------+
 
 

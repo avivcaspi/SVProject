@@ -4,28 +4,26 @@
 // New coding convention dudy December 2018
 
 
-module	tank_move	(	
+module	missle_move	(	
  
 					input	logic	clk,
 					input	logic	resetN,
 					input	logic	startOfFrame,  // short pulse every start of frame 30Hz 
 					input logic collision,
-					input logic [3:0] inputKeyPressed,
+					input logic inputKeyPressed, //shooting key was pressed
+					input logic [10:0] tankTopLeftX,
+					input logic [10:0] tankTopLeftY,
+					input logic [1:0] tankDir,
 					output	logic	[10:0]	topLeftX,// output the top left corner 
 					output	logic	[10:0]	topLeftY,
-					output 	logic [1:0] 	tankDir
-					
+					output logic drawEn
 );
 
 
-// a module used to generate a ball trajectory.  
-
-parameter int INITIAL_X = 280;
-parameter int INITIAL_Y = 185;
 parameter int INITIAL_X_SPEED = 0;
 parameter int INITIAL_Y_SPEED = 0;
-parameter int MOVEMENT_X_SPEED = 20;
-parameter int MOVEMENT_Y_SPEED = 20;
+parameter int MOVEMENT_X_SPEED = 300;
+parameter int MOVEMENT_Y_SPEED = 300;
 
 const int	MULTIPLIER	=	64;
 // multiplier is used to work with integers in high resolution 
@@ -50,22 +48,22 @@ begin
 		Xspeed	<= INITIAL_X_SPEED;
 	end
 	else 	begin
-		if(inputKeyPressed[2] ^ inputKeyPressed[3] && !inputKeyPressed[0] && !inputKeyPressed[1]) begin
-			if(inputKeyPressed[2]) begin
-				Xspeed <= -MOVEMENT_X_SPEED;
-				
-			end
-			else begin
-				Xspeed <= MOVEMENT_X_SPEED;
-			end
+		if(inputKeyPressed && flag == 0) begin
+			case (tankDir) 
+			2'b00 : Xspeed <= 0; //up
+			2'b01 : Xspeed <= MOVEMENT_X_SPEED; // right
+			2'b10 : Xspeed <= 0; //down
+			2'b11 : Xspeed <= -MOVEMENT_X_SPEED; //left
+			default : Xspeed <= MOVEMENT_X_SPEED;
+			endcase
 		end
-		else 
+		else if (drawEn == 1'b0)
 			Xspeed <= 0;
 	end
 end
 
 
-//  calculation Y Axis speed using gravity
+//  calculation Y Axis speed 
 
 //======--------------------------------------------------------------------------------------------------------------=
 always_ff@(posedge clk or negedge resetN)
@@ -74,15 +72,16 @@ begin
 		Yspeed	<= INITIAL_Y_SPEED;
 	end 
 	else 	begin
-		if(inputKeyPressed[0] ^ inputKeyPressed[1] && !inputKeyPressed[2] && !inputKeyPressed[3]) begin
-			if(inputKeyPressed[0]) begin
-				Yspeed <= MOVEMENT_Y_SPEED;
-			end
-			else begin
-				Yspeed <= -MOVEMENT_Y_SPEED;
-			end
+		if(inputKeyPressed && flag == 0) begin
+			case (tankDir) 
+			2'b00 : Yspeed <= -MOVEMENT_Y_SPEED; //up
+			2'b01 : Yspeed <= 0; // right
+			2'b10 : Yspeed <= MOVEMENT_Y_SPEED; //down
+			2'b11 : Yspeed <= 0; //left
+			default : Yspeed <= 0;
+			endcase
 		end
-		else
+		else if (drawEn == 1'b0)
 			Yspeed <= 0;
 	end
 end
@@ -94,31 +93,27 @@ always_ff@(posedge clk or negedge resetN)
 begin
 	if(!resetN)
 	begin
-		topLeftX_tmp	<= INITIAL_X * MULTIPLIER;
-		topLeftY_tmp	<= INITIAL_Y * MULTIPLIER;
-		lastSpeedY <= INITIAL_Y_SPEED;
-		lastSpeedX <= INITIAL_X_SPEED;
+		drawEn <= 1'b0;
 		flag <= 0;
-		tankDir <= 2'b01; //right 
+		topLeftX_tmp	<= tankTopLeftX * MULTIPLIER;
+		topLeftY_tmp	<= tankTopLeftY * MULTIPLIER;
 	end
 	else begin
-		if(collision == 1'b1 && flag == 0) begin
-			topLeftX_tmp  <= topLeftX_tmp - lastSpeedX; 	
-			topLeftY_tmp  <= topLeftY_tmp - lastSpeedY; 
+		if(inputKeyPressed == 1'b1 && flag == 0) begin
+			drawEn <= 1'b1;
 			flag <= 1;
+			topLeftX_tmp <= tankTopLeftX * MULTIPLIER;
+			topLeftY_tmp <= tankTopLeftY * MULTIPLIER;
 		end
-		else if (startOfFrame == 1'b1) begin // perform only 30 times per second 
+		if(collision == 1'b1) begin
+			drawEn <= 1'b0;
+			flag <= 0;
+			topLeftX_tmp	<= tankTopLeftX * MULTIPLIER;
+			topLeftY_tmp	<= tankTopLeftY * MULTIPLIER;
+		end
+		else if (startOfFrame == 1'b1 && drawEn == 1'b1) begin // perform only 30 times per second 
 				topLeftX_tmp  <= topLeftX_tmp + Xspeed; 	
 				topLeftY_tmp  <= topLeftY_tmp + Yspeed; 
-				lastSpeedX <= Xspeed;
-				lastSpeedY <= Yspeed;
-				flag <= 0;
-				case (inputKeyPressed)
-				4'b0001: tankDir <= 2; //down
-				4'b0010: tankDir <= 0;	//up
-				4'b0100: tankDir <= 3;	//left
-				4'b1000: tankDir <= 1;	//right
-				endcase
 		end
 	end
 end

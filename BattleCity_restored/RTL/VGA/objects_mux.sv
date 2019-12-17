@@ -15,6 +15,9 @@ module	objects_mux	(
 					input 	logic brickDrawingRequest,
 					input 	logic [7:0] brickRGB,
 					
+		// missle
+					input 	logic missleDrawingRequest,
+					input 	logic [7:0] missleRGB,
 										
 		// background 
 					input		logic	[7:0] backGroundRGB, 
@@ -38,8 +41,11 @@ begin
 			tmpRGB	<= 8'b0;
 	end
 	else begin
-		if (tankDrawingRequest == 1'b1 )   
-			tmpRGB <= tankRGB;  //first priority 
+		if (missleDrawingRequest == 1'b1)
+			tmpRGB <= missleRGB;
+		
+		else if (tankDrawingRequest == 1'b1 )   
+			tmpRGB <= tankRGB;  
 		
 		else if (brickDrawingRequest == 1'b1)
 			tmpRGB <= brickRGB;
