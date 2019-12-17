@@ -1,5 +1,5 @@
 Archive Project report for BattleCity
-Sun Dec 15 17:02:36 2019
+Tue Dec 17 21:23:11 2019
 Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
 
 
@@ -36,7 +36,7 @@ agreement for further details.
 +----------------------------------------------------------------+
 ; Archive Project Summary                                        ;
 +------------------------+---------------------------------------+
-; Archive Project Status ; Successful - Sun Dec 15 17:02:36 2019 ;
+; Archive Project Status ; Successful - Tue Dec 17 21:23:11 2019 ;
 ; Revision Name          ; BattleCity                            ;
 ; Top-level Entity Name  ; TOP_VGA                               ;
 ; Family                 ; Cyclone V                             ;
@@ -50,17 +50,17 @@ Info: File Set 'Source control' contains:
     Info: Project source and settings files
     Info: Automatically detected source files
 Info: Archive will store files relative to the closest common parent directory
-Info (13213): Using common directory C:/Users/aviv_/Desktop/LabProject/BattleCity_restored/
+Info (13213): Using common directory C:/Users/aviv_/Documents/SVProject/BattleCity_restored/
 Info: ----------------------------------------------------------
 Info: ----------------------------------------------------------
-Info: Generated archive 'C:/Users/aviv_/Desktop/LabProject/BattleCity_restored/BattleCity.qar'
+Info: Generated archive 'C:/Users/aviv_/Documents/SVProject/BattleCity_restored/BattleCity.qar'
 Info: ----------------------------------------------------------
 Info: ----------------------------------------------------------
 Info: Generated report 'BattleCity.archive.rpt'
 Info (23030): Evaluation of Tcl script c:/intelfpga_lite/17.0/quartus/common/tcl/apps/qpm/qar.tcl was successful
 Info: Quartus Prime Shell was successful. 0 errors, 0 warnings
     Info: Peak virtual memory: 4836 megabytes
-    Info: Processing ended: Sun Dec 15 17:02:36 2019
+    Info: Processing ended: Tue Dec 17 21:23:11 2019
     Info: Elapsed time: 00:00:02
     Info: Total CPU time (on all processors): 00:00:02
 
@@ -77,6 +77,14 @@ Info: Quartus Prime Shell was successful. 0 errors, 0 warnings
 ; Const_0.qip                                           ;
 ; Const_0.v                                             ;
 ; Const_0_bb.v                                          ;
+; matrixX.bsf                                           ;
+; matrixX.qip                                           ;
+; matrixX.v                                             ;
+; matrixX_bb.v                                          ;
+; matrixY.bsf                                           ;
+; matrixY.qip                                           ;
+; matrixY.v                                             ;
+; matrixY_bb.v                                          ;
 ; MiddleX.bsf                                           ;
 ; MiddleX.qip                                           ;
 ; MiddleX.v                                             ;
@@ -103,7 +111,9 @@ Info: Quartus Prime Shell was successful. 0 errors, 0 warnings
 ; RTL/MSS/TOP_MSS_DEMO.bdf                              ;
 ; RTL/Seg7/SEG7.SV                                      ;
 ; RTL/VGA/back_ground_draw.sv                           ;
+; RTL/VGA/bricks_matrix.sv                              ;
 ; RTL/VGA/game_controller.sv                            ;
+; RTL/VGA/missle_move.sv                                ;
 ; RTL/VGA/NumbersBitMap.sv                              ;
 ; RTL/VGA/objects_mux.sv                                ;
 ; RTL/VGA/smileyBitMap.sv                               ;
@@ -111,8 +121,13 @@ Info: Quartus Prime Shell was successful. 0 errors, 0 warnings
 ; RTL/VGA/smileyface_move.sv                            ;
 ; RTL/VGA/square_object.sv                              ;
 ; RTL/VGA/tank_move.sv                                  ;
+; RTL/VGA/tank_square_object.sv                         ;
 ; RTL/VGA/TOP_VGA.bdf                                   ;
 ; RTL/VGA/VGA_Controller.sv                             ;
+; tankDirConst.bsf                                      ;
+; tankDirConst.qip                                      ;
+; tankDirConst.v                                        ;
+; tankDirConst_bb.v                                     ;
 +-------------------------------------------------------+
 
 

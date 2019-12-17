@@ -17,25 +17,29 @@ module	brick_matrix	(
 					output 	logic	[10:0] offsetY,
 					output	logic	drawingRequest, // indicates pixel inside the bracket
 					output	logic	[7:0]	 RGBout, //optional color output for mux 
-					output 	logic [0:9][9:0] matrix
+					output 	logic [0:13][0:16] matrix
 );
 
-parameter  int OBJECT_WIDTH_X = 320;
-parameter  int OBJECT_HEIGHT_Y = 320;
+parameter  int OBJECT_WIDTH_X = 544;
+parameter  int OBJECT_HEIGHT_Y = 448;
 parameter  logic [7:0] OBJECT_COLOR = 8'h5b ; 
 localparam logic [7:0] TRANSPARENT_ENCODING = 8'hFF ;// bitmap  representation for a transparent pixel 
 
-logic [0:9][9:0] bricks_matrix = 
-							'{10'b0000000000,
-						     10'b0000000000,
-							  10'b0010000100,
-							  10'b0000000000,
-							  10'b0000000000,
-							  10'b0000000000,
-							  10'b0000000000,
-							  10'b0010000100,
-							  10'b0000000000,
-							  10'b0000000000};
+logic [0:13][0:16] bricks_matrix = 
+							'{17'b00000000000000001,
+						     17'b00010100000000000,
+							  17'b00010101000000000,
+							  17'b00010100000000000,
+							  17'b00010100000000000,
+							  17'b00010100000000000,
+							  17'b00100010000000000,
+							  17'b00100001000000000,
+							  17'b00000000000000000,
+							  17'b00000000000000000,
+							  17'b00000000000000000,
+							  17'b00000000000000000,
+							  17'b00000000000000000,
+							  17'b10000000000000001};
 int rightX ; //coordinates of the sides  
 int bottomY ;
 logic insideBracket ; 

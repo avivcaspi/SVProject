@@ -17,7 +17,7 @@ module	back_ground_draw	(
 
 const int	xFrameSize	=	639;
 const int	yFrameSize	=	479;
-const int	bracketOffset =	50;
+const int	bracketOffset =	16;
 
 logic [2:0] redBits;
 logic [2:0] greenBits;
@@ -47,8 +47,8 @@ begin
 		
 		if (pixelX == bracketOffset ||
 						pixelY == bracketOffset ||
-						pixelX == 320 + bracketOffset|| 
-						pixelY == 320 + bracketOffset) 
+						pixelX == 544 + bracketOffset|| 
+						pixelY == 448 + bracketOffset) 
 			begin 
 					redBits <= DARK_COLOR ;	
 					greenBits <= DARK_COLOR  ;	

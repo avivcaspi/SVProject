@@ -9,7 +9,7 @@ module game_controller	(
 					input logic missleDrawingRequest,
 					input logic [10:0] missleTopLeftX,
 					input logic [10:0] missleTopLeftY,
-					input logic [0:9][9:0] brickMatrix,
+					input logic [0:13][0:16] brickMatrix,
 					input logic [10:0] matrixTopLeftX,
 					input logic [10:0] matrixTopLeftY,
 					output logic collision,	//brick tank collision
@@ -22,10 +22,10 @@ parameter int tankWidth = 32;
 parameter int tankHeight = 32;
 parameter int missleWidth = 10;
 parameter int missleHeight = 10;
-parameter int screenLeft = 64;
-parameter int screenRight = 576;
-parameter int screenTop = 32;
-parameter int screenBottom = 416;
+parameter int screenLeft = 16;
+parameter int screenRight = 560;
+parameter int screenTop = 16;
+parameter int screenBottom = 464;
 int tankOffsetX;
 int tankOffsetY;
 int tankMatrixOffsetX;
@@ -59,9 +59,14 @@ begin
 		else if (reminderBottom > 0 && reminderRight > 0 && brickMatrix[tankMatrixOffsetY+ 1][tankMatrixOffsetX + 1]) begin
 			collision <= 1'b1;
 		end
+		// Check tank1 collision with end screen 
+		else if (tankTopLeftX < screenLeft || tankTopLeftX + tankWidth > screenRight || tankTopLeftY < screenTop || tankTopLeftY + tankHeight > screenBottom) begin
+			collision <= 1'b1;
+		end
 		else	begin
 				collision <= 1'b0;
 		end
+		
 		
 		// Check missle1 collision with end screen and brick collision 
 		if (missleTopLeftX < screenLeft || missleTopLeftX + missleWidth > screenRight || missleTopLeftY < screenTop || missleTopLeftY + missleHeight > screenBottom || (brickDrawingRequest && missleDrawingRequest)) begin
