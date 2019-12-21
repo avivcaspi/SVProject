@@ -21,9 +21,9 @@ agreement for further details.
 */
 (header "symbol" (version "1.1"))
 (symbol
-	(rect 16 16 248 160)
+	(rect 16 16 256 192)
 	(text "brick_matrix" (rect 5 0 54 12)(font "Arial" ))
-	(text "inst" (rect 8 128 20 140)(font "Arial" ))
+	(text "inst" (rect 8 160 20 172)(font "Arial" ))
 	(port
 		(pt 0 32)
 		(input)
@@ -67,39 +67,39 @@ agreement for further details.
 		(line (pt 0 112)(pt 16 112)(line_width 3))
 	)
 	(port
-		(pt 232 32)
+		(pt 0 128)
+		(input)
+		(text "matrix[0..13][0..16]" (rect 0 0 71 12)(font "Arial" ))
+		(text "matrix[0..13][0..16]" (rect 21 123 92 135)(font "Arial" ))
+		(line (pt 0 128)(pt 16 128)(line_width 3))
+	)
+	(port
+		(pt 240 32)
 		(output)
 		(text "offsetX[10..0]" (rect 0 0 53 12)(font "Arial" ))
-		(text "offsetX[10..0]" (rect 158 27 211 39)(font "Arial" ))
-		(line (pt 232 32)(pt 216 32)(line_width 3))
+		(text "offsetX[10..0]" (rect 166 27 219 39)(font "Arial" ))
+		(line (pt 240 32)(pt 224 32)(line_width 3))
 	)
 	(port
-		(pt 232 48)
+		(pt 240 48)
 		(output)
 		(text "offsetY[10..0]" (rect 0 0 54 12)(font "Arial" ))
-		(text "offsetY[10..0]" (rect 157 43 211 55)(font "Arial" ))
-		(line (pt 232 48)(pt 216 48)(line_width 3))
+		(text "offsetY[10..0]" (rect 165 43 219 55)(font "Arial" ))
+		(line (pt 240 48)(pt 224 48)(line_width 3))
 	)
 	(port
-		(pt 232 64)
+		(pt 240 64)
 		(output)
 		(text "drawingRequest" (rect 0 0 63 12)(font "Arial" ))
-		(text "drawingRequest" (rect 148 59 211 71)(font "Arial" ))
-		(line (pt 232 64)(pt 216 64)(line_width 1))
+		(text "drawingRequest" (rect 156 59 219 71)(font "Arial" ))
+		(line (pt 240 64)(pt 224 64)(line_width 1))
 	)
 	(port
-		(pt 232 80)
+		(pt 240 80)
 		(output)
 		(text "RGBout[7..0]" (rect 0 0 53 12)(font "Arial" ))
-		(text "RGBout[7..0]" (rect 158 75 211 87)(font "Arial" ))
-		(line (pt 232 80)(pt 216 80)(line_width 3))
-	)
-	(port
-		(pt 232 96)
-		(output)
-		(text "matrix[0..13][0..16]" (rect 0 0 71 12)(font "Arial" ))
-		(text "matrix[0..13][0..16]" (rect 140 91 211 103)(font "Arial" ))
-		(line (pt 232 96)(pt 216 96)(line_width 3))
+		(text "RGBout[7..0]" (rect 166 75 219 87)(font "Arial" ))
+		(line (pt 240 80)(pt 224 80)(line_width 3))
 	)
 	(parameter
 		"OBJECT_WIDTH_X"
@@ -117,7 +117,7 @@ agreement for further details.
 		""
 		(type "PARAMETER_UNSIGNED_BIN")	)
 	(drawing
-		(rectangle (rect 16 16 216 128)(line_width 1))
+		(rectangle (rect 16 16 224 160)(line_width 1))
 	)
-	(annotation_block (parameter)(rect 248 -64 348 16))
+	(annotation_block (parameter)(rect 256 -64 356 16))
 )

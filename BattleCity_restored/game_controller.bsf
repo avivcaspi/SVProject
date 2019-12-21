@@ -21,9 +21,9 @@ agreement for further details.
 */
 (header "symbol" (version "1.1"))
 (symbol
-	(rect 16 16 240 256)
+	(rect 16 16 288 288)
 	(text "game_controller" (rect 5 0 68 12)(font "Arial" ))
-	(text "inst" (rect 8 224 20 236)(font "Arial" ))
+	(text "inst" (rect 8 256 20 268)(font "Arial" ))
 	(port
 		(pt 0 32)
 		(input)
@@ -102,18 +102,53 @@ agreement for further details.
 		(line (pt 0 192)(pt 16 192)(line_width 3))
 	)
 	(port
-		(pt 224 32)
-		(output)
-		(text "collision" (rect 0 0 28 12)(font "Arial" ))
-		(text "collision" (rect 175 27 203 39)(font "Arial" ))
-		(line (pt 224 32)(pt 208 32)(line_width 1))
+		(pt 0 208)
+		(input)
+		(text "pixelX[10..0]" (rect 0 0 46 12)(font "Arial" ))
+		(text "pixelX[10..0]" (rect 21 203 67 215)(font "Arial" ))
+		(line (pt 0 208)(pt 16 208)(line_width 3))
 	)
 	(port
-		(pt 224 48)
+		(pt 0 224)
+		(input)
+		(text "pixelY[10..0]" (rect 0 0 47 12)(font "Arial" ))
+		(text "pixelY[10..0]" (rect 21 219 68 231)(font "Arial" ))
+		(line (pt 0 224)(pt 16 224)(line_width 3))
+	)
+	(port
+		(pt 272 32)
+		(output)
+		(text "collision" (rect 0 0 28 12)(font "Arial" ))
+		(text "collision" (rect 223 27 251 39)(font "Arial" ))
+		(line (pt 272 32)(pt 256 32)(line_width 1))
+	)
+	(port
+		(pt 272 48)
 		(output)
 		(text "collision1" (rect 0 0 31 12)(font "Arial" ))
-		(text "collision1" (rect 172 43 203 55)(font "Arial" ))
-		(line (pt 224 48)(pt 208 48)(line_width 1))
+		(text "collision1" (rect 220 43 251 55)(font "Arial" ))
+		(line (pt 272 48)(pt 256 48)(line_width 1))
+	)
+	(port
+		(pt 272 64)
+		(output)
+		(text "collision2" (rect 0 0 33 12)(font "Arial" ))
+		(text "collision2" (rect 218 59 251 71)(font "Arial" ))
+		(line (pt 272 64)(pt 256 64)(line_width 1))
+	)
+	(port
+		(pt 272 80)
+		(output)
+		(text "brickCollision1X[4..0]" (rect 0 0 80 12)(font "Arial" ))
+		(text "brickCollision1X[4..0]" (rect 171 75 251 87)(font "Arial" ))
+		(line (pt 272 80)(pt 256 80)(line_width 3))
+	)
+	(port
+		(pt 272 96)
+		(output)
+		(text "brickCollision1Y[3..0]" (rect 0 0 80 12)(font "Arial" ))
+		(text "brickCollision1Y[3..0]" (rect 171 91 251 103)(font "Arial" ))
+		(line (pt 272 96)(pt 256 96)(line_width 3))
 	)
 	(parameter
 		"BRICK_WIDTH"
@@ -127,12 +162,12 @@ agreement for further details.
 		(type "PARAMETER_SIGNED_DEC")	)
 	(parameter
 		"tankWidth"
-		"32"
+		"25"
 		""
 		(type "PARAMETER_SIGNED_DEC")	)
 	(parameter
 		"tankHeight"
-		"32"
+		"25"
 		""
 		(type "PARAMETER_SIGNED_DEC")	)
 	(parameter
@@ -162,11 +197,11 @@ agreement for further details.
 		(type "PARAMETER_SIGNED_DEC")	)
 	(parameter
 		"screenBottom"
-		"16"
+		"464"
 		""
 		(type "PARAMETER_SIGNED_DEC")	)
 	(drawing
-		(rectangle (rect 16 16 208 224)(line_width 1))
+		(rectangle (rect 16 16 256 256)(line_width 1))
 	)
-	(annotation_block (parameter)(rect 240 -64 340 16))
+	(annotation_block (parameter)(rect 288 -64 388 16))
 )

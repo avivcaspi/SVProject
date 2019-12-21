@@ -102,8 +102,8 @@ begin
 		if(inputKeyPressed == 1'b1 && flag == 0) begin
 			drawEn <= 1'b1;
 			flag <= 1;
-			topLeftX_tmp <= tankTopLeftX * MULTIPLIER;
-			topLeftY_tmp <= tankTopLeftY * MULTIPLIER;
+			topLeftX_tmp <= (tankTopLeftX) * MULTIPLIER;
+			topLeftY_tmp <= (tankTopLeftY) * MULTIPLIER;
 		end
 		if(collision == 1'b1) begin
 			drawEn <= 1'b0;

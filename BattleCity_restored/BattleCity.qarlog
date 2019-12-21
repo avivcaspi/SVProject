@@ -1,7 +1,7 @@
 Quartus Prime Archive log --	C:/Users/aviv_/Documents/SVProject/BattleCity_restored/BattleCity.qarlog
 
 Archive:	C:/Users/aviv_/Documents/SVProject/BattleCity_restored/BattleCity.qar
-Date:		Tue Dec 17 21:23:11 2019
+Date:		Sat Dec 21 13:57:04 2019
 Quartus Prime		17.0.0 Build 595 04/25/2017 SJ Lite Edition
 
 	=========== Files Selected: ===========
@@ -38,6 +38,7 @@ C:/Users/aviv_/Documents/SVProject/BattleCity_restored/RTL/VGA/NumbersBitMap.sv
 C:/Users/aviv_/Documents/SVProject/BattleCity_restored/RTL/VGA/TOP_VGA.bdf
 C:/Users/aviv_/Documents/SVProject/BattleCity_restored/RTL/VGA/VGA_Controller.sv
 C:/Users/aviv_/Documents/SVProject/BattleCity_restored/RTL/VGA/back_ground_draw.sv
+C:/Users/aviv_/Documents/SVProject/BattleCity_restored/RTL/VGA/bricks_contorller.sv
 C:/Users/aviv_/Documents/SVProject/BattleCity_restored/RTL/VGA/bricks_matrix.sv
 C:/Users/aviv_/Documents/SVProject/BattleCity_restored/RTL/VGA/game_controller.sv
 C:/Users/aviv_/Documents/SVProject/BattleCity_restored/RTL/VGA/missle_move.sv
@@ -63,7 +64,7 @@ C:/Users/aviv_/Documents/SVProject/BattleCity_restored/tankDirConst.bsf
 C:/Users/aviv_/Documents/SVProject/BattleCity_restored/tankDirConst.qip
 C:/Users/aviv_/Documents/SVProject/BattleCity_restored/tankDirConst.v
 C:/Users/aviv_/Documents/SVProject/BattleCity_restored/tankDirConst_bb.v
-	======= Total: 58 files to archive =======
+	======= Total: 59 files to archive =======
 
 	================ Status: ===============
 All files archived successfully.

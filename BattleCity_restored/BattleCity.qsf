@@ -255,4 +255,5 @@ set_global_assignment -name SYSTEMVERILOG_FILE RTL/VGA/bricks_matrix.sv
 set_global_assignment -name QIP_FILE matrixX.qip
 set_global_assignment -name QIP_FILE matrixY.qip
 set_global_assignment -name SIGNALTAP_FILE stp1.stp
+set_global_assignment -name SYSTEMVERILOG_FILE RTL/VGA/bricks_contorller.sv
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
