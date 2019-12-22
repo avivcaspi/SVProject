@@ -1,5 +1,5 @@
 Analysis & Synthesis report for BattleCity
-Sat Dec 21 23:40:30 2019
+Sun Dec 22 19:26:28 2019
 Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
 
 
@@ -70,13 +70,13 @@ agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Sat Dec 21 23:40:30 2019       ;
+; Analysis & Synthesis Status     ; Successful - Sun Dec 22 19:26:28 2019       ;
 ; Quartus Prime Version           ; 17.0.0 Build 595 04/25/2017 SJ Lite Edition ;
 ; Revision Name                   ; BattleCity                                  ;
 ; Top-level Entity Name           ; TOP_VGA                                     ;
 ; Family                          ; Cyclone V                                   ;
 ; Logic utilization (in ALMs)     ; N/A                                         ;
-; Total registers                 ; 1431                                        ;
+; Total registers                 ; 1432                                        ;
 ; Total pins                      ; 49                                          ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 128                                         ;
@@ -190,7 +190,7 @@ agreement for further details.
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   0.0%      ;
+;     Processor 2            ;   0.1%      ;
 +----------------------------+-------------+
 
 
@@ -216,7 +216,6 @@ agreement for further details.
 ; RTL/VGA/VGA_Controller.sv                             ; yes             ; User SystemVerilog HDL File        ; C:/Users/aviv_/Documents/SVProject/BattleCity_restored/RTL/VGA/VGA_Controller.sv                             ;         ;
 ; RTL/VGA/TOP_VGA.bdf                                   ; yes             ; User Block Diagram/Schematic File  ; C:/Users/aviv_/Documents/SVProject/BattleCity_restored/RTL/VGA/TOP_VGA.bdf                                   ;         ;
 ; RTL/VGA/square_object.sv                              ; yes             ; User SystemVerilog HDL File        ; C:/Users/aviv_/Documents/SVProject/BattleCity_restored/RTL/VGA/square_object.sv                              ;         ;
-; RTL/VGA/smileyBitMap.sv                               ; yes             ; User SystemVerilog HDL File        ; C:/Users/aviv_/Documents/SVProject/BattleCity_restored/RTL/VGA/smileyBitMap.sv                               ;         ;
 ; RTL/VGA/objects_mux.sv                                ; yes             ; User SystemVerilog HDL File        ; C:/Users/aviv_/Documents/SVProject/BattleCity_restored/RTL/VGA/objects_mux.sv                                ;         ;
 ; RTL/VGA/game_controller.sv                            ; yes             ; User SystemVerilog HDL File        ; C:/Users/aviv_/Documents/SVProject/BattleCity_restored/RTL/VGA/game_controller.sv                            ;         ;
 ; RTL/VGA/back_ground_draw.sv                           ; yes             ; User SystemVerilog HDL File        ; C:/Users/aviv_/Documents/SVProject/BattleCity_restored/RTL/VGA/back_ground_draw.sv                           ;         ;
@@ -227,6 +226,8 @@ agreement for further details.
 ; matrixX.v                                             ; yes             ; User Wizard-Generated File         ; C:/Users/aviv_/Documents/SVProject/BattleCity_restored/matrixX.v                                             ;         ;
 ; matrixY.v                                             ; yes             ; User Wizard-Generated File         ; C:/Users/aviv_/Documents/SVProject/BattleCity_restored/matrixY.v                                             ;         ;
 ; RTL/VGA/brickBitMap.sv                                ; yes             ; User SystemVerilog HDL File        ; C:/Users/aviv_/Documents/SVProject/BattleCity_restored/RTL/VGA/brickBitMap.sv                                ;         ;
+; RTL/VGA/tankBitMap.sv                                 ; yes             ; User SystemVerilog HDL File        ; C:/Users/aviv_/Documents/SVProject/BattleCity_restored/RTL/VGA/tankBitMap.sv                                 ;         ;
+; RTL/VGA/missleBitMap.sv                               ; yes             ; User SystemVerilog HDL File        ; C:/Users/aviv_/Documents/SVProject/BattleCity_restored/RTL/VGA/missleBitMap.sv                               ;         ;
 ; lpm_constant.tdf                                      ; yes             ; Megafunction                       ; c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/lpm_constant.tdf                                      ;         ;
 +-------------------------------------------------------+-----------------+------------------------------------+--------------------------------------------------------------------------------------------------------------+---------+
 
@@ -236,16 +237,16 @@ agreement for further details.
 +---------------------------------------------+----------------+
 ; Resource                                    ; Usage          ;
 +---------------------------------------------+----------------+
-; Estimate of Logic utilization (ALMs needed) ; 2159           ;
+; Estimate of Logic utilization (ALMs needed) ; 2190           ;
 ;                                             ;                ;
-; Combinational ALUT usage for logic          ; 3360           ;
-;     -- 7 input functions                    ; 50             ;
-;     -- 6 input functions                    ; 876            ;
-;     -- 5 input functions                    ; 410            ;
-;     -- 4 input functions                    ; 290            ;
-;     -- <=3 input functions                  ; 1734           ;
+; Combinational ALUT usage for logic          ; 3412           ;
+;     -- 7 input functions                    ; 73             ;
+;     -- 6 input functions                    ; 863            ;
+;     -- 5 input functions                    ; 447            ;
+;     -- 4 input functions                    ; 272            ;
+;     -- <=3 input functions                  ; 1757           ;
 ;                                             ;                ;
-; Dedicated logic registers                   ; 1431           ;
+; Dedicated logic registers                   ; 1432           ;
 ;                                             ;                ;
 ; I/O pins                                    ; 49             ;
 ; Total MLAB memory bits                      ; 0              ;
@@ -254,9 +255,9 @@ agreement for further details.
 ; Total DSP Blocks                            ; 0              ;
 ;                                             ;                ;
 ; Maximum fan-out node                        ; CLOCK_50~input ;
-; Maximum fan-out                             ; 1078           ;
-; Total fan-out                               ; 19673          ;
-; Average fan-out                             ; 4.02           ;
+; Maximum fan-out                             ; 1079           ;
+; Total fan-out                               ; 19940          ;
+; Average fan-out                             ; 4.03           ;
 +---------------------------------------------+----------------+
 
 
@@ -265,7 +266,7 @@ agreement for further details.
 +--------------------------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------+--------------+
 ; Compilation Hierarchy Node                                         ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                                                                                                                                            ; Entity Name            ; Library Name ;
 +--------------------------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------+--------------+
-; |TOP_VGA                                                           ; 3360 (1)            ; 1431 (0)                  ; 128               ; 0          ; 49   ; 0            ; |TOP_VGA                                                                                                                                                                                                                                                       ; TOP_VGA                ; work         ;
+; |TOP_VGA                                                           ; 3412 (1)            ; 1432 (0)                  ; 128               ; 0          ; 49   ; 0            ; |TOP_VGA                                                                                                                                                                                                                                                       ; TOP_VGA                ; work         ;
 ;    |SEG7:inst10|                                                   ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TOP_VGA|SEG7:inst10                                                                                                                                                                                                                                           ; SEG7                   ; work         ;
 ;    |TOP_KBD_DEMOALL:inst8|                                         ; 104 (0)             ; 62 (0)                    ; 0                 ; 0          ; 0    ; 0            ; |TOP_VGA|TOP_KBD_DEMOALL:inst8                                                                                                                                                                                                                                 ; TOP_KBD_DEMOALL        ; work         ;
 ;       |KBDINTF:inst4|                                              ; 46 (0)              ; 51 (0)                    ; 0                 ; 0          ; 0    ; 0            ; |TOP_VGA|TOP_KBD_DEMOALL:inst8|KBDINTF:inst4                                                                                                                                                                                                                   ; KBDINTF                ; work         ;
@@ -273,10 +274,10 @@ agreement for further details.
 ;          |byterec:inst3|                                           ; 22 (22)             ; 19 (19)                   ; 0                 ; 0          ; 0    ; 0            ; |TOP_VGA|TOP_KBD_DEMOALL:inst8|KBDINTF:inst4|byterec:inst3                                                                                                                                                                                                     ; byterec                ; work         ;
 ;          |lpf:inst5|                                               ; 5 (5)               ; 5 (5)                     ; 0                 ; 0          ; 0    ; 0            ; |TOP_VGA|TOP_KBD_DEMOALL:inst8|KBDINTF:inst4|lpf:inst5                                                                                                                                                                                                         ; lpf                    ; work         ;
 ;       |keyPad_decoder:inst2|                                       ; 49 (49)             ; 5 (5)                     ; 0                 ; 0          ; 0    ; 0            ; |TOP_VGA|TOP_KBD_DEMOALL:inst8|keyPad_decoder:inst2                                                                                                                                                                                                            ; keyPad_decoder         ; work         ;
-;       |keyToggle_decoder:inst1|                                    ; 1 (1)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |TOP_VGA|TOP_KBD_DEMOALL:inst8|keyToggle_decoder:inst1                                                                                                                                                                                                         ; keyToggle_decoder      ; work         ;
-;       |keyToggle_decoder:inst3|                                    ; 1 (1)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |TOP_VGA|TOP_KBD_DEMOALL:inst8|keyToggle_decoder:inst3                                                                                                                                                                                                         ; keyToggle_decoder      ; work         ;
+;       |keyToggle_decoder:inst1|                                    ; 2 (2)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |TOP_VGA|TOP_KBD_DEMOALL:inst8|keyToggle_decoder:inst1                                                                                                                                                                                                         ; keyToggle_decoder      ; work         ;
+;       |keyToggle_decoder:inst3|                                    ; 2 (2)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |TOP_VGA|TOP_KBD_DEMOALL:inst8|keyToggle_decoder:inst3                                                                                                                                                                                                         ; keyToggle_decoder      ; work         ;
 ;       |keyToggle_decoder:inst5|                                    ; 3 (3)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |TOP_VGA|TOP_KBD_DEMOALL:inst8|keyToggle_decoder:inst5                                                                                                                                                                                                         ; keyToggle_decoder      ; work         ;
-;       |keyToggle_decoder:inst6|                                    ; 3 (3)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |TOP_VGA|TOP_KBD_DEMOALL:inst8|keyToggle_decoder:inst6                                                                                                                                                                                                         ; keyToggle_decoder      ; work         ;
+;       |keyToggle_decoder:inst6|                                    ; 1 (1)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |TOP_VGA|TOP_KBD_DEMOALL:inst8|keyToggle_decoder:inst6                                                                                                                                                                                                         ; keyToggle_decoder      ; work         ;
 ;       |keyToggle_decoder:inst7|                                    ; 1 (1)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |TOP_VGA|TOP_KBD_DEMOALL:inst8|keyToggle_decoder:inst7                                                                                                                                                                                                         ; keyToggle_decoder      ; work         ;
 ;    |TOP_MSS_DEMO:inst9|                                            ; 526 (0)             ; 601 (0)                   ; 128               ; 0          ; 0    ; 0            ; |TOP_VGA|TOP_MSS_DEMO:inst9                                                                                                                                                                                                                                    ; TOP_MSS_DEMO           ; work         ;
 ;       |addr_counter:inst9|                                         ; 11 (11)             ; 8 (8)                     ; 0                 ; 0          ; 0    ; 0            ; |TOP_VGA|TOP_MSS_DEMO:inst9|addr_counter:inst9                                                                                                                                                                                                                 ; addr_counter           ; work         ;
@@ -365,15 +366,15 @@ agreement for further details.
 ;       |prescaler:inst3|                                            ; 43 (43)             ; 33 (33)                   ; 0                 ; 0          ; 0    ; 0            ; |TOP_VGA|TOP_MSS_DEMO:inst9|prescaler:inst3                                                                                                                                                                                                                    ; prescaler              ; work         ;
 ;       |sintable:inst1|                                             ; 40 (40)             ; 8 (8)                     ; 0                 ; 0          ; 0    ; 0            ; |TOP_VGA|TOP_MSS_DEMO:inst9|sintable:inst1                                                                                                                                                                                                                     ; sintable               ; work         ;
 ;    |ToneDecoder:inst3|                                             ; 8 (8)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TOP_VGA|ToneDecoder:inst3                                                                                                                                                                                                                                     ; ToneDecoder            ; work         ;
-;    |VGA_Controller:inst|                                           ; 73 (73)             ; 26 (26)                   ; 0                 ; 0          ; 0    ; 0            ; |TOP_VGA|VGA_Controller:inst                                                                                                                                                                                                                                   ; VGA_Controller         ; work         ;
-;    |back_ground_draw:inst12|                                       ; 6 (6)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |TOP_VGA|back_ground_draw:inst12                                                                                                                                                                                                                               ; back_ground_draw       ; work         ;
-;    |brickBitMap:inst24|                                            ; 359 (359)           ; 8 (8)                     ; 0                 ; 0          ; 0    ; 0            ; |TOP_VGA|brickBitMap:inst24                                                                                                                                                                                                                                    ; brickBitMap            ; work         ;
-;    |bricks_matrix:inst22|                                          ; 1443 (1443)         ; 562 (562)                 ; 0                 ; 0          ; 0    ; 0            ; |TOP_VGA|bricks_matrix:inst22                                                                                                                                                                                                                                  ; bricks_matrix          ; work         ;
+;    |VGA_Controller:inst|                                           ; 74 (74)             ; 26 (26)                   ; 0                 ; 0          ; 0    ; 0            ; |TOP_VGA|VGA_Controller:inst                                                                                                                                                                                                                                   ; VGA_Controller         ; work         ;
+;    |back_ground_draw:inst12|                                       ; 14 (14)             ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |TOP_VGA|back_ground_draw:inst12                                                                                                                                                                                                                               ; back_ground_draw       ; work         ;
+;    |brickBitMap:inst24|                                            ; 415 (415)           ; 8 (8)                     ; 0                 ; 0          ; 0    ; 0            ; |TOP_VGA|brickBitMap:inst24                                                                                                                                                                                                                                    ; brickBitMap            ; work         ;
+;    |bricks_matrix:inst22|                                          ; 1430 (1430)         ; 562 (562)                 ; 0                 ; 0          ; 0    ; 0            ; |TOP_VGA|bricks_matrix:inst22                                                                                                                                                                                                                                  ; bricks_matrix          ; work         ;
 ;    |game_controller:inst1|                                         ; 272 (272)           ; 3 (3)                     ; 0                 ; 0          ; 0    ; 0            ; |TOP_VGA|game_controller:inst1                                                                                                                                                                                                                                 ; game_controller        ; work         ;
 ;    |missle_move:inst7|                                             ; 162 (162)           ; 67 (67)                   ; 0                 ; 0          ; 0    ; 0            ; |TOP_VGA|missle_move:inst7                                                                                                                                                                                                                                     ; missle_move            ; work         ;
 ;    |objects_mux:inst13|                                            ; 12 (12)             ; 8 (8)                     ; 0                 ; 0          ; 0    ; 0            ; |TOP_VGA|objects_mux:inst13                                                                                                                                                                                                                                    ; objects_mux            ; work         ;
-;    |smileyBitMap:inst5|                                            ; 147 (147)           ; 8 (8)                     ; 0                 ; 0          ; 0    ; 0            ; |TOP_VGA|smileyBitMap:inst5                                                                                                                                                                                                                                    ; smileyBitMap           ; work         ;
 ;    |square_object:inst11|                                          ; 60 (60)             ; 3 (3)                     ; 0                 ; 0          ; 0    ; 0            ; |TOP_VGA|square_object:inst11                                                                                                                                                                                                                                  ; square_object          ; work         ;
+;    |tankBitMap:inst25|                                             ; 147 (147)           ; 8 (8)                     ; 0                 ; 0          ; 0    ; 0            ; |TOP_VGA|tankBitMap:inst25                                                                                                                                                                                                                                     ; tankBitMap             ; work         ;
 ;    |tank_move:inst15|                                              ; 98 (98)             ; 71 (71)                   ; 0                 ; 0          ; 0    ; 0            ; |TOP_VGA|tank_move:inst15                                                                                                                                                                                                                                      ; tank_move              ; work         ;
 ;    |tank_square_object:inst20|                                     ; 82 (82)             ; 11 (11)                   ; 0                 ; 0          ; 0    ; 0            ; |TOP_VGA|tank_square_object:inst20                                                                                                                                                                                                                             ; tank_square_object     ; work         ;
 +--------------------------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------+--------------+
@@ -444,466 +445,465 @@ Encoding Type:  One-Hot
 +---------------------------------+---------------------------------+-------------------------------+-----------------------------+---------------------------+----------------------------+-----------------------------+---------------------------+---------------------------+-----------------------------+-----------------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------+
-; Registers Removed During Synthesis                                                                                  ;
-+-------------------------------------------------------------------+-------------------------------------------------+
-; Register name                                                     ; Reason for Removal                              ;
-+-------------------------------------------------------------------+-------------------------------------------------+
-; back_ground_draw:inst12|redBits[1]                                ; Stuck at VCC due to stuck port data_in          ;
-; back_ground_draw:inst12|greenBits[1,2]                            ; Stuck at VCC due to stuck port data_in          ;
-; tank_move:inst15|Xspeed[0..3]                                     ; Stuck at GND due to stuck port data_in          ;
-; tank_move:inst15|Yspeed[0..3]                                     ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|matrix[13][15]                               ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|matrix[13][14]                               ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|matrix[13][13]                               ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|matrix[13][12]                               ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|matrix[13][11]                               ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|matrix[13][10]                               ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|matrix[13][9]                                ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|matrix[13][8]                                ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|matrix[13][7]                                ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|matrix[13][6]                                ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|matrix[13][5]                                ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|matrix[13][4]                                ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|matrix[13][3]                                ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|matrix[13][2]                                ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|matrix[13][1]                                ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|matrix[12][16]                               ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|matrix[12][15]                               ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|matrix[12][14]                               ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|matrix[12][13]                               ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|matrix[12][4]                                ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|matrix[12][3]                                ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|matrix[12][2]                                ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|matrix[12][1]                                ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|matrix[11][16]                               ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|matrix[11][15]                               ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|matrix[11][14]                               ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|matrix[11][13]                               ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|matrix[11][11]                               ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|matrix[11][10]                               ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|matrix[11][9]                                ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|matrix[11][8]                                ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|matrix[11][7]                                ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|matrix[11][6]                                ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|matrix[11][5]                                ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|matrix[11][4]                                ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|matrix[11][3]                                ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|matrix[11][2]                                ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|matrix[11][1]                                ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|matrix[11][0]                                ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|matrix[10][16]                               ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|matrix[10][15]                               ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|matrix[10][14]                               ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|matrix[10][13]                               ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|matrix[10][11]                               ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|matrix[10][10]                               ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|matrix[10][9]                                ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|matrix[10][8]                                ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|matrix[10][7]                                ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|matrix[10][6]                                ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|matrix[10][4]                                ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|matrix[10][2]                                ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|matrix[10][0]                                ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|matrix[9][16]                                ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|matrix[9][15]                                ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|matrix[9][14]                                ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|matrix[9][13]                                ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|matrix[9][11]                                ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|matrix[9][10]                                ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|matrix[9][9]                                 ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|matrix[9][8]                                 ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|matrix[9][7]                                 ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|matrix[9][6]                                 ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|matrix[9][4]                                 ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|matrix[9][2]                                 ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|matrix[9][0]                                 ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|matrix[8][16]                                ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|matrix[8][15]                                ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|matrix[8][14]                                ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|matrix[8][13]                                ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|matrix[8][10]                                ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|matrix[8][9]                                 ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|matrix[8][8]                                 ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|matrix[8][7]                                 ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|matrix[8][4]                                 ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|matrix[8][2]                                 ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|matrix[8][0]                                 ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|matrix[7][16]                                ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|matrix[7][15]                                ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|matrix[7][14]                                ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|matrix[7][13]                                ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|matrix[7][10]                                ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|matrix[7][9]                                 ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|matrix[7][8]                                 ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|matrix[7][4]                                 ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|matrix[7][2]                                 ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|matrix[7][0]                                 ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|matrix[6][16]                                ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|matrix[6][15]                                ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|matrix[6][14]                                ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|matrix[6][13]                                ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|matrix[6][10]                                ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|matrix[6][9]                                 ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|matrix[6][8]                                 ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|matrix[6][7]                                 ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|matrix[6][6]                                 ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|matrix[6][4]                                 ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|matrix[6][2]                                 ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|matrix[6][0]                                 ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|matrix[5][16]                                ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|matrix[5][15]                                ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|matrix[5][14]                                ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|matrix[5][13]                                ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|matrix[5][10]                                ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|matrix[5][9]                                 ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|matrix[5][8]                                 ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|matrix[5][4]                                 ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|matrix[5][2]                                 ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|matrix[5][0]                                 ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|matrix[4][16]                                ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|matrix[4][15]                                ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|matrix[4][14]                                ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|matrix[4][13]                                ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|matrix[4][10]                                ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|matrix[4][9]                                 ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|matrix[4][8]                                 ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|matrix[4][4]                                 ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|matrix[4][2]                                 ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|matrix[4][0]                                 ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|matrix[3][16]                                ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|matrix[3][15]                                ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|matrix[3][14]                                ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|matrix[3][13]                                ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|matrix[3][10]                                ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|matrix[3][9]                                 ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|matrix[3][8]                                 ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|matrix[3][7]                                 ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|matrix[3][4]                                 ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|matrix[3][2]                                 ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|matrix[3][0]                                 ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|matrix[2][16]                                ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|matrix[2][15]                                ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|matrix[2][14]                                ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|matrix[2][13]                                ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|matrix[2][10]                                ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|matrix[2][9]                                 ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|matrix[2][8]                                 ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|matrix[2][7]                                 ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|matrix[2][4]                                 ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|matrix[2][2]                                 ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|matrix[2][0]                                 ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|matrix[1][16]                                ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|matrix[1][15]                                ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|matrix[1][14]                                ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|matrix[1][13]                                ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|matrix[1][7]                                 ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|matrix[1][4]                                 ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|matrix[1][2]                                 ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|matrix[1][0]                                 ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|matrix[0][15]                                ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|matrix[0][14]                                ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|matrix[0][13]                                ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|matrix[0][12]                                ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|matrix[0][11]                                ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|matrix[0][10]                                ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|matrix[0][9]                                 ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|matrix[0][8]                                 ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|matrix[0][7]                                 ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|matrix[0][6]                                 ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|matrix[0][5]                                 ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|matrix[0][4]                                 ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|matrix[0][3]                                 ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|matrix[0][2]                                 ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|matrix[0][1]                                 ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|matrix[0][0]                                 ; Stuck at GND due to stuck port data_in          ;
-; tank_move:inst15|lastSpeedY[0..3]                                 ; Stuck at GND due to stuck port data_in          ;
-; tank_move:inst15|lastSpeedX[0..3]                                 ; Stuck at GND due to stuck port data_in          ;
-; missle_move:inst7|Xspeed[3,9,13..25,28..30]                       ; Merged with missle_move:inst7|Xspeed[31]        ;
-; missle_move:inst7|Xspeed[10..12,26]                               ; Merged with missle_move:inst7|Xspeed[27]        ;
-; missle_move:inst7|Xspeed[4..6]                                    ; Merged with missle_move:inst7|Xspeed[7]         ;
-; missle_move:inst7|Yspeed[0,1]                                     ; Merged with missle_move:inst7|Xspeed[1]         ;
-; missle_move:inst7|Xspeed[0]                                       ; Merged with missle_move:inst7|Xspeed[1]         ;
-; missle_move:inst7|Yspeed[3,9,15..30]                              ; Merged with missle_move:inst7|Yspeed[31]        ;
-; missle_move:inst7|Yspeed[10..13]                                  ; Merged with missle_move:inst7|Yspeed[14]        ;
-; missle_move:inst7|Yspeed[4,5,7]                                   ; Merged with missle_move:inst7|Yspeed[8]         ;
-; missle_move:inst7|flag[0]                                         ; Merged with missle_move:inst7|drawEn            ;
-; missle_move:inst7|flag[1..30]                                     ; Merged with missle_move:inst7|flag[31]          ;
-; bricks_matrix:inst22|flag[2,4,6,8,10,18,20..30]                   ; Merged with bricks_matrix:inst22|flag[31]       ;
-; bricks_matrix:inst22|flag[1,3,5,7,9,11..17]                       ; Merged with bricks_matrix:inst22|flag[19]       ;
-; tank_move:inst15|Xspeed[5,7..30]                                  ; Merged with tank_move:inst15|Xspeed[31]         ;
-; tank_move:inst15|Yspeed[5,7..30]                                  ; Merged with tank_move:inst15|Yspeed[31]         ;
-; missle_move:inst7|Xspeed[27]                                      ; Merged with missle_move:inst7|Xspeed[31]        ;
-; missle_move:inst7|Xspeed[7]                                       ; Merged with missle_move:inst7|Xspeed[8]         ;
-; missle_move:inst7|Yspeed[14]                                      ; Merged with missle_move:inst7|Yspeed[31]        ;
-; missle_move:inst7|Yspeed[6]                                       ; Merged with missle_move:inst7|Yspeed[8]         ;
-; bricks_matrix:inst22|flag[19]                                     ; Merged with bricks_matrix:inst22|flag[31]       ;
-; back_ground_draw:inst12|blueBits[1]                               ; Merged with back_ground_draw:inst12|blueBits[0] ;
-; back_ground_draw:inst12|greenBits[0]                              ; Merged with back_ground_draw:inst12|blueBits[0] ;
-; back_ground_draw:inst12|redBits[0,2]                              ; Merged with back_ground_draw:inst12|blueBits[0] ;
-; square_object:inst11|RGBout[1]                                    ; Merged with square_object:inst11|RGBout[0]      ;
-; square_object:inst11|RGBout[3..7]                                 ; Merged with square_object:inst11|RGBout[2]      ;
-; tank_move:inst15|lastSpeedY[5,7..9,11..31]                        ; Merged with tank_move:inst15|lastSpeedY[10]     ;
-; tank_move:inst15|flag[1..9,11..31]                                ; Merged with tank_move:inst15|flag[10]           ;
-; tank_move:inst15|lastSpeedX[5,7..9,11..31]                        ; Merged with tank_move:inst15|lastSpeedX[10]     ;
-; tank_move:inst15|topLeftY_tmp[0,2,3]                              ; Merged with tank_move:inst15|topLeftX_tmp[3]    ;
-; tank_move:inst15|topLeftX_tmp[1,2]                                ; Merged with tank_move:inst15|topLeftX_tmp[3]    ;
-; tank_move:inst15|topLeftY_tmp[1]                                  ; Merged with tank_move:inst15|topLeftX_tmp[3]    ;
-; tank_move:inst15|topLeftX_tmp[0]                                  ; Merged with tank_move:inst15|topLeftX_tmp[3]    ;
-; missle_move:inst7|Xspeed[1]                                       ; Stuck at GND due to stuck port data_in          ;
-; missle_move:inst7|flag[31]                                        ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|flag[31]                                     ; Stuck at GND due to stuck port data_in          ;
-; tank_move:inst15|topLeftX_tmp[3]                                  ; Stuck at GND due to stuck port data_in          ;
-; tank_move:inst15|flag[10]                                         ; Stuck at GND due to stuck port data_in          ;
-; missle_move:inst7|topLeftY_tmp[0]                                 ; Stuck at GND due to stuck port data_in          ;
-; missle_move:inst7|topLeftX_tmp[0,1]                               ; Stuck at GND due to stuck port data_in          ;
-; missle_move:inst7|topLeftY_tmp[1]                                 ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|bricks_matrix[8][16][2]                      ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|bricks_matrix[9][0][2]                       ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|bricks_matrix[9][1][2]                       ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|bricks_matrix[9][2][2]                       ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|bricks_matrix[9][3][2]                       ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|bricks_matrix[9][4][2]                       ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|bricks_matrix[9][5][2]                       ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|bricks_matrix[9][6][2]                       ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|bricks_matrix[9][7][2]                       ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|bricks_matrix[9][8][2]                       ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|bricks_matrix[9][9][2]                       ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|bricks_matrix[9][10][2]                      ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|bricks_matrix[9][11][2]                      ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|bricks_matrix[9][12][2]                      ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|bricks_matrix[9][13][2]                      ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|bricks_matrix[9][14][2]                      ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|bricks_matrix[9][15][2]                      ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|bricks_matrix[9][16][2]                      ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|bricks_matrix[8][0][2]                       ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|bricks_matrix[8][1][2]                       ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|bricks_matrix[8][2][2]                       ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|bricks_matrix[8][3][2]                       ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|bricks_matrix[8][4][2]                       ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|bricks_matrix[8][5][2]                       ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|bricks_matrix[8][6][2]                       ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|bricks_matrix[8][7][2]                       ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|bricks_matrix[8][8][2]                       ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|bricks_matrix[8][9][2]                       ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|bricks_matrix[8][10][2]                      ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|bricks_matrix[8][11][2]                      ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|bricks_matrix[8][12][2]                      ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|bricks_matrix[8][13][2]                      ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|bricks_matrix[8][14][2]                      ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|bricks_matrix[8][15][2]                      ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|bricks_matrix[10][16][2]                     ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|bricks_matrix[11][0][2]                      ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|bricks_matrix[11][1][2]                      ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|bricks_matrix[11][2][2]                      ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|bricks_matrix[11][3][2]                      ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|bricks_matrix[11][4][2]                      ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|bricks_matrix[11][5][2]                      ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|bricks_matrix[11][6][2]                      ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|bricks_matrix[11][7][2]                      ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|bricks_matrix[11][8][2]                      ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|bricks_matrix[11][9][2]                      ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|bricks_matrix[11][10][2]                     ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|bricks_matrix[11][11][2]                     ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|bricks_matrix[11][12][2]                     ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|bricks_matrix[11][13][2]                     ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|bricks_matrix[11][14][2]                     ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|bricks_matrix[11][15][2]                     ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|bricks_matrix[11][16][2]                     ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|bricks_matrix[10][0][2]                      ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|bricks_matrix[10][1][2]                      ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|bricks_matrix[10][2][2]                      ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|bricks_matrix[10][3][2]                      ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|bricks_matrix[10][4][2]                      ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|bricks_matrix[10][5][2]                      ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|bricks_matrix[10][6][2]                      ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|bricks_matrix[10][7][2]                      ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|bricks_matrix[10][8][2]                      ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|bricks_matrix[10][9][2]                      ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|bricks_matrix[10][10][2]                     ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|bricks_matrix[10][11][2]                     ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|bricks_matrix[10][12][2]                     ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|bricks_matrix[10][13][2]                     ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|bricks_matrix[10][14][2]                     ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|bricks_matrix[10][15][2]                     ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|bricks_matrix[12][16][2]                     ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|bricks_matrix[13][0][2]                      ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|bricks_matrix[13][1][2]                      ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|bricks_matrix[13][2][2]                      ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|bricks_matrix[13][3][2]                      ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|bricks_matrix[13][4][2]                      ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|bricks_matrix[13][5][2]                      ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|bricks_matrix[13][6][2]                      ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|bricks_matrix[13][7][2]                      ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|bricks_matrix[13][8][2]                      ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|bricks_matrix[13][9][2]                      ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|bricks_matrix[13][10][2]                     ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|bricks_matrix[13][11][2]                     ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|bricks_matrix[13][12][2]                     ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|bricks_matrix[13][13][2]                     ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|bricks_matrix[13][14][2]                     ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|bricks_matrix[13][15][2]                     ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|bricks_matrix[13][16][2]                     ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|bricks_matrix[12][0][2]                      ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|bricks_matrix[12][1][2]                      ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|bricks_matrix[12][2][2]                      ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|bricks_matrix[12][3][2]                      ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|bricks_matrix[12][4][2]                      ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|bricks_matrix[12][5][2]                      ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|bricks_matrix[12][6][2]                      ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|bricks_matrix[12][7][2]                      ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|bricks_matrix[12][8][2]                      ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|bricks_matrix[12][9][2]                      ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|bricks_matrix[12][10][2]                     ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|bricks_matrix[12][11][2]                     ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|bricks_matrix[12][12][2]                     ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|bricks_matrix[12][13][2]                     ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|bricks_matrix[12][14][2]                     ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|bricks_matrix[12][15][2]                     ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|bricks_matrix[0][16][2]                      ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|bricks_matrix[1][0][2]                       ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|bricks_matrix[1][1][2]                       ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|bricks_matrix[1][2][2]                       ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|bricks_matrix[1][3][2]                       ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|bricks_matrix[1][4][2]                       ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|bricks_matrix[1][5][2]                       ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|bricks_matrix[1][6][2]                       ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|bricks_matrix[1][7][2]                       ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|bricks_matrix[1][8][2]                       ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|bricks_matrix[1][9][2]                       ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|bricks_matrix[1][10][2]                      ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|bricks_matrix[1][11][2]                      ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|bricks_matrix[1][12][2]                      ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|bricks_matrix[1][13][2]                      ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|bricks_matrix[1][14][2]                      ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|bricks_matrix[1][15][2]                      ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|bricks_matrix[1][16][2]                      ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|bricks_matrix[0][0][2]                       ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|bricks_matrix[0][1][2]                       ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|bricks_matrix[0][2][2]                       ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|bricks_matrix[0][3][2]                       ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|bricks_matrix[0][4][2]                       ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|bricks_matrix[0][5][2]                       ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|bricks_matrix[0][6][2]                       ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|bricks_matrix[0][7][2]                       ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|bricks_matrix[0][8][2]                       ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|bricks_matrix[0][9][2]                       ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|bricks_matrix[0][10][2]                      ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|bricks_matrix[0][11][2]                      ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|bricks_matrix[0][12][2]                      ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|bricks_matrix[0][13][2]                      ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|bricks_matrix[0][14][2]                      ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|bricks_matrix[0][15][2]                      ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|bricks_matrix[2][16][2]                      ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|bricks_matrix[3][0][2]                       ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|bricks_matrix[3][1][2]                       ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|bricks_matrix[3][2][2]                       ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|bricks_matrix[3][3][2]                       ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|bricks_matrix[3][4][2]                       ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|bricks_matrix[3][5][2]                       ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|bricks_matrix[3][6][2]                       ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|bricks_matrix[3][7][2]                       ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|bricks_matrix[3][8][2]                       ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|bricks_matrix[3][9][2]                       ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|bricks_matrix[3][10][2]                      ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|bricks_matrix[3][11][2]                      ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|bricks_matrix[3][12][2]                      ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|bricks_matrix[3][13][2]                      ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|bricks_matrix[3][14][2]                      ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|bricks_matrix[3][15][2]                      ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|bricks_matrix[3][16][2]                      ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|bricks_matrix[2][0][2]                       ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|bricks_matrix[2][1][2]                       ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|bricks_matrix[2][2][2]                       ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|bricks_matrix[2][3][2]                       ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|bricks_matrix[2][4][2]                       ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|bricks_matrix[2][5][2]                       ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|bricks_matrix[2][6][2]                       ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|bricks_matrix[2][7][2]                       ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|bricks_matrix[2][8][2]                       ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|bricks_matrix[2][9][2]                       ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|bricks_matrix[2][10][2]                      ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|bricks_matrix[2][11][2]                      ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|bricks_matrix[2][12][2]                      ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|bricks_matrix[2][13][2]                      ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|bricks_matrix[2][14][2]                      ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|bricks_matrix[2][15][2]                      ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|bricks_matrix[4][16][2]                      ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|bricks_matrix[5][0][2]                       ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|bricks_matrix[5][1][2]                       ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|bricks_matrix[5][2][2]                       ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|bricks_matrix[5][3][2]                       ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|bricks_matrix[5][4][2]                       ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|bricks_matrix[5][5][2]                       ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|bricks_matrix[5][6][2]                       ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|bricks_matrix[5][7][2]                       ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|bricks_matrix[5][8][2]                       ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|bricks_matrix[5][9][2]                       ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|bricks_matrix[5][10][2]                      ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|bricks_matrix[5][11][2]                      ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|bricks_matrix[5][12][2]                      ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|bricks_matrix[5][13][2]                      ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|bricks_matrix[5][14][2]                      ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|bricks_matrix[5][15][2]                      ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|bricks_matrix[5][16][2]                      ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|bricks_matrix[4][0][2]                       ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|bricks_matrix[4][1][2]                       ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|bricks_matrix[4][2][2]                       ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|bricks_matrix[4][3][2]                       ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|bricks_matrix[4][4][2]                       ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|bricks_matrix[4][5][2]                       ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|bricks_matrix[4][6][2]                       ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|bricks_matrix[4][7][2]                       ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|bricks_matrix[4][8][2]                       ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|bricks_matrix[4][9][2]                       ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|bricks_matrix[4][10][2]                      ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|bricks_matrix[4][11][2]                      ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|bricks_matrix[4][12][2]                      ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|bricks_matrix[4][13][2]                      ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|bricks_matrix[4][14][2]                      ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|bricks_matrix[4][15][2]                      ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|bricks_matrix[6][16][2]                      ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|bricks_matrix[7][0][2]                       ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|bricks_matrix[7][1][2]                       ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|bricks_matrix[7][2][2]                       ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|bricks_matrix[7][3][2]                       ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|bricks_matrix[7][4][2]                       ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|bricks_matrix[7][5][2]                       ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|bricks_matrix[7][6][2]                       ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|bricks_matrix[7][7][2]                       ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|bricks_matrix[7][8][2]                       ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|bricks_matrix[7][9][2]                       ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|bricks_matrix[7][10][2]                      ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|bricks_matrix[7][11][2]                      ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|bricks_matrix[7][12][2]                      ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|bricks_matrix[7][13][2]                      ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|bricks_matrix[7][14][2]                      ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|bricks_matrix[7][15][2]                      ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|bricks_matrix[7][16][2]                      ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|bricks_matrix[6][0][2]                       ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|bricks_matrix[6][1][2]                       ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|bricks_matrix[6][2][2]                       ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|bricks_matrix[6][3][2]                       ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|bricks_matrix[6][4][2]                       ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|bricks_matrix[6][5][2]                       ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|bricks_matrix[6][6][2]                       ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|bricks_matrix[6][7][2]                       ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|bricks_matrix[6][8][2]                       ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|bricks_matrix[6][9][2]                       ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|bricks_matrix[6][10][2]                      ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|bricks_matrix[6][11][2]                      ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|bricks_matrix[6][12][2]                      ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|bricks_matrix[6][13][2]                      ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|bricks_matrix[6][14][2]                      ; Stuck at GND due to stuck port data_in          ;
-; bricks_matrix:inst22|bricks_matrix[6][15][2]                      ; Stuck at GND due to stuck port data_in          ;
-; TOP_KBD_DEMOALL:inst8|KBDINTF:inst4|bitrec:inst4|cur_st~4         ; Lost fanout                                     ;
-; TOP_KBD_DEMOALL:inst8|KBDINTF:inst4|bitrec:inst4|cur_st~5         ; Lost fanout                                     ;
-; TOP_KBD_DEMOALL:inst8|KBDINTF:inst4|byterec:inst3|present_state~4 ; Lost fanout                                     ;
-; TOP_KBD_DEMOALL:inst8|KBDINTF:inst4|byterec:inst3|present_state~5 ; Lost fanout                                     ;
-; TOP_KBD_DEMOALL:inst8|KBDINTF:inst4|byterec:inst3|present_state~6 ; Lost fanout                                     ;
-; TOP_KBD_DEMOALL:inst8|KBDINTF:inst4|byterec:inst3|present_state~7 ; Lost fanout                                     ;
-; Total Number of Removed Registers = 701                           ;                                                 ;
-+-------------------------------------------------------------------+-------------------------------------------------+
++----------------------------------------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                                                   ;
++-------------------------------------------------------------------+--------------------------------------------------+
+; Register name                                                     ; Reason for Removal                               ;
++-------------------------------------------------------------------+--------------------------------------------------+
+; back_ground_draw:inst12|redBits[0,2]                              ; Stuck at VCC due to stuck port data_in           ;
+; back_ground_draw:inst12|greenBits[0,1]                            ; Stuck at VCC due to stuck port data_in           ;
+; tank_move:inst15|Xspeed[0..3]                                     ; Stuck at GND due to stuck port data_in           ;
+; tank_move:inst15|Yspeed[0..3]                                     ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|matrix[13][15]                               ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|matrix[13][14]                               ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|matrix[13][13]                               ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|matrix[13][12]                               ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|matrix[13][11]                               ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|matrix[13][10]                               ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|matrix[13][9]                                ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|matrix[13][8]                                ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|matrix[13][7]                                ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|matrix[13][6]                                ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|matrix[13][5]                                ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|matrix[13][4]                                ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|matrix[13][3]                                ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|matrix[13][2]                                ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|matrix[13][1]                                ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|matrix[12][16]                               ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|matrix[12][15]                               ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|matrix[12][14]                               ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|matrix[12][13]                               ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|matrix[12][4]                                ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|matrix[12][3]                                ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|matrix[12][2]                                ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|matrix[12][1]                                ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|matrix[11][16]                               ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|matrix[11][15]                               ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|matrix[11][14]                               ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|matrix[11][13]                               ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|matrix[11][11]                               ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|matrix[11][10]                               ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|matrix[11][9]                                ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|matrix[11][8]                                ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|matrix[11][7]                                ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|matrix[11][6]                                ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|matrix[11][5]                                ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|matrix[11][4]                                ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|matrix[11][3]                                ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|matrix[11][2]                                ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|matrix[11][1]                                ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|matrix[11][0]                                ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|matrix[10][16]                               ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|matrix[10][15]                               ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|matrix[10][14]                               ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|matrix[10][13]                               ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|matrix[10][11]                               ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|matrix[10][10]                               ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|matrix[10][9]                                ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|matrix[10][8]                                ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|matrix[10][7]                                ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|matrix[10][6]                                ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|matrix[10][4]                                ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|matrix[10][2]                                ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|matrix[10][0]                                ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|matrix[9][16]                                ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|matrix[9][15]                                ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|matrix[9][14]                                ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|matrix[9][13]                                ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|matrix[9][11]                                ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|matrix[9][10]                                ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|matrix[9][9]                                 ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|matrix[9][8]                                 ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|matrix[9][7]                                 ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|matrix[9][6]                                 ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|matrix[9][4]                                 ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|matrix[9][2]                                 ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|matrix[9][0]                                 ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|matrix[8][16]                                ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|matrix[8][15]                                ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|matrix[8][14]                                ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|matrix[8][13]                                ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|matrix[8][10]                                ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|matrix[8][9]                                 ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|matrix[8][8]                                 ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|matrix[8][7]                                 ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|matrix[8][4]                                 ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|matrix[8][2]                                 ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|matrix[8][0]                                 ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|matrix[7][16]                                ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|matrix[7][15]                                ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|matrix[7][14]                                ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|matrix[7][13]                                ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|matrix[7][10]                                ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|matrix[7][9]                                 ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|matrix[7][8]                                 ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|matrix[7][4]                                 ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|matrix[7][2]                                 ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|matrix[7][0]                                 ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|matrix[6][16]                                ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|matrix[6][15]                                ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|matrix[6][14]                                ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|matrix[6][13]                                ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|matrix[6][10]                                ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|matrix[6][9]                                 ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|matrix[6][8]                                 ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|matrix[6][7]                                 ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|matrix[6][6]                                 ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|matrix[6][4]                                 ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|matrix[6][2]                                 ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|matrix[6][0]                                 ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|matrix[5][16]                                ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|matrix[5][15]                                ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|matrix[5][14]                                ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|matrix[5][13]                                ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|matrix[5][10]                                ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|matrix[5][9]                                 ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|matrix[5][8]                                 ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|matrix[5][4]                                 ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|matrix[5][2]                                 ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|matrix[5][0]                                 ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|matrix[4][16]                                ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|matrix[4][15]                                ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|matrix[4][14]                                ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|matrix[4][13]                                ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|matrix[4][10]                                ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|matrix[4][9]                                 ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|matrix[4][8]                                 ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|matrix[4][4]                                 ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|matrix[4][2]                                 ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|matrix[4][0]                                 ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|matrix[3][16]                                ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|matrix[3][15]                                ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|matrix[3][14]                                ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|matrix[3][13]                                ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|matrix[3][10]                                ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|matrix[3][9]                                 ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|matrix[3][8]                                 ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|matrix[3][7]                                 ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|matrix[3][4]                                 ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|matrix[3][2]                                 ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|matrix[3][0]                                 ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|matrix[2][16]                                ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|matrix[2][15]                                ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|matrix[2][14]                                ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|matrix[2][13]                                ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|matrix[2][10]                                ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|matrix[2][9]                                 ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|matrix[2][8]                                 ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|matrix[2][7]                                 ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|matrix[2][4]                                 ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|matrix[2][2]                                 ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|matrix[2][0]                                 ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|matrix[1][16]                                ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|matrix[1][15]                                ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|matrix[1][14]                                ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|matrix[1][13]                                ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|matrix[1][7]                                 ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|matrix[1][4]                                 ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|matrix[1][2]                                 ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|matrix[1][0]                                 ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|matrix[0][15]                                ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|matrix[0][14]                                ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|matrix[0][13]                                ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|matrix[0][12]                                ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|matrix[0][11]                                ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|matrix[0][10]                                ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|matrix[0][9]                                 ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|matrix[0][8]                                 ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|matrix[0][7]                                 ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|matrix[0][6]                                 ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|matrix[0][5]                                 ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|matrix[0][4]                                 ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|matrix[0][3]                                 ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|matrix[0][2]                                 ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|matrix[0][1]                                 ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|matrix[0][0]                                 ; Stuck at GND due to stuck port data_in           ;
+; tank_move:inst15|lastSpeedY[0..3]                                 ; Stuck at GND due to stuck port data_in           ;
+; tank_move:inst15|lastSpeedX[0..3]                                 ; Stuck at GND due to stuck port data_in           ;
+; missle_move:inst7|Xspeed[3,9,13..25,28..30]                       ; Merged with missle_move:inst7|Xspeed[31]         ;
+; missle_move:inst7|Xspeed[10..12,26]                               ; Merged with missle_move:inst7|Xspeed[27]         ;
+; missle_move:inst7|Xspeed[4..6]                                    ; Merged with missle_move:inst7|Xspeed[7]          ;
+; missle_move:inst7|Yspeed[0,1]                                     ; Merged with missle_move:inst7|Xspeed[1]          ;
+; missle_move:inst7|Xspeed[0]                                       ; Merged with missle_move:inst7|Xspeed[1]          ;
+; missle_move:inst7|Yspeed[3,9,15..30]                              ; Merged with missle_move:inst7|Yspeed[31]         ;
+; missle_move:inst7|Yspeed[10..13]                                  ; Merged with missle_move:inst7|Yspeed[14]         ;
+; missle_move:inst7|Yspeed[4,5,7]                                   ; Merged with missle_move:inst7|Yspeed[8]          ;
+; missle_move:inst7|flag[0]                                         ; Merged with missle_move:inst7|drawEn             ;
+; missle_move:inst7|flag[1..30]                                     ; Merged with missle_move:inst7|flag[31]           ;
+; bricks_matrix:inst22|flag[2,4,6,8,10,18,20..30]                   ; Merged with bricks_matrix:inst22|flag[31]        ;
+; bricks_matrix:inst22|flag[1,3,5,7,9,11..17]                       ; Merged with bricks_matrix:inst22|flag[19]        ;
+; tank_move:inst15|Xspeed[5,7..30]                                  ; Merged with tank_move:inst15|Xspeed[31]          ;
+; tank_move:inst15|Yspeed[5,7..30]                                  ; Merged with tank_move:inst15|Yspeed[31]          ;
+; missle_move:inst7|Xspeed[27]                                      ; Merged with missle_move:inst7|Xspeed[31]         ;
+; missle_move:inst7|Xspeed[7]                                       ; Merged with missle_move:inst7|Xspeed[8]          ;
+; missle_move:inst7|Yspeed[14]                                      ; Merged with missle_move:inst7|Yspeed[31]         ;
+; missle_move:inst7|Yspeed[6]                                       ; Merged with missle_move:inst7|Yspeed[8]          ;
+; bricks_matrix:inst22|flag[19]                                     ; Merged with bricks_matrix:inst22|flag[31]        ;
+; back_ground_draw:inst12|blueBits[1]                               ; Merged with back_ground_draw:inst12|blueBits[0]  ;
+; square_object:inst11|RGBout[1]                                    ; Merged with square_object:inst11|RGBout[0]       ;
+; back_ground_draw:inst12|redBits[1]                                ; Merged with back_ground_draw:inst12|greenBits[2] ;
+; square_object:inst11|RGBout[3..7]                                 ; Merged with square_object:inst11|RGBout[2]       ;
+; tank_move:inst15|lastSpeedY[5,7..9,11..31]                        ; Merged with tank_move:inst15|lastSpeedY[10]      ;
+; tank_move:inst15|flag[1..9,11..31]                                ; Merged with tank_move:inst15|flag[10]            ;
+; tank_move:inst15|lastSpeedX[5,7..9,11..31]                        ; Merged with tank_move:inst15|lastSpeedX[10]      ;
+; tank_move:inst15|topLeftY_tmp[0,2,3]                              ; Merged with tank_move:inst15|topLeftX_tmp[3]     ;
+; tank_move:inst15|topLeftX_tmp[1,2]                                ; Merged with tank_move:inst15|topLeftX_tmp[3]     ;
+; tank_move:inst15|topLeftY_tmp[1]                                  ; Merged with tank_move:inst15|topLeftX_tmp[3]     ;
+; tank_move:inst15|topLeftX_tmp[0]                                  ; Merged with tank_move:inst15|topLeftX_tmp[3]     ;
+; missle_move:inst7|Xspeed[1]                                       ; Stuck at GND due to stuck port data_in           ;
+; missle_move:inst7|flag[31]                                        ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|flag[31]                                     ; Stuck at GND due to stuck port data_in           ;
+; tank_move:inst15|topLeftX_tmp[3]                                  ; Stuck at GND due to stuck port data_in           ;
+; tank_move:inst15|flag[10]                                         ; Stuck at GND due to stuck port data_in           ;
+; missle_move:inst7|topLeftY_tmp[0]                                 ; Stuck at GND due to stuck port data_in           ;
+; missle_move:inst7|topLeftX_tmp[0,1]                               ; Stuck at GND due to stuck port data_in           ;
+; missle_move:inst7|topLeftY_tmp[1]                                 ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|bricks_matrix[8][16][2]                      ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|bricks_matrix[9][0][2]                       ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|bricks_matrix[9][1][2]                       ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|bricks_matrix[9][2][2]                       ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|bricks_matrix[9][3][2]                       ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|bricks_matrix[9][4][2]                       ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|bricks_matrix[9][5][2]                       ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|bricks_matrix[9][6][2]                       ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|bricks_matrix[9][7][2]                       ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|bricks_matrix[9][8][2]                       ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|bricks_matrix[9][9][2]                       ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|bricks_matrix[9][10][2]                      ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|bricks_matrix[9][11][2]                      ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|bricks_matrix[9][12][2]                      ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|bricks_matrix[9][13][2]                      ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|bricks_matrix[9][14][2]                      ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|bricks_matrix[9][15][2]                      ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|bricks_matrix[9][16][2]                      ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|bricks_matrix[8][0][2]                       ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|bricks_matrix[8][1][2]                       ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|bricks_matrix[8][2][2]                       ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|bricks_matrix[8][3][2]                       ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|bricks_matrix[8][4][2]                       ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|bricks_matrix[8][5][2]                       ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|bricks_matrix[8][6][2]                       ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|bricks_matrix[8][7][2]                       ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|bricks_matrix[8][8][2]                       ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|bricks_matrix[8][9][2]                       ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|bricks_matrix[8][10][2]                      ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|bricks_matrix[8][11][2]                      ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|bricks_matrix[8][12][2]                      ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|bricks_matrix[8][13][2]                      ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|bricks_matrix[8][14][2]                      ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|bricks_matrix[8][15][2]                      ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|bricks_matrix[10][16][2]                     ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|bricks_matrix[11][0][2]                      ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|bricks_matrix[11][1][2]                      ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|bricks_matrix[11][2][2]                      ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|bricks_matrix[11][3][2]                      ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|bricks_matrix[11][4][2]                      ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|bricks_matrix[11][5][2]                      ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|bricks_matrix[11][6][2]                      ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|bricks_matrix[11][7][2]                      ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|bricks_matrix[11][8][2]                      ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|bricks_matrix[11][9][2]                      ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|bricks_matrix[11][10][2]                     ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|bricks_matrix[11][11][2]                     ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|bricks_matrix[11][12][2]                     ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|bricks_matrix[11][13][2]                     ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|bricks_matrix[11][14][2]                     ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|bricks_matrix[11][15][2]                     ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|bricks_matrix[11][16][2]                     ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|bricks_matrix[10][0][2]                      ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|bricks_matrix[10][1][2]                      ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|bricks_matrix[10][2][2]                      ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|bricks_matrix[10][3][2]                      ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|bricks_matrix[10][4][2]                      ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|bricks_matrix[10][5][2]                      ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|bricks_matrix[10][6][2]                      ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|bricks_matrix[10][7][2]                      ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|bricks_matrix[10][8][2]                      ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|bricks_matrix[10][9][2]                      ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|bricks_matrix[10][10][2]                     ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|bricks_matrix[10][11][2]                     ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|bricks_matrix[10][12][2]                     ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|bricks_matrix[10][13][2]                     ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|bricks_matrix[10][14][2]                     ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|bricks_matrix[10][15][2]                     ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|bricks_matrix[12][16][2]                     ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|bricks_matrix[13][0][2]                      ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|bricks_matrix[13][1][2]                      ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|bricks_matrix[13][2][2]                      ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|bricks_matrix[13][3][2]                      ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|bricks_matrix[13][4][2]                      ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|bricks_matrix[13][5][2]                      ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|bricks_matrix[13][6][2]                      ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|bricks_matrix[13][7][2]                      ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|bricks_matrix[13][8][2]                      ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|bricks_matrix[13][9][2]                      ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|bricks_matrix[13][10][2]                     ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|bricks_matrix[13][11][2]                     ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|bricks_matrix[13][12][2]                     ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|bricks_matrix[13][13][2]                     ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|bricks_matrix[13][14][2]                     ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|bricks_matrix[13][15][2]                     ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|bricks_matrix[13][16][2]                     ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|bricks_matrix[12][0][2]                      ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|bricks_matrix[12][1][2]                      ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|bricks_matrix[12][2][2]                      ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|bricks_matrix[12][3][2]                      ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|bricks_matrix[12][4][2]                      ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|bricks_matrix[12][5][2]                      ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|bricks_matrix[12][6][2]                      ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|bricks_matrix[12][7][2]                      ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|bricks_matrix[12][8][2]                      ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|bricks_matrix[12][9][2]                      ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|bricks_matrix[12][10][2]                     ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|bricks_matrix[12][11][2]                     ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|bricks_matrix[12][12][2]                     ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|bricks_matrix[12][13][2]                     ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|bricks_matrix[12][14][2]                     ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|bricks_matrix[12][15][2]                     ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|bricks_matrix[0][16][2]                      ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|bricks_matrix[1][0][2]                       ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|bricks_matrix[1][1][2]                       ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|bricks_matrix[1][2][2]                       ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|bricks_matrix[1][3][2]                       ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|bricks_matrix[1][4][2]                       ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|bricks_matrix[1][5][2]                       ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|bricks_matrix[1][6][2]                       ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|bricks_matrix[1][7][2]                       ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|bricks_matrix[1][8][2]                       ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|bricks_matrix[1][9][2]                       ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|bricks_matrix[1][10][2]                      ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|bricks_matrix[1][11][2]                      ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|bricks_matrix[1][12][2]                      ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|bricks_matrix[1][13][2]                      ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|bricks_matrix[1][14][2]                      ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|bricks_matrix[1][15][2]                      ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|bricks_matrix[1][16][2]                      ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|bricks_matrix[0][0][2]                       ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|bricks_matrix[0][1][2]                       ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|bricks_matrix[0][2][2]                       ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|bricks_matrix[0][3][2]                       ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|bricks_matrix[0][4][2]                       ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|bricks_matrix[0][5][2]                       ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|bricks_matrix[0][6][2]                       ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|bricks_matrix[0][7][2]                       ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|bricks_matrix[0][8][2]                       ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|bricks_matrix[0][9][2]                       ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|bricks_matrix[0][10][2]                      ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|bricks_matrix[0][11][2]                      ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|bricks_matrix[0][12][2]                      ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|bricks_matrix[0][13][2]                      ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|bricks_matrix[0][14][2]                      ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|bricks_matrix[0][15][2]                      ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|bricks_matrix[2][16][2]                      ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|bricks_matrix[3][0][2]                       ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|bricks_matrix[3][1][2]                       ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|bricks_matrix[3][2][2]                       ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|bricks_matrix[3][3][2]                       ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|bricks_matrix[3][4][2]                       ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|bricks_matrix[3][5][2]                       ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|bricks_matrix[3][6][2]                       ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|bricks_matrix[3][7][2]                       ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|bricks_matrix[3][8][2]                       ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|bricks_matrix[3][9][2]                       ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|bricks_matrix[3][10][2]                      ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|bricks_matrix[3][11][2]                      ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|bricks_matrix[3][12][2]                      ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|bricks_matrix[3][13][2]                      ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|bricks_matrix[3][14][2]                      ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|bricks_matrix[3][15][2]                      ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|bricks_matrix[3][16][2]                      ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|bricks_matrix[2][0][2]                       ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|bricks_matrix[2][1][2]                       ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|bricks_matrix[2][2][2]                       ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|bricks_matrix[2][3][2]                       ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|bricks_matrix[2][4][2]                       ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|bricks_matrix[2][5][2]                       ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|bricks_matrix[2][6][2]                       ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|bricks_matrix[2][7][2]                       ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|bricks_matrix[2][8][2]                       ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|bricks_matrix[2][9][2]                       ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|bricks_matrix[2][10][2]                      ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|bricks_matrix[2][11][2]                      ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|bricks_matrix[2][12][2]                      ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|bricks_matrix[2][13][2]                      ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|bricks_matrix[2][14][2]                      ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|bricks_matrix[2][15][2]                      ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|bricks_matrix[4][16][2]                      ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|bricks_matrix[5][0][2]                       ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|bricks_matrix[5][1][2]                       ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|bricks_matrix[5][2][2]                       ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|bricks_matrix[5][3][2]                       ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|bricks_matrix[5][4][2]                       ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|bricks_matrix[5][5][2]                       ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|bricks_matrix[5][6][2]                       ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|bricks_matrix[5][7][2]                       ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|bricks_matrix[5][8][2]                       ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|bricks_matrix[5][9][2]                       ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|bricks_matrix[5][10][2]                      ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|bricks_matrix[5][11][2]                      ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|bricks_matrix[5][12][2]                      ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|bricks_matrix[5][13][2]                      ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|bricks_matrix[5][14][2]                      ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|bricks_matrix[5][15][2]                      ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|bricks_matrix[5][16][2]                      ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|bricks_matrix[4][0][2]                       ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|bricks_matrix[4][1][2]                       ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|bricks_matrix[4][2][2]                       ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|bricks_matrix[4][3][2]                       ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|bricks_matrix[4][4][2]                       ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|bricks_matrix[4][5][2]                       ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|bricks_matrix[4][6][2]                       ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|bricks_matrix[4][7][2]                       ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|bricks_matrix[4][8][2]                       ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|bricks_matrix[4][9][2]                       ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|bricks_matrix[4][10][2]                      ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|bricks_matrix[4][11][2]                      ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|bricks_matrix[4][12][2]                      ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|bricks_matrix[4][13][2]                      ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|bricks_matrix[4][14][2]                      ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|bricks_matrix[4][15][2]                      ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|bricks_matrix[6][16][2]                      ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|bricks_matrix[7][0][2]                       ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|bricks_matrix[7][1][2]                       ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|bricks_matrix[7][2][2]                       ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|bricks_matrix[7][3][2]                       ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|bricks_matrix[7][4][2]                       ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|bricks_matrix[7][5][2]                       ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|bricks_matrix[7][6][2]                       ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|bricks_matrix[7][7][2]                       ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|bricks_matrix[7][8][2]                       ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|bricks_matrix[7][9][2]                       ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|bricks_matrix[7][10][2]                      ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|bricks_matrix[7][11][2]                      ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|bricks_matrix[7][12][2]                      ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|bricks_matrix[7][13][2]                      ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|bricks_matrix[7][14][2]                      ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|bricks_matrix[7][15][2]                      ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|bricks_matrix[7][16][2]                      ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|bricks_matrix[6][0][2]                       ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|bricks_matrix[6][1][2]                       ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|bricks_matrix[6][2][2]                       ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|bricks_matrix[6][3][2]                       ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|bricks_matrix[6][4][2]                       ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|bricks_matrix[6][5][2]                       ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|bricks_matrix[6][6][2]                       ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|bricks_matrix[6][7][2]                       ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|bricks_matrix[6][8][2]                       ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|bricks_matrix[6][9][2]                       ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|bricks_matrix[6][10][2]                      ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|bricks_matrix[6][11][2]                      ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|bricks_matrix[6][12][2]                      ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|bricks_matrix[6][13][2]                      ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|bricks_matrix[6][14][2]                      ; Stuck at GND due to stuck port data_in           ;
+; bricks_matrix:inst22|bricks_matrix[6][15][2]                      ; Stuck at GND due to stuck port data_in           ;
+; TOP_KBD_DEMOALL:inst8|KBDINTF:inst4|bitrec:inst4|cur_st~4         ; Lost fanout                                      ;
+; TOP_KBD_DEMOALL:inst8|KBDINTF:inst4|bitrec:inst4|cur_st~5         ; Lost fanout                                      ;
+; TOP_KBD_DEMOALL:inst8|KBDINTF:inst4|byterec:inst3|present_state~4 ; Lost fanout                                      ;
+; TOP_KBD_DEMOALL:inst8|KBDINTF:inst4|byterec:inst3|present_state~5 ; Lost fanout                                      ;
+; TOP_KBD_DEMOALL:inst8|KBDINTF:inst4|byterec:inst3|present_state~6 ; Lost fanout                                      ;
+; TOP_KBD_DEMOALL:inst8|KBDINTF:inst4|byterec:inst3|present_state~7 ; Lost fanout                                      ;
+; Total Number of Removed Registers = 700                           ;                                                  ;
++-------------------------------------------------------------------+--------------------------------------------------+
 
 
 +-----------------------------------------------------------------------------------------------------------------------------------+
@@ -1175,12 +1175,12 @@ Encoding Type:  One-Hot
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 1431  ;
+; Total registers                              ; 1432  ;
 ; Number of registers using Synchronous Clear  ; 252   ;
 ; Number of registers using Synchronous Load   ; 478   ;
-; Number of registers using Asynchronous Clear ; 1096  ;
+; Number of registers using Asynchronous Clear ; 1097  ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 863   ;
+; Number of registers using Clock Enable       ; 859   ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -1190,6 +1190,50 @@ Encoding Type:  One-Hot
 +-----------------------------------------------+---------+
 ; Inverted Register                             ; Fan out ;
 +-----------------------------------------------+---------+
+; bricks_matrix:inst22|bricks_matrix[13][16][0] ; 4       ;
+; bricks_matrix:inst22|bricks_matrix[6][1][0]   ; 4       ;
+; bricks_matrix:inst22|bricks_matrix[6][5][0]   ; 4       ;
+; bricks_matrix:inst22|bricks_matrix[7][1][0]   ; 4       ;
+; bricks_matrix:inst22|bricks_matrix[7][5][0]   ; 4       ;
+; bricks_matrix:inst22|bricks_matrix[7][6][0]   ; 4       ;
+; bricks_matrix:inst22|bricks_matrix[4][1][0]   ; 4       ;
+; bricks_matrix:inst22|bricks_matrix[4][5][0]   ; 4       ;
+; bricks_matrix:inst22|bricks_matrix[4][6][0]   ; 4       ;
+; bricks_matrix:inst22|bricks_matrix[5][1][0]   ; 4       ;
+; bricks_matrix:inst22|bricks_matrix[5][5][0]   ; 4       ;
+; bricks_matrix:inst22|bricks_matrix[5][6][0]   ; 4       ;
+; bricks_matrix:inst22|bricks_matrix[5][7][0]   ; 4       ;
+; bricks_matrix:inst22|bricks_matrix[12][0][0]  ; 4       ;
+; bricks_matrix:inst22|bricks_matrix[12][8][0]  ; 4       ;
+; bricks_matrix:inst22|bricks_matrix[12][12][0] ; 4       ;
+; bricks_matrix:inst22|bricks_matrix[12][5][0]  ; 4       ;
+; bricks_matrix:inst22|bricks_matrix[12][9][0]  ; 4       ;
+; bricks_matrix:inst22|bricks_matrix[12][6][0]  ; 4       ;
+; bricks_matrix:inst22|bricks_matrix[12][10][0] ; 4       ;
+; bricks_matrix:inst22|bricks_matrix[12][7][0]  ; 4       ;
+; bricks_matrix:inst22|bricks_matrix[12][11][0] ; 4       ;
+; bricks_matrix:inst22|bricks_matrix[10][1][0]  ; 4       ;
+; bricks_matrix:inst22|bricks_matrix[10][5][0]  ; 4       ;
+; bricks_matrix:inst22|bricks_matrix[8][1][0]   ; 4       ;
+; bricks_matrix:inst22|bricks_matrix[8][5][0]   ; 4       ;
+; bricks_matrix:inst22|bricks_matrix[8][6][0]   ; 4       ;
+; bricks_matrix:inst22|bricks_matrix[9][1][0]   ; 4       ;
+; bricks_matrix:inst22|bricks_matrix[9][5][0]   ; 4       ;
+; bricks_matrix:inst22|bricks_matrix[2][1][0]   ; 4       ;
+; bricks_matrix:inst22|bricks_matrix[2][5][0]   ; 4       ;
+; bricks_matrix:inst22|bricks_matrix[2][6][0]   ; 4       ;
+; bricks_matrix:inst22|bricks_matrix[3][1][0]   ; 4       ;
+; bricks_matrix:inst22|bricks_matrix[3][5][0]   ; 4       ;
+; bricks_matrix:inst22|bricks_matrix[3][6][0]   ; 4       ;
+; bricks_matrix:inst22|bricks_matrix[1][8][0]   ; 4       ;
+; bricks_matrix:inst22|bricks_matrix[1][12][0]  ; 4       ;
+; bricks_matrix:inst22|bricks_matrix[1][1][0]   ; 4       ;
+; bricks_matrix:inst22|bricks_matrix[1][5][0]   ; 4       ;
+; bricks_matrix:inst22|bricks_matrix[1][9][0]   ; 4       ;
+; bricks_matrix:inst22|bricks_matrix[1][6][0]   ; 4       ;
+; bricks_matrix:inst22|bricks_matrix[1][10][0]  ; 4       ;
+; bricks_matrix:inst22|bricks_matrix[1][11][0]  ; 4       ;
+; bricks_matrix:inst22|bricks_matrix[0][16][0]  ; 4       ;
 ; bricks_matrix:inst22|bricks_matrix[6][3][1]   ; 4       ;
 ; bricks_matrix:inst22|bricks_matrix[6][5][1]   ; 4       ;
 ; bricks_matrix:inst22|bricks_matrix[6][11][1]  ; 4       ;
@@ -1233,53 +1277,10 @@ Encoding Type:  One-Hot
 ; bricks_matrix:inst22|bricks_matrix[1][3][1]   ; 4       ;
 ; bricks_matrix:inst22|bricks_matrix[0][16][1]  ; 4       ;
 ; bricks_matrix:inst22|bricks_matrix[13][0][1]  ; 4       ;
-; bricks_matrix:inst22|bricks_matrix[10][1][0]  ; 4       ;
-; bricks_matrix:inst22|bricks_matrix[10][5][0]  ; 4       ;
-; bricks_matrix:inst22|bricks_matrix[8][1][0]   ; 4       ;
-; bricks_matrix:inst22|bricks_matrix[8][5][0]   ; 4       ;
-; bricks_matrix:inst22|bricks_matrix[8][6][0]   ; 4       ;
-; bricks_matrix:inst22|bricks_matrix[9][1][0]   ; 4       ;
-; bricks_matrix:inst22|bricks_matrix[9][5][0]   ; 4       ;
-; bricks_matrix:inst22|bricks_matrix[12][0][0]  ; 4       ;
-; bricks_matrix:inst22|bricks_matrix[12][8][0]  ; 4       ;
-; bricks_matrix:inst22|bricks_matrix[12][12][0] ; 4       ;
-; bricks_matrix:inst22|bricks_matrix[12][5][0]  ; 4       ;
-; bricks_matrix:inst22|bricks_matrix[12][9][0]  ; 4       ;
-; bricks_matrix:inst22|bricks_matrix[12][6][0]  ; 4       ;
-; bricks_matrix:inst22|bricks_matrix[12][10][0] ; 4       ;
-; bricks_matrix:inst22|bricks_matrix[12][7][0]  ; 4       ;
-; bricks_matrix:inst22|bricks_matrix[12][11][0] ; 4       ;
-; bricks_matrix:inst22|bricks_matrix[13][16][0] ; 4       ;
-; bricks_matrix:inst22|bricks_matrix[2][1][0]   ; 4       ;
-; bricks_matrix:inst22|bricks_matrix[2][5][0]   ; 4       ;
-; bricks_matrix:inst22|bricks_matrix[2][6][0]   ; 4       ;
-; bricks_matrix:inst22|bricks_matrix[3][1][0]   ; 4       ;
-; bricks_matrix:inst22|bricks_matrix[3][5][0]   ; 4       ;
-; bricks_matrix:inst22|bricks_matrix[3][6][0]   ; 4       ;
-; bricks_matrix:inst22|bricks_matrix[1][8][0]   ; 4       ;
-; bricks_matrix:inst22|bricks_matrix[1][12][0]  ; 4       ;
-; bricks_matrix:inst22|bricks_matrix[1][1][0]   ; 4       ;
-; bricks_matrix:inst22|bricks_matrix[1][5][0]   ; 4       ;
-; bricks_matrix:inst22|bricks_matrix[1][9][0]   ; 4       ;
-; bricks_matrix:inst22|bricks_matrix[1][6][0]   ; 4       ;
-; bricks_matrix:inst22|bricks_matrix[1][10][0]  ; 4       ;
-; bricks_matrix:inst22|bricks_matrix[1][11][0]  ; 4       ;
-; bricks_matrix:inst22|bricks_matrix[0][16][0]  ; 4       ;
-; bricks_matrix:inst22|bricks_matrix[6][1][0]   ; 4       ;
-; bricks_matrix:inst22|bricks_matrix[6][5][0]   ; 4       ;
-; bricks_matrix:inst22|bricks_matrix[7][1][0]   ; 4       ;
-; bricks_matrix:inst22|bricks_matrix[7][5][0]   ; 4       ;
-; bricks_matrix:inst22|bricks_matrix[7][6][0]   ; 4       ;
-; bricks_matrix:inst22|bricks_matrix[4][1][0]   ; 4       ;
-; bricks_matrix:inst22|bricks_matrix[4][5][0]   ; 4       ;
-; bricks_matrix:inst22|bricks_matrix[4][6][0]   ; 4       ;
-; bricks_matrix:inst22|bricks_matrix[5][1][0]   ; 4       ;
-; bricks_matrix:inst22|bricks_matrix[5][5][0]   ; 4       ;
-; bricks_matrix:inst22|bricks_matrix[5][6][0]   ; 4       ;
-; bricks_matrix:inst22|bricks_matrix[5][7][0]   ; 4       ;
 ; VGA_Controller:inst|oVGA_VS                   ; 9       ;
 ; VGA_Controller:inst|oVGA_HS                   ; 14      ;
-; back_ground_draw:inst12|blueBits[0]           ; 5       ;
+; back_ground_draw:inst12|blueBits[0]           ; 2       ;
+; back_ground_draw:inst12|greenBits[2]          ; 2       ;
 ; tank_move:inst15|tankDir[0]                   ; 12      ;
 ; tank_move:inst15|topLeftY_tmp[10]             ; 2       ;
 ; tank_move:inst15|topLeftY_tmp[8]              ; 2       ;
@@ -1289,8 +1290,7 @@ Encoding Type:  One-Hot
 ; bricks_matrix:inst22|matrix[6][11]            ; 3       ;
 ; bricks_matrix:inst22|matrix[6][3]             ; 3       ;
 ; bricks_matrix:inst22|matrix[6][5]             ; 3       ;
-; bricks_matrix:inst22|matrix[6][1]             ; 3       ;
-; Total number of inverted registers = 206*     ;         ;
+; Total number of inverted registers = 207*     ;         ;
 +-----------------------------------------------+---------+
 * Table truncated at 100 items. To change the number of inverted registers reported, set the "Number of Inverted Registers Reported" option under Assignments->Settings->Analysis and Synthesis Settings->More Settings
 
@@ -1300,29 +1300,28 @@ Encoding Type:  One-Hot
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                           ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------------+
-; 3:1                ; 5 bits    ; 10 LEs        ; 5 LEs                ; 5 LEs                  ; Yes        ; |TOP_VGA|TOP_KBD_DEMOALL:inst8|keyToggle_decoder:inst6|keyIsPressed  ;
-; 3:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |TOP_VGA|missle_move:inst7|Yspeed[2]                                 ;
-; 4:1                ; 38 bits   ; 76 LEs        ; 0 LEs                ; 76 LEs                 ; Yes        ; |TOP_VGA|missle_move:inst7|topLeftY_tmp[29]                          ;
-; 5:1                ; 10 bits   ; 30 LEs        ; 20 LEs               ; 10 LEs                 ; Yes        ; |TOP_VGA|tank_square_object:inst20|offsetY[2]                        ;
-; 4:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; Yes        ; |TOP_VGA|objects_mux:inst13|tmpRGB[4]                                ;
-; 4:1                ; 5 bits    ; 10 LEs        ; 10 LEs               ; 0 LEs                  ; Yes        ; |TOP_VGA|objects_mux:inst13|tmpRGB[1]                                ;
-; 9:1                ; 2 bits    ; 12 LEs        ; 4 LEs                ; 8 LEs                  ; Yes        ; |TOP_VGA|brickBitMap:inst24|RGBout[1]                                ;
-; 41:1               ; 2 bits    ; 54 LEs        ; 44 LEs               ; 10 LEs                 ; Yes        ; |TOP_VGA|brickBitMap:inst24|RGBout[3]                                ;
-; 17:1               ; 3 bits    ; 33 LEs        ; 30 LEs               ; 3 LEs                  ; Yes        ; |TOP_VGA|TOP_KBD_DEMOALL:inst8|keyPad_decoder:inst2|key[3]           ;
-; 4:1                ; 22 bits   ; 44 LEs        ; 22 LEs               ; 22 LEs                 ; Yes        ; |TOP_VGA|missle_move:inst7|topLeftY_tmp[9]                           ;
+; 3:1                ; 5 bits    ; 10 LEs        ; 5 LEs                ; 5 LEs                  ; Yes        ; |TOP_VGA|TOP_KBD_DEMOALL:inst8|keyToggle_decoder:inst1|keyIsPressed  ;
+; 3:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |TOP_VGA|missle_move:inst7|Yspeed[8]                                 ;
+; 4:1                ; 38 bits   ; 76 LEs        ; 0 LEs                ; 76 LEs                 ; Yes        ; |TOP_VGA|missle_move:inst7|topLeftY_tmp[27]                          ;
+; 5:1                ; 10 bits   ; 30 LEs        ; 20 LEs               ; 10 LEs                 ; Yes        ; |TOP_VGA|tank_square_object:inst20|offsetY[3]                        ;
+; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |TOP_VGA|objects_mux:inst13|tmpRGB[2]                                ;
+; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |TOP_VGA|objects_mux:inst13|tmpRGB[6]                                ;
+; 17:1               ; 3 bits    ; 33 LEs        ; 30 LEs               ; 3 LEs                  ; Yes        ; |TOP_VGA|TOP_KBD_DEMOALL:inst8|keyPad_decoder:inst2|key[1]           ;
+; 4:1                ; 22 bits   ; 44 LEs        ; 22 LEs               ; 22 LEs                 ; Yes        ; |TOP_VGA|missle_move:inst7|topLeftY_tmp[11]                          ;
+; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |TOP_VGA|brickBitMap:inst24|Mux63                                    ;
 ; 32:1               ; 2 bits    ; 42 LEs        ; 20 LEs               ; 22 LEs                 ; No         ; |TOP_VGA|game_controller:inst1|Mux1                                  ;
 ; 32:1               ; 2 bits    ; 42 LEs        ; 20 LEs               ; 22 LEs                 ; No         ; |TOP_VGA|game_controller:inst1|Mux31                                 ;
 ; 17:1               ; 2 bits    ; 22 LEs        ; 14 LEs               ; 8 LEs                  ; No         ; |TOP_VGA|game_controller:inst1|Mux6                                  ;
-; 17:1               ; 3 bits    ; 33 LEs        ; 27 LEs               ; 6 LEs                  ; No         ; |TOP_VGA|game_controller:inst1|Mux7                                  ;
+; 17:1               ; 3 bits    ; 33 LEs        ; 27 LEs               ; 6 LEs                  ; No         ; |TOP_VGA|game_controller:inst1|Mux13                                 ;
 ; 17:1               ; 3 bits    ; 33 LEs        ; 27 LEs               ; 6 LEs                  ; No         ; |TOP_VGA|game_controller:inst1|Mux11                                 ;
-; 17:1               ; 2 bits    ; 22 LEs        ; 14 LEs               ; 8 LEs                  ; No         ; |TOP_VGA|game_controller:inst1|Mux21                                 ;
-; 17:1               ; 3 bits    ; 33 LEs        ; 27 LEs               ; 6 LEs                  ; No         ; |TOP_VGA|game_controller:inst1|Mux28                                 ;
-; 17:1               ; 3 bits    ; 33 LEs        ; 27 LEs               ; 6 LEs                  ; No         ; |TOP_VGA|game_controller:inst1|Mux26                                 ;
+; 17:1               ; 2 bits    ; 22 LEs        ; 14 LEs               ; 8 LEs                  ; No         ; |TOP_VGA|game_controller:inst1|Mux20                                 ;
+; 17:1               ; 3 bits    ; 33 LEs        ; 27 LEs               ; 6 LEs                  ; No         ; |TOP_VGA|game_controller:inst1|Mux22                                 ;
+; 17:1               ; 3 bits    ; 33 LEs        ; 27 LEs               ; 6 LEs                  ; No         ; |TOP_VGA|game_controller:inst1|Mux23                                 ;
 ; 9:1                ; 3 bits    ; 18 LEs        ; 9 LEs                ; 9 LEs                  ; No         ; |TOP_VGA|TOP_KBD_DEMOALL:inst8|KBDINTF:inst4|bitrec:inst4|Selector7  ;
-; 8:1                ; 3 bits    ; 15 LEs        ; 12 LEs               ; 3 LEs                  ; No         ; |TOP_VGA|TOP_KBD_DEMOALL:inst8|KBDINTF:inst4|byterec:inst3|Selector1 ;
+; 8:1                ; 3 bits    ; 15 LEs        ; 12 LEs               ; 3 LEs                  ; No         ; |TOP_VGA|TOP_KBD_DEMOALL:inst8|KBDINTF:inst4|byterec:inst3|Selector3 ;
 ; 10:1               ; 2 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; No         ; |TOP_VGA|TOP_KBD_DEMOALL:inst8|KBDINTF:inst4|bitrec:inst4|Selector8  ;
-; 450:1              ; 3 bits    ; 900 LEs       ; 588 LEs              ; 312 LEs                ; No         ; |TOP_VGA|bricks_matrix:inst22|Mux42                                  ;
-; 914:1              ; 3 bits    ; 1827 LEs      ; 618 LEs              ; 1209 LEs               ; No         ; |TOP_VGA|bricks_matrix:inst22|Mux802                                 ;
+; 450:1              ; 3 bits    ; 900 LEs       ; 588 LEs              ; 312 LEs                ; No         ; |TOP_VGA|bricks_matrix:inst22|Mux44                                  ;
+; 914:1              ; 3 bits    ; 1827 LEs      ; 618 LEs              ; 1209 LEs               ; No         ; |TOP_VGA|bricks_matrix:inst22|Mux803                                 ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------------+
 
 
@@ -1891,16 +1890,16 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-------------------------------------+---------------+
 ; Type                                ; Count         ;
 +-------------------------------------+---------------+
-; arriav_ff                           ; 879           ;
-;     CLR                             ; 153           ;
+; arriav_ff                           ; 880           ;
+;     CLR                             ; 158           ;
 ;     CLR SCLR                        ; 55            ;
 ;     CLR SLD                         ; 2             ;
 ;     ENA                             ; 1             ;
-;     ENA CLR                         ; 126           ;
+;     ENA CLR                         ; 122           ;
 ;     ENA CLR SCLR                    ; 46            ;
 ;     ENA CLR SLD                     ; 476           ;
 ;     ENA SCLR                        ; 20            ;
-; arriav_lcell_comb                   ; 2933          ;
+; arriav_lcell_comb                   ; 2985          ;
 ;     arith                           ; 387           ;
 ;         0 data inputs               ; 8             ;
 ;         1 data inputs               ; 216           ;
@@ -1908,16 +1907,16 @@ Note: In order to hide this table in the UI and the text report file, please set
 ;         3 data inputs               ; 4             ;
 ;         4 data inputs               ; 24            ;
 ;         5 data inputs               ; 66            ;
-;     extend                          ; 47            ;
-;         7 data inputs               ; 47            ;
-;     normal                          ; 2455          ;
+;     extend                          ; 70            ;
+;         7 data inputs               ; 70            ;
+;     normal                          ; 2484          ;
 ;         0 data inputs               ; 2             ;
 ;         1 data inputs               ; 11            ;
-;         2 data inputs               ; 50            ;
-;         3 data inputs               ; 1070          ;
-;         4 data inputs               ; 213           ;
-;         5 data inputs               ; 301           ;
-;         6 data inputs               ; 808           ;
+;         2 data inputs               ; 47            ;
+;         3 data inputs               ; 1096          ;
+;         4 data inputs               ; 195           ;
+;         5 data inputs               ; 338           ;
+;         6 data inputs               ; 795           ;
 ;     shared                          ; 44            ;
 ;         0 data inputs               ; 2             ;
 ;         1 data inputs               ; 22            ;
@@ -1927,7 +1926,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; boundary_port                       ; 49            ;
 ;                                     ;               ;
 ; Max LUT depth                       ; 11.90         ;
-; Average LUT depth                   ; 6.70          ;
+; Average LUT depth                   ; 6.65          ;
 +-------------------------------------+---------------+
 
 
@@ -1936,7 +1935,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:20     ;
+; Top            ; 00:00:12     ;
 +----------------+--------------+
 
 
@@ -1946,7 +1945,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
-    Info: Processing started: Sat Dec 21 23:39:54 2019
+    Info: Processing started: Sun Dec 22 19:26:02 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off BattleCity -c BattleCity
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
@@ -2026,6 +2025,10 @@ Info (12021): Found 1 design units, including 1 entities, in source file rtl/vga
     Info (12023): Found entity 1: bricks_controller File: C:/Users/aviv_/Documents/SVProject/BattleCity_restored/RTL/VGA/bricks_contorller.sv Line: 8
 Info (12021): Found 1 design units, including 1 entities, in source file rtl/vga/brickbitmap.sv
     Info (12023): Found entity 1: brickBitMap File: C:/Users/aviv_/Documents/SVProject/BattleCity_restored/RTL/VGA/brickBitMap.sv Line: 10
+Info (12021): Found 1 design units, including 1 entities, in source file rtl/vga/tankbitmap.sv
+    Info (12023): Found entity 1: tankBitMap File: C:/Users/aviv_/Documents/SVProject/BattleCity_restored/RTL/VGA/tankBitMap.sv Line: 10
+Info (12021): Found 1 design units, including 1 entities, in source file rtl/vga/misslebitmap.sv
+    Info (12023): Found entity 1: missleBitMap File: C:/Users/aviv_/Documents/SVProject/BattleCity_restored/RTL/VGA/missleBitMap.sv Line: 3
 Warning (10236): Verilog HDL Implicit Net warning at byterec.sv(35): created implicit net for "nor_code" File: C:/Users/aviv_/Documents/SVProject/BattleCity_restored/RTL/KEYBOARD/byterec.sv Line: 35
 Warning (10236): Verilog HDL Implicit Net warning at byterec.sv(36): created implicit net for "ext_code" File: C:/Users/aviv_/Documents/SVProject/BattleCity_restored/RTL/KEYBOARD/byterec.sv Line: 36
 Warning (10236): Verilog HDL Implicit Net warning at byterec.sv(37): created implicit net for "rel_code" File: C:/Users/aviv_/Documents/SVProject/BattleCity_restored/RTL/KEYBOARD/byterec.sv Line: 37
@@ -2034,7 +2037,7 @@ Info (12128): Elaborating entity "VGA_Controller" for hierarchy "VGA_Controller:
 Warning (10230): Verilog HDL assignment warning at VGA_Controller.sv(58): truncated value with size 32 to match size of target (11) File: C:/Users/aviv_/Documents/SVProject/BattleCity_restored/RTL/VGA/VGA_Controller.sv Line: 58
 Warning (10230): Verilog HDL assignment warning at VGA_Controller.sv(59): truncated value with size 32 to match size of target (11) File: C:/Users/aviv_/Documents/SVProject/BattleCity_restored/RTL/VGA/VGA_Controller.sv Line: 59
 Info (12128): Elaborating entity "objects_mux" for hierarchy "objects_mux:inst13"
-Info (12128): Elaborating entity "smileyBitMap" for hierarchy "smileyBitMap:inst5"
+Info (12128): Elaborating entity "tankBitMap" for hierarchy "tankBitMap:inst25"
 Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "object_colors" into its bus
 Info (12128): Elaborating entity "tank_square_object" for hierarchy "tank_square_object:inst20"
 Warning (10230): Verilog HDL assignment warning at tank_square_object.sv(61): truncated value with size 32 to match size of target (11) File: C:/Users/aviv_/Documents/SVProject/BattleCity_restored/RTL/VGA/tank_square_object.sv Line: 61
@@ -2091,6 +2094,7 @@ Warning (10036): Verilog HDL or VHDL warning at back_ground_draw.sv(19): object 
 Warning (10230): Verilog HDL assignment warning at back_ground_draw.sv(37): truncated value with size 3 to match size of target (2) File: C:/Users/aviv_/Documents/SVProject/BattleCity_restored/RTL/VGA/back_ground_draw.sv Line: 37
 Warning (10230): Verilog HDL assignment warning at back_ground_draw.sv(44): truncated value with size 3 to match size of target (2) File: C:/Users/aviv_/Documents/SVProject/BattleCity_restored/RTL/VGA/back_ground_draw.sv Line: 44
 Warning (10230): Verilog HDL assignment warning at back_ground_draw.sv(55): truncated value with size 3 to match size of target (2) File: C:/Users/aviv_/Documents/SVProject/BattleCity_restored/RTL/VGA/back_ground_draw.sv Line: 55
+Warning (10230): Verilog HDL assignment warning at back_ground_draw.sv(65): truncated value with size 3 to match size of target (2) File: C:/Users/aviv_/Documents/SVProject/BattleCity_restored/RTL/VGA/back_ground_draw.sv Line: 65
 Info (12128): Elaborating entity "TOP_MSS_DEMO" for hierarchy "TOP_MSS_DEMO:inst9"
 Info (12128): Elaborating entity "audio_codec_controller" for hierarchy "TOP_MSS_DEMO:inst9|audio_codec_controller:inst2"
 Info (12128): Elaborating entity "sintable" for hierarchy "TOP_MSS_DEMO:inst9|sintable:inst1"
@@ -2100,6 +2104,8 @@ Warning (10230): Verilog HDL assignment warning at addr_counter.sv(32): truncate
 Info (12128): Elaborating entity "prescaler" for hierarchy "TOP_MSS_DEMO:inst9|prescaler:inst3"
 Info (12128): Elaborating entity "ToneDecoder" for hierarchy "ToneDecoder:inst3"
 Info (12128): Elaborating entity "SEG7" for hierarchy "SEG7:inst10"
+Info (12128): Elaborating entity "missleBitMap" for hierarchy "missleBitMap:inst26"
+Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "object_colors" into its bus
 Warning (12240): Synthesis found one or more imported partitions that will be treated as black boxes for timing analysis during synthesis
 Warning (13004): Presettable and clearable registers converted to equivalent circuits with latches. Registers power-up to an undefined state, and DEVCLRn places the registers in an undefined state.
     Warning (13310): Register "missle_move:inst7|topLeftX_tmp[6]" is converted into an equivalent circuit using register "missle_move:inst7|topLeftX_tmp[6]~_emulated" and latch "missle_move:inst7|topLeftX_tmp[6]~1" File: C:/Users/aviv_/Documents/SVProject/BattleCity_restored/RTL/VGA/missle_move.sv Line: 102
@@ -2498,17 +2504,17 @@ Info (35003): Optimize away 265 nodes that do not fanout to OUTPUT or BIDIR pins
     Info (35004): Node: "TOP_MSS_DEMO:inst9|audio_codec_controller:inst2|adc2parallel:adc2parallel_right_inst|synch_fifo:adc_synch_fifo_inst|dcfifo:dcfifo_component|dcfifo_8il1:auto_generated|altdpram:fiforam|lpm_decode:wdecoder|decode_mpf:auto_generated|w_anode317w[3]" File: C:/Users/aviv_/Documents/SVProject/BattleCity_restored/RTL/audio_codec_controller/audio_codec_controller.qxp Line: -1
 Warning (21074): Design contains 1 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "AUD_ADCDAT"
-Info (21057): Implemented 3705 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 3758 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 5 input pins
     Info (21059): Implemented 40 output pins
     Info (21060): Implemented 4 bidirectional pins
-    Info (21061): Implemented 3654 logic cells
+    Info (21061): Implemented 3707 logic cells
     Info (21064): Implemented 2 RAM segments
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 63 warnings
-    Info: Peak virtual memory: 4861 megabytes
-    Info: Processing ended: Sat Dec 21 23:40:30 2019
-    Info: Elapsed time: 00:00:36
-    Info: Total CPU time (on all processors): 00:00:49
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 64 warnings
+    Info: Peak virtual memory: 4852 megabytes
+    Info: Processing ended: Sun Dec 22 19:26:28 2019
+    Info: Elapsed time: 00:00:26
+    Info: Total CPU time (on all processors): 00:00:41
 
 
 +------------------------------------------+

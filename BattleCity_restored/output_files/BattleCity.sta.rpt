@@ -1,5 +1,5 @@
 TimeQuest Timing Analyzer report for BattleCity
-Sat Dec 21 23:43:51 2019
+Sun Dec 22 19:29:25 2019
 Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
 
 
@@ -128,9 +128,9 @@ agreement for further details.
 +------------+-----------------+-----------------------------+------+
 ; Fmax       ; Restricted Fmax ; Clock Name                  ; Note ;
 +------------+-----------------+-----------------------------+------+
-; 92.52 MHz  ; 92.52 MHz       ; CLOCK_50                    ;      ;
-; 259.27 MHz ; 259.27 MHz      ; AUD_BCLK                    ;      ;
-; 298.6 MHz  ; 298.6 MHz       ; VGA_Controller:inst|oVGA_HS ;      ;
+; 92.89 MHz  ; 92.89 MHz       ; CLOCK_50                    ;      ;
+; 260.55 MHz ; 260.55 MHz      ; AUD_BCLK                    ;      ;
+; 303.77 MHz ; 303.77 MHz      ; VGA_Controller:inst|oVGA_HS ;      ;
 +------------+-----------------+-----------------------------+------+
 This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
 
@@ -146,10 +146,10 @@ HTML report is unavailable in plain text report export.
 +-----------------------------+--------+---------------+
 ; Clock                       ; Slack  ; End Point TNS ;
 +-----------------------------+--------+---------------+
-; CLOCK_50                    ; -9.809 ; -6744.875     ;
-; AUD_BCLK                    ; -5.604 ; -632.301      ;
-; resetN                      ; -4.403 ; -81.410       ;
-; VGA_Controller:inst|oVGA_HS ; -2.349 ; -47.637       ;
+; CLOCK_50                    ; -9.766 ; -6788.025     ;
+; AUD_BCLK                    ; -5.605 ; -578.240      ;
+; resetN                      ; -4.189 ; -81.089       ;
+; VGA_Controller:inst|oVGA_HS ; -2.292 ; -44.355       ;
 +-----------------------------+--------+---------------+
 
 
@@ -158,10 +158,10 @@ HTML report is unavailable in plain text report export.
 +-----------------------------+-------+---------------+
 ; Clock                       ; Slack ; End Point TNS ;
 +-----------------------------+-------+---------------+
-; CLOCK_50                    ; 0.114 ; 0.000         ;
-; VGA_Controller:inst|oVGA_HS ; 0.284 ; 0.000         ;
-; AUD_BCLK                    ; 0.304 ; 0.000         ;
-; resetN                      ; 0.818 ; 0.000         ;
+; CLOCK_50                    ; 0.214 ; 0.000         ;
+; AUD_BCLK                    ; 0.285 ; 0.000         ;
+; VGA_Controller:inst|oVGA_HS ; 0.337 ; 0.000         ;
+; resetN                      ; 0.889 ; 0.000         ;
 +-----------------------------+-------+---------------+
 
 
@@ -170,9 +170,9 @@ HTML report is unavailable in plain text report export.
 +-----------------------------+--------+---------------+
 ; Clock                       ; Slack  ; End Point TNS ;
 +-----------------------------+--------+---------------+
-; VGA_Controller:inst|oVGA_HS ; -7.545 ; -164.625      ;
-; CLOCK_50                    ; -7.439 ; -4413.085     ;
-; AUD_BCLK                    ; -6.457 ; -1264.474     ;
+; VGA_Controller:inst|oVGA_HS ; -7.591 ; -159.081      ;
+; CLOCK_50                    ; -7.443 ; -4446.017     ;
+; AUD_BCLK                    ; -6.175 ; -1337.879     ;
 +-----------------------------+--------+---------------+
 
 
@@ -181,9 +181,9 @@ HTML report is unavailable in plain text report export.
 +-----------------------------+-------+---------------+
 ; Clock                       ; Slack ; End Point TNS ;
 +-----------------------------+-------+---------------+
-; AUD_BCLK                    ; 0.307 ; 0.000         ;
-; CLOCK_50                    ; 0.932 ; 0.000         ;
-; VGA_Controller:inst|oVGA_HS ; 4.066 ; 0.000         ;
+; AUD_BCLK                    ; 0.619 ; 0.000         ;
+; CLOCK_50                    ; 0.862 ; 0.000         ;
+; VGA_Controller:inst|oVGA_HS ; 4.556 ; 0.000         ;
 +-----------------------------+-------+---------------+
 
 
@@ -192,10 +192,10 @@ HTML report is unavailable in plain text report export.
 +-----------------------------+--------+---------------+
 ; Clock                       ; Slack  ; End Point TNS ;
 +-----------------------------+--------+---------------+
-; CLOCK_50                    ; -2.174 ; -900.296      ;
-; AUD_BCLK                    ; -2.174 ; -462.685      ;
-; VGA_Controller:inst|oVGA_HS ; -0.394 ; -14.036       ;
-; resetN                      ; -0.033 ; -0.045        ;
+; CLOCK_50                    ; -2.174 ; -902.186      ;
+; AUD_BCLK                    ; -2.174 ; -424.696      ;
+; VGA_Controller:inst|oVGA_HS ; -0.394 ; -13.395       ;
+; resetN                      ; -0.031 ; -0.110        ;
 +-----------------------------+--------+---------------+
 
 
@@ -211,9 +211,9 @@ Design MTBF is not calculated because the design doesn't meet its timing require
 +------------+-----------------+-----------------------------+------+
 ; Fmax       ; Restricted Fmax ; Clock Name                  ; Note ;
 +------------+-----------------+-----------------------------+------+
-; 92.83 MHz  ; 92.83 MHz       ; CLOCK_50                    ;      ;
-; 270.42 MHz ; 270.42 MHz      ; AUD_BCLK                    ;      ;
-; 301.48 MHz ; 301.48 MHz      ; VGA_Controller:inst|oVGA_HS ;      ;
+; 91.66 MHz  ; 91.66 MHz       ; CLOCK_50                    ;      ;
+; 266.45 MHz ; 266.45 MHz      ; AUD_BCLK                    ;      ;
+; 302.21 MHz ; 302.21 MHz      ; VGA_Controller:inst|oVGA_HS ;      ;
 +------------+-----------------+-----------------------------+------+
 This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
 
@@ -223,23 +223,23 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +-----------------------------+--------+---------------+
 ; Clock                       ; Slack  ; End Point TNS ;
 +-----------------------------+--------+---------------+
-; CLOCK_50                    ; -9.772 ; -6667.503     ;
-; AUD_BCLK                    ; -5.398 ; -607.736      ;
-; resetN                      ; -4.553 ; -85.176       ;
-; VGA_Controller:inst|oVGA_HS ; -2.317 ; -46.221       ;
+; CLOCK_50                    ; -9.910 ; -6751.497     ;
+; AUD_BCLK                    ; -5.402 ; -559.683      ;
+; resetN                      ; -4.363 ; -85.144       ;
+; VGA_Controller:inst|oVGA_HS ; -2.309 ; -43.781       ;
 +-----------------------------+--------+---------------+
 
 
-+------------------------------------------------------+
-; Slow 1100mV 0C Model Hold Summary                    ;
-+-----------------------------+--------+---------------+
-; Clock                       ; Slack  ; End Point TNS ;
-+-----------------------------+--------+---------------+
-; CLOCK_50                    ; -0.030 ; -0.309        ;
-; AUD_BCLK                    ; 0.200  ; 0.000         ;
-; VGA_Controller:inst|oVGA_HS ; 0.344  ; 0.000         ;
-; resetN                      ; 1.007  ; 0.000         ;
-+-----------------------------+--------+---------------+
++-----------------------------------------------------+
+; Slow 1100mV 0C Model Hold Summary                   ;
++-----------------------------+-------+---------------+
+; Clock                       ; Slack ; End Point TNS ;
++-----------------------------+-------+---------------+
+; CLOCK_50                    ; 0.052 ; 0.000         ;
+; AUD_BCLK                    ; 0.223 ; 0.000         ;
+; VGA_Controller:inst|oVGA_HS ; 0.382 ; 0.000         ;
+; resetN                      ; 1.019 ; 0.000         ;
++-----------------------------+-------+---------------+
 
 
 +------------------------------------------------------+
@@ -247,9 +247,9 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +-----------------------------+--------+---------------+
 ; Clock                       ; Slack  ; End Point TNS ;
 +-----------------------------+--------+---------------+
-; VGA_Controller:inst|oVGA_HS ; -7.410 ; -161.779      ;
-; CLOCK_50                    ; -7.052 ; -4232.955     ;
-; AUD_BCLK                    ; -6.242 ; -1218.073     ;
+; VGA_Controller:inst|oVGA_HS ; -7.460 ; -156.319      ;
+; CLOCK_50                    ; -7.013 ; -4263.246     ;
+; AUD_BCLK                    ; -5.864 ; -1272.368     ;
 +-----------------------------+--------+---------------+
 
 
@@ -258,9 +258,9 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +-----------------------------+-------+---------------+
 ; Clock                       ; Slack ; End Point TNS ;
 +-----------------------------+-------+---------------+
-; AUD_BCLK                    ; 0.226 ; 0.000         ;
-; CLOCK_50                    ; 0.882 ; 0.000         ;
-; VGA_Controller:inst|oVGA_HS ; 4.130 ; 0.000         ;
+; AUD_BCLK                    ; 0.442 ; 0.000         ;
+; CLOCK_50                    ; 0.804 ; 0.000         ;
+; VGA_Controller:inst|oVGA_HS ; 4.541 ; 0.000         ;
 +-----------------------------+-------+---------------+
 
 
@@ -269,10 +269,10 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +-----------------------------+--------+---------------+
 ; Clock                       ; Slack  ; End Point TNS ;
 +-----------------------------+--------+---------------+
-; CLOCK_50                    ; -2.174 ; -833.816      ;
-; AUD_BCLK                    ; -2.174 ; -455.633      ;
-; VGA_Controller:inst|oVGA_HS ; -0.394 ; -13.120       ;
-; resetN                      ; -0.046 ; -0.201        ;
+; CLOCK_50                    ; -2.174 ; -836.336      ;
+; AUD_BCLK                    ; -2.174 ; -417.742      ;
+; VGA_Controller:inst|oVGA_HS ; -0.394 ; -12.549       ;
+; resetN                      ; -0.066 ; -0.465        ;
 +-----------------------------+--------+---------------+
 
 
@@ -288,23 +288,23 @@ Design MTBF is not calculated because the design doesn't meet its timing require
 +-----------------------------+--------+---------------+
 ; Clock                       ; Slack  ; End Point TNS ;
 +-----------------------------+--------+---------------+
-; CLOCK_50                    ; -5.374 ; -3594.483     ;
-; AUD_BCLK                    ; -3.968 ; -234.572      ;
-; resetN                      ; -2.150 ; -38.036       ;
-; VGA_Controller:inst|oVGA_HS ; -1.032 ; -21.023       ;
+; CLOCK_50                    ; -5.360 ; -3576.287     ;
+; AUD_BCLK                    ; -3.945 ; -212.029      ;
+; resetN                      ; -2.079 ; -37.644       ;
+; VGA_Controller:inst|oVGA_HS ; -1.009 ; -19.918       ;
 +-----------------------------+--------+---------------+
 
 
-+-----------------------------------------------------+
-; Fast 1100mV 85C Model Hold Summary                  ;
-+-----------------------------+-------+---------------+
-; Clock                       ; Slack ; End Point TNS ;
-+-----------------------------+-------+---------------+
-; CLOCK_50                    ; 0.097 ; 0.000         ;
-; AUD_BCLK                    ; 0.107 ; 0.000         ;
-; VGA_Controller:inst|oVGA_HS ; 0.123 ; 0.000         ;
-; resetN                      ; 0.374 ; 0.000         ;
-+-----------------------------+-------+---------------+
++------------------------------------------------------+
+; Fast 1100mV 85C Model Hold Summary                   ;
++-----------------------------+--------+---------------+
+; Clock                       ; Slack  ; End Point TNS ;
++-----------------------------+--------+---------------+
+; CLOCK_50                    ; -0.016 ; -0.016        ;
+; AUD_BCLK                    ; 0.128  ; 0.000         ;
+; VGA_Controller:inst|oVGA_HS ; 0.166  ; 0.000         ;
+; resetN                      ; 0.442  ; 0.000         ;
++-----------------------------+--------+---------------+
 
 
 +------------------------------------------------------+
@@ -312,9 +312,9 @@ Design MTBF is not calculated because the design doesn't meet its timing require
 +-----------------------------+--------+---------------+
 ; Clock                       ; Slack  ; End Point TNS ;
 +-----------------------------+--------+---------------+
-; CLOCK_50                    ; -5.048 ; -2830.446     ;
-; AUD_BCLK                    ; -4.586 ; -891.772      ;
-; VGA_Controller:inst|oVGA_HS ; -4.180 ; -91.090       ;
+; CLOCK_50                    ; -4.898 ; -2866.469     ;
+; AUD_BCLK                    ; -4.257 ; -921.051      ;
+; VGA_Controller:inst|oVGA_HS ; -4.252 ; -89.101       ;
 +-----------------------------+--------+---------------+
 
 
@@ -323,9 +323,9 @@ Design MTBF is not calculated because the design doesn't meet its timing require
 +-----------------------------+-------+---------------+
 ; Clock                       ; Slack ; End Point TNS ;
 +-----------------------------+-------+---------------+
-; CLOCK_50                    ; 0.512 ; 0.000         ;
-; AUD_BCLK                    ; 0.525 ; 0.000         ;
-; VGA_Controller:inst|oVGA_HS ; 2.411 ; 0.000         ;
+; CLOCK_50                    ; 0.495 ; 0.000         ;
+; AUD_BCLK                    ; 0.714 ; 0.000         ;
+; VGA_Controller:inst|oVGA_HS ; 2.732 ; 0.000         ;
 +-----------------------------+-------+---------------+
 
 
@@ -334,10 +334,10 @@ Design MTBF is not calculated because the design doesn't meet its timing require
 +-----------------------------+--------+---------------+
 ; Clock                       ; Slack  ; End Point TNS ;
 +-----------------------------+--------+---------------+
-; CLOCK_50                    ; -2.174 ; -648.698      ;
-; AUD_BCLK                    ; -2.174 ; -485.223      ;
-; resetN                      ; -0.367 ; -13.471       ;
-; VGA_Controller:inst|oVGA_HS ; 0.048  ; 0.000         ;
+; CLOCK_50                    ; -2.174 ; -652.270      ;
+; AUD_BCLK                    ; -2.174 ; -423.025      ;
+; resetN                      ; -0.371 ; -14.574       ;
+; VGA_Controller:inst|oVGA_HS ; 0.099  ; 0.000         ;
 +-----------------------------+--------+---------------+
 
 
@@ -353,23 +353,23 @@ Design MTBF is not calculated because the design doesn't meet its timing require
 +-----------------------------+--------+---------------+
 ; Clock                       ; Slack  ; End Point TNS ;
 +-----------------------------+--------+---------------+
-; CLOCK_50                    ; -4.809 ; -3196.949     ;
-; AUD_BCLK                    ; -3.318 ; -187.770      ;
-; resetN                      ; -1.916 ; -34.484       ;
-; VGA_Controller:inst|oVGA_HS ; -0.890 ; -17.993       ;
+; CLOCK_50                    ; -4.789 ; -3211.521     ;
+; AUD_BCLK                    ; -3.290 ; -172.521      ;
+; resetN                      ; -1.872 ; -34.267       ;
+; VGA_Controller:inst|oVGA_HS ; -0.900 ; -17.288       ;
 +-----------------------------+--------+---------------+
 
 
-+-----------------------------------------------------+
-; Fast 1100mV 0C Model Hold Summary                   ;
-+-----------------------------+-------+---------------+
-; Clock                       ; Slack ; End Point TNS ;
-+-----------------------------+-------+---------------+
-; CLOCK_50                    ; 0.029 ; 0.000         ;
-; AUD_BCLK                    ; 0.051 ; 0.000         ;
-; VGA_Controller:inst|oVGA_HS ; 0.125 ; 0.000         ;
-; resetN                      ; 0.365 ; 0.000         ;
-+-----------------------------+-------+---------------+
++------------------------------------------------------+
+; Fast 1100mV 0C Model Hold Summary                    ;
++-----------------------------+--------+---------------+
+; Clock                       ; Slack  ; End Point TNS ;
++-----------------------------+--------+---------------+
+; CLOCK_50                    ; -0.070 ; -0.098        ;
+; AUD_BCLK                    ; 0.054  ; 0.000         ;
+; VGA_Controller:inst|oVGA_HS ; 0.153  ; 0.000         ;
+; resetN                      ; 0.421  ; 0.000         ;
++-----------------------------+--------+---------------+
 
 
 +------------------------------------------------------+
@@ -377,9 +377,9 @@ Design MTBF is not calculated because the design doesn't meet its timing require
 +-----------------------------+--------+---------------+
 ; Clock                       ; Slack  ; End Point TNS ;
 +-----------------------------+--------+---------------+
-; CLOCK_50                    ; -4.303 ; -2788.740     ;
-; VGA_Controller:inst|oVGA_HS ; -4.110 ; -89.653       ;
-; AUD_BCLK                    ; -3.855 ; -742.739      ;
+; VGA_Controller:inst|oVGA_HS ; -4.169 ; -87.383       ;
+; CLOCK_50                    ; -4.146 ; -2820.866     ;
+; AUD_BCLK                    ; -3.548 ; -765.670      ;
 +-----------------------------+--------+---------------+
 
 
@@ -388,9 +388,9 @@ Design MTBF is not calculated because the design doesn't meet its timing require
 +-----------------------------+-------+---------------+
 ; Clock                       ; Slack ; End Point TNS ;
 +-----------------------------+-------+---------------+
-; AUD_BCLK                    ; 0.200 ; 0.000         ;
-; CLOCK_50                    ; 0.470 ; 0.000         ;
-; VGA_Controller:inst|oVGA_HS ; 2.392 ; 0.000         ;
+; AUD_BCLK                    ; 0.323 ; 0.000         ;
+; CLOCK_50                    ; 0.448 ; 0.000         ;
+; VGA_Controller:inst|oVGA_HS ; 2.673 ; 0.000         ;
 +-----------------------------+-------+---------------+
 
 
@@ -399,10 +399,10 @@ Design MTBF is not calculated because the design doesn't meet its timing require
 +-----------------------------+--------+---------------+
 ; Clock                       ; Slack  ; End Point TNS ;
 +-----------------------------+--------+---------------+
-; CLOCK_50                    ; -2.174 ; -748.674      ;
-; AUD_BCLK                    ; -2.174 ; -505.114      ;
-; resetN                      ; -0.406 ; -15.362       ;
-; VGA_Controller:inst|oVGA_HS ; 0.059  ; 0.000         ;
+; CLOCK_50                    ; -2.174 ; -751.879      ;
+; AUD_BCLK                    ; -2.174 ; -455.815      ;
+; resetN                      ; -0.410 ; -16.381       ;
+; VGA_Controller:inst|oVGA_HS ; 0.116  ; 0.000         ;
 +-----------------------------+--------+---------------+
 
 
@@ -418,16 +418,16 @@ Design MTBF is not calculated because the design doesn't meet its timing require
 +------------------------------+-----------+--------+-----------+---------+---------------------+
 ; Clock                        ; Setup     ; Hold   ; Recovery  ; Removal ; Minimum Pulse Width ;
 +------------------------------+-----------+--------+-----------+---------+---------------------+
-; Worst-case Slack             ; -9.809    ; -0.030 ; -7.545    ; 0.200   ; -2.174              ;
-;  AUD_BCLK                    ; -5.604    ; 0.051  ; -6.457    ; 0.200   ; -2.174              ;
-;  CLOCK_50                    ; -9.809    ; -0.030 ; -7.439    ; 0.470   ; -2.174              ;
-;  VGA_Controller:inst|oVGA_HS ; -2.349    ; 0.123  ; -7.545    ; 2.392   ; -0.394              ;
-;  resetN                      ; -4.553    ; 0.365  ; N/A       ; N/A     ; -0.406              ;
-; Design-wide TNS              ; -7506.223 ; -0.309 ; -5842.184 ; 0.0     ; -1377.062           ;
-;  AUD_BCLK                    ; -632.301  ; 0.000  ; -1264.474 ; 0.000   ; -505.114            ;
-;  CLOCK_50                    ; -6744.875 ; -0.309 ; -4413.085 ; 0.000   ; -900.296            ;
-;  VGA_Controller:inst|oVGA_HS ; -47.637   ; 0.000  ; -164.625  ; 0.000   ; -14.036             ;
-;  resetN                      ; -85.176   ; 0.000  ; N/A       ; N/A     ; -15.362             ;
+; Worst-case Slack             ; -9.910    ; -0.070 ; -7.591    ; 0.323   ; -2.174              ;
+;  AUD_BCLK                    ; -5.605    ; 0.054  ; -6.175    ; 0.323   ; -2.174              ;
+;  CLOCK_50                    ; -9.910    ; -0.070 ; -7.443    ; 0.448   ; -2.174              ;
+;  VGA_Controller:inst|oVGA_HS ; -2.309    ; 0.153  ; -7.591    ; 2.673   ; -0.394              ;
+;  resetN                      ; -4.363    ; 0.421  ; N/A       ; N/A     ; -0.410              ;
+; Design-wide TNS              ; -7491.709 ; -0.098 ; -5942.977 ; 0.0     ; -1340.387           ;
+;  AUD_BCLK                    ; -578.240  ; 0.000  ; -1337.879 ; 0.000   ; -455.815            ;
+;  CLOCK_50                    ; -6788.025 ; -0.098 ; -4446.017 ; 0.000   ; -902.186            ;
+;  VGA_Controller:inst|oVGA_HS ; -44.355   ; 0.000  ; -159.081  ; 0.000   ; -13.395             ;
+;  resetN                      ; -85.144   ; 0.000  ; N/A       ; N/A     ; -16.381             ;
 +------------------------------+-----------+--------+-----------+---------+---------------------+
 
 
@@ -713,14 +713,14 @@ Design MTBF is not calculated because the design doesn't meet its timing require
 +-----------------------------+-----------------------------+----------+----------+----------+----------+
 ; From Clock                  ; To Clock                    ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
 +-----------------------------+-----------------------------+----------+----------+----------+----------+
-; AUD_BCLK                    ; AUD_BCLK                    ; 8898     ; 0        ; 4        ; 0        ;
+; AUD_BCLK                    ; AUD_BCLK                    ; 8531     ; 0        ; 4        ; 0        ;
 ; CLOCK_50                    ; AUD_BCLK                    ; 18       ; 0        ; 0        ; 0        ;
 ; AUD_BCLK                    ; CLOCK_50                    ; 16       ; 0        ; 0        ; 0        ;
-; CLOCK_50                    ; CLOCK_50                    ; 16519306 ; 0        ; 0        ; 0        ;
+; CLOCK_50                    ; CLOCK_50                    ; 16452749 ; 0        ; 0        ; 0        ;
 ; resetN                      ; CLOCK_50                    ; 8084     ; 4048     ; 0        ; 0        ;
-; VGA_Controller:inst|oVGA_HS ; CLOCK_50                    ; 1        ; 2151079  ; 0        ; 0        ;
+; VGA_Controller:inst|oVGA_HS ; CLOCK_50                    ; 1        ; 2146686  ; 0        ; 0        ;
 ; CLOCK_50                    ; resetN                      ; 198      ; 0        ; 0        ; 0        ;
-; VGA_Controller:inst|oVGA_HS ; VGA_Controller:inst|oVGA_HS ; 0        ; 0        ; 0        ; 327      ;
+; VGA_Controller:inst|oVGA_HS ; VGA_Controller:inst|oVGA_HS ; 0        ; 0        ; 0        ; 311      ;
 +-----------------------------+-----------------------------+----------+----------+----------+----------+
 Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
 
@@ -730,14 +730,14 @@ Entries labeled "false path" only account for clock-to-clock false paths and not
 +-----------------------------+-----------------------------+----------+----------+----------+----------+
 ; From Clock                  ; To Clock                    ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
 +-----------------------------+-----------------------------+----------+----------+----------+----------+
-; AUD_BCLK                    ; AUD_BCLK                    ; 8898     ; 0        ; 4        ; 0        ;
+; AUD_BCLK                    ; AUD_BCLK                    ; 8531     ; 0        ; 4        ; 0        ;
 ; CLOCK_50                    ; AUD_BCLK                    ; 18       ; 0        ; 0        ; 0        ;
 ; AUD_BCLK                    ; CLOCK_50                    ; 16       ; 0        ; 0        ; 0        ;
-; CLOCK_50                    ; CLOCK_50                    ; 16519306 ; 0        ; 0        ; 0        ;
+; CLOCK_50                    ; CLOCK_50                    ; 16452749 ; 0        ; 0        ; 0        ;
 ; resetN                      ; CLOCK_50                    ; 8084     ; 4048     ; 0        ; 0        ;
-; VGA_Controller:inst|oVGA_HS ; CLOCK_50                    ; 1        ; 2151079  ; 0        ; 0        ;
+; VGA_Controller:inst|oVGA_HS ; CLOCK_50                    ; 1        ; 2146686  ; 0        ; 0        ;
 ; CLOCK_50                    ; resetN                      ; 198      ; 0        ; 0        ; 0        ;
-; VGA_Controller:inst|oVGA_HS ; VGA_Controller:inst|oVGA_HS ; 0        ; 0        ; 0        ; 327      ;
+; VGA_Controller:inst|oVGA_HS ; VGA_Controller:inst|oVGA_HS ; 0        ; 0        ; 0        ; 311      ;
 +-----------------------------+-----------------------------+----------+----------+----------+----------+
 Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
 
@@ -747,10 +747,10 @@ Entries labeled "false path" only account for clock-to-clock false paths and not
 +------------+-----------------------------+----------+----------+----------+----------+
 ; From Clock ; To Clock                    ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
 +------------+-----------------------------+----------+----------+----------+----------+
-; CLOCK_50   ; AUD_BCLK                    ; 229      ; 0        ; 2        ; 0        ;
-; CLOCK_50   ; CLOCK_50                    ; 63       ; 0        ; 0        ; 0        ;
-; resetN     ; CLOCK_50                    ; 871      ; 871      ; 0        ; 0        ;
-; resetN     ; VGA_Controller:inst|oVGA_HS ; 0        ; 0        ; 22       ; 22       ;
+; CLOCK_50   ; AUD_BCLK                    ; 224      ; 0        ; 2        ; 0        ;
+; CLOCK_50   ; CLOCK_50                    ; 52       ; 0        ; 0        ; 0        ;
+; resetN     ; CLOCK_50                    ; 876      ; 876      ; 0        ; 0        ;
+; resetN     ; VGA_Controller:inst|oVGA_HS ; 0        ; 0        ; 21       ; 21       ;
 +------------+-----------------------------+----------+----------+----------+----------+
 Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
 
@@ -760,10 +760,10 @@ Entries labeled "false path" only account for clock-to-clock false paths and not
 +------------+-----------------------------+----------+----------+----------+----------+
 ; From Clock ; To Clock                    ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
 +------------+-----------------------------+----------+----------+----------+----------+
-; CLOCK_50   ; AUD_BCLK                    ; 229      ; 0        ; 2        ; 0        ;
-; CLOCK_50   ; CLOCK_50                    ; 63       ; 0        ; 0        ; 0        ;
-; resetN     ; CLOCK_50                    ; 871      ; 871      ; 0        ; 0        ;
-; resetN     ; VGA_Controller:inst|oVGA_HS ; 0        ; 0        ; 22       ; 22       ;
+; CLOCK_50   ; AUD_BCLK                    ; 224      ; 0        ; 2        ; 0        ;
+; CLOCK_50   ; CLOCK_50                    ; 52       ; 0        ; 0        ; 0        ;
+; resetN     ; CLOCK_50                    ; 876      ; 876      ; 0        ; 0        ;
+; resetN     ; VGA_Controller:inst|oVGA_HS ; 0        ; 0        ; 21       ; 21       ;
 +------------+-----------------------------+----------+----------+----------+----------+
 Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
 
@@ -934,7 +934,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 Info: *******************************************************************
 Info: Running Quartus Prime TimeQuest Timing Analyzer
     Info: Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
-    Info: Processing started: Sat Dec 21 23:43:32 2019
+    Info: Processing started: Sun Dec 22 19:29:11 2019
 Info: Command: quartus_sta BattleCity -c BattleCity
 Info: qsta_default_script.tcl version: #1
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
@@ -966,39 +966,39 @@ Info: Found TIMEQUEST_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
 Info: Analyzing Slow 1100mV 85C Model
 Critical Warning (332148): Timing requirements not met
     Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the TimeQuest Timing Analyzer.
-Info (332146): Worst-case setup slack is -9.809
+Info (332146): Worst-case setup slack is -9.766
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -9.809           -6744.875 CLOCK_50 
-    Info (332119):    -5.604            -632.301 AUD_BCLK 
-    Info (332119):    -4.403             -81.410 resetN 
-    Info (332119):    -2.349             -47.637 VGA_Controller:inst|oVGA_HS 
-Info (332146): Worst-case hold slack is 0.114
+    Info (332119):    -9.766           -6788.025 CLOCK_50 
+    Info (332119):    -5.605            -578.240 AUD_BCLK 
+    Info (332119):    -4.189             -81.089 resetN 
+    Info (332119):    -2.292             -44.355 VGA_Controller:inst|oVGA_HS 
+Info (332146): Worst-case hold slack is 0.214
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.114               0.000 CLOCK_50 
-    Info (332119):     0.284               0.000 VGA_Controller:inst|oVGA_HS 
-    Info (332119):     0.304               0.000 AUD_BCLK 
-    Info (332119):     0.818               0.000 resetN 
-Info (332146): Worst-case recovery slack is -7.545
+    Info (332119):     0.214               0.000 CLOCK_50 
+    Info (332119):     0.285               0.000 AUD_BCLK 
+    Info (332119):     0.337               0.000 VGA_Controller:inst|oVGA_HS 
+    Info (332119):     0.889               0.000 resetN 
+Info (332146): Worst-case recovery slack is -7.591
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -7.545            -164.625 VGA_Controller:inst|oVGA_HS 
-    Info (332119):    -7.439           -4413.085 CLOCK_50 
-    Info (332119):    -6.457           -1264.474 AUD_BCLK 
-Info (332146): Worst-case removal slack is 0.307
+    Info (332119):    -7.591            -159.081 VGA_Controller:inst|oVGA_HS 
+    Info (332119):    -7.443           -4446.017 CLOCK_50 
+    Info (332119):    -6.175           -1337.879 AUD_BCLK 
+Info (332146): Worst-case removal slack is 0.619
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.307               0.000 AUD_BCLK 
-    Info (332119):     0.932               0.000 CLOCK_50 
-    Info (332119):     4.066               0.000 VGA_Controller:inst|oVGA_HS 
+    Info (332119):     0.619               0.000 AUD_BCLK 
+    Info (332119):     0.862               0.000 CLOCK_50 
+    Info (332119):     4.556               0.000 VGA_Controller:inst|oVGA_HS 
 Info (332146): Worst-case minimum pulse width slack is -2.174
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -2.174            -900.296 CLOCK_50 
-    Info (332119):    -2.174            -462.685 AUD_BCLK 
-    Info (332119):    -0.394             -14.036 VGA_Controller:inst|oVGA_HS 
-    Info (332119):    -0.033              -0.045 resetN 
+    Info (332119):    -2.174            -902.186 CLOCK_50 
+    Info (332119):    -2.174            -424.696 AUD_BCLK 
+    Info (332119):    -0.394             -13.395 VGA_Controller:inst|oVGA_HS 
+    Info (332119):    -0.031              -0.110 resetN 
 Info (332114): Report Metastability: Found 39 synchronizer chains.
     Info (332114): Design MTBF is not calculated because the design doesn't meet its timing requirements.
 Info: Analyzing Slow 1100mV 0C Model
@@ -1007,39 +1007,39 @@ Info (334004): Delay annotation completed successfully
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in TimeQuest to see clock uncertainties.
 Critical Warning (332148): Timing requirements not met
     Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the TimeQuest Timing Analyzer.
-Info (332146): Worst-case setup slack is -9.772
+Info (332146): Worst-case setup slack is -9.910
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -9.772           -6667.503 CLOCK_50 
-    Info (332119):    -5.398            -607.736 AUD_BCLK 
-    Info (332119):    -4.553             -85.176 resetN 
-    Info (332119):    -2.317             -46.221 VGA_Controller:inst|oVGA_HS 
-Info (332146): Worst-case hold slack is -0.030
+    Info (332119):    -9.910           -6751.497 CLOCK_50 
+    Info (332119):    -5.402            -559.683 AUD_BCLK 
+    Info (332119):    -4.363             -85.144 resetN 
+    Info (332119):    -2.309             -43.781 VGA_Controller:inst|oVGA_HS 
+Info (332146): Worst-case hold slack is 0.052
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -0.030              -0.309 CLOCK_50 
-    Info (332119):     0.200               0.000 AUD_BCLK 
-    Info (332119):     0.344               0.000 VGA_Controller:inst|oVGA_HS 
-    Info (332119):     1.007               0.000 resetN 
-Info (332146): Worst-case recovery slack is -7.410
+    Info (332119):     0.052               0.000 CLOCK_50 
+    Info (332119):     0.223               0.000 AUD_BCLK 
+    Info (332119):     0.382               0.000 VGA_Controller:inst|oVGA_HS 
+    Info (332119):     1.019               0.000 resetN 
+Info (332146): Worst-case recovery slack is -7.460
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -7.410            -161.779 VGA_Controller:inst|oVGA_HS 
-    Info (332119):    -7.052           -4232.955 CLOCK_50 
-    Info (332119):    -6.242           -1218.073 AUD_BCLK 
-Info (332146): Worst-case removal slack is 0.226
+    Info (332119):    -7.460            -156.319 VGA_Controller:inst|oVGA_HS 
+    Info (332119):    -7.013           -4263.246 CLOCK_50 
+    Info (332119):    -5.864           -1272.368 AUD_BCLK 
+Info (332146): Worst-case removal slack is 0.442
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.226               0.000 AUD_BCLK 
-    Info (332119):     0.882               0.000 CLOCK_50 
-    Info (332119):     4.130               0.000 VGA_Controller:inst|oVGA_HS 
+    Info (332119):     0.442               0.000 AUD_BCLK 
+    Info (332119):     0.804               0.000 CLOCK_50 
+    Info (332119):     4.541               0.000 VGA_Controller:inst|oVGA_HS 
 Info (332146): Worst-case minimum pulse width slack is -2.174
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -2.174            -833.816 CLOCK_50 
-    Info (332119):    -2.174            -455.633 AUD_BCLK 
-    Info (332119):    -0.394             -13.120 VGA_Controller:inst|oVGA_HS 
-    Info (332119):    -0.046              -0.201 resetN 
+    Info (332119):    -2.174            -836.336 CLOCK_50 
+    Info (332119):    -2.174            -417.742 AUD_BCLK 
+    Info (332119):    -0.394             -12.549 VGA_Controller:inst|oVGA_HS 
+    Info (332119):    -0.066              -0.465 resetN 
 Info (332114): Report Metastability: Found 39 synchronizer chains.
     Info (332114): Design MTBF is not calculated because the design doesn't meet its timing requirements.
 Info: Analyzing Fast 1100mV 85C Model
@@ -1048,86 +1048,86 @@ Info (334004): Delay annotation completed successfully
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in TimeQuest to see clock uncertainties.
 Critical Warning (332148): Timing requirements not met
     Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the TimeQuest Timing Analyzer.
-Info (332146): Worst-case setup slack is -5.374
+Info (332146): Worst-case setup slack is -5.360
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -5.374           -3594.483 CLOCK_50 
-    Info (332119):    -3.968            -234.572 AUD_BCLK 
-    Info (332119):    -2.150             -38.036 resetN 
-    Info (332119):    -1.032             -21.023 VGA_Controller:inst|oVGA_HS 
-Info (332146): Worst-case hold slack is 0.097
+    Info (332119):    -5.360           -3576.287 CLOCK_50 
+    Info (332119):    -3.945            -212.029 AUD_BCLK 
+    Info (332119):    -2.079             -37.644 resetN 
+    Info (332119):    -1.009             -19.918 VGA_Controller:inst|oVGA_HS 
+Info (332146): Worst-case hold slack is -0.016
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.097               0.000 CLOCK_50 
-    Info (332119):     0.107               0.000 AUD_BCLK 
-    Info (332119):     0.123               0.000 VGA_Controller:inst|oVGA_HS 
-    Info (332119):     0.374               0.000 resetN 
-Info (332146): Worst-case recovery slack is -5.048
+    Info (332119):    -0.016              -0.016 CLOCK_50 
+    Info (332119):     0.128               0.000 AUD_BCLK 
+    Info (332119):     0.166               0.000 VGA_Controller:inst|oVGA_HS 
+    Info (332119):     0.442               0.000 resetN 
+Info (332146): Worst-case recovery slack is -4.898
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -5.048           -2830.446 CLOCK_50 
-    Info (332119):    -4.586            -891.772 AUD_BCLK 
-    Info (332119):    -4.180             -91.090 VGA_Controller:inst|oVGA_HS 
-Info (332146): Worst-case removal slack is 0.512
+    Info (332119):    -4.898           -2866.469 CLOCK_50 
+    Info (332119):    -4.257            -921.051 AUD_BCLK 
+    Info (332119):    -4.252             -89.101 VGA_Controller:inst|oVGA_HS 
+Info (332146): Worst-case removal slack is 0.495
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.512               0.000 CLOCK_50 
-    Info (332119):     0.525               0.000 AUD_BCLK 
-    Info (332119):     2.411               0.000 VGA_Controller:inst|oVGA_HS 
+    Info (332119):     0.495               0.000 CLOCK_50 
+    Info (332119):     0.714               0.000 AUD_BCLK 
+    Info (332119):     2.732               0.000 VGA_Controller:inst|oVGA_HS 
 Info (332146): Worst-case minimum pulse width slack is -2.174
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -2.174            -648.698 CLOCK_50 
-    Info (332119):    -2.174            -485.223 AUD_BCLK 
-    Info (332119):    -0.367             -13.471 resetN 
-    Info (332119):     0.048               0.000 VGA_Controller:inst|oVGA_HS 
+    Info (332119):    -2.174            -652.270 CLOCK_50 
+    Info (332119):    -2.174            -423.025 AUD_BCLK 
+    Info (332119):    -0.371             -14.574 resetN 
+    Info (332119):     0.099               0.000 VGA_Controller:inst|oVGA_HS 
 Info (332114): Report Metastability: Found 39 synchronizer chains.
     Info (332114): Design MTBF is not calculated because the design doesn't meet its timing requirements.
 Info: Analyzing Fast 1100mV 0C Model
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in TimeQuest to see clock uncertainties.
 Critical Warning (332148): Timing requirements not met
     Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the TimeQuest Timing Analyzer.
-Info (332146): Worst-case setup slack is -4.809
+Info (332146): Worst-case setup slack is -4.789
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -4.809           -3196.949 CLOCK_50 
-    Info (332119):    -3.318            -187.770 AUD_BCLK 
-    Info (332119):    -1.916             -34.484 resetN 
-    Info (332119):    -0.890             -17.993 VGA_Controller:inst|oVGA_HS 
-Info (332146): Worst-case hold slack is 0.029
+    Info (332119):    -4.789           -3211.521 CLOCK_50 
+    Info (332119):    -3.290            -172.521 AUD_BCLK 
+    Info (332119):    -1.872             -34.267 resetN 
+    Info (332119):    -0.900             -17.288 VGA_Controller:inst|oVGA_HS 
+Info (332146): Worst-case hold slack is -0.070
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.029               0.000 CLOCK_50 
-    Info (332119):     0.051               0.000 AUD_BCLK 
-    Info (332119):     0.125               0.000 VGA_Controller:inst|oVGA_HS 
-    Info (332119):     0.365               0.000 resetN 
-Info (332146): Worst-case recovery slack is -4.303
+    Info (332119):    -0.070              -0.098 CLOCK_50 
+    Info (332119):     0.054               0.000 AUD_BCLK 
+    Info (332119):     0.153               0.000 VGA_Controller:inst|oVGA_HS 
+    Info (332119):     0.421               0.000 resetN 
+Info (332146): Worst-case recovery slack is -4.169
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -4.303           -2788.740 CLOCK_50 
-    Info (332119):    -4.110             -89.653 VGA_Controller:inst|oVGA_HS 
-    Info (332119):    -3.855            -742.739 AUD_BCLK 
-Info (332146): Worst-case removal slack is 0.200
+    Info (332119):    -4.169             -87.383 VGA_Controller:inst|oVGA_HS 
+    Info (332119):    -4.146           -2820.866 CLOCK_50 
+    Info (332119):    -3.548            -765.670 AUD_BCLK 
+Info (332146): Worst-case removal slack is 0.323
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.200               0.000 AUD_BCLK 
-    Info (332119):     0.470               0.000 CLOCK_50 
-    Info (332119):     2.392               0.000 VGA_Controller:inst|oVGA_HS 
+    Info (332119):     0.323               0.000 AUD_BCLK 
+    Info (332119):     0.448               0.000 CLOCK_50 
+    Info (332119):     2.673               0.000 VGA_Controller:inst|oVGA_HS 
 Info (332146): Worst-case minimum pulse width slack is -2.174
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -2.174            -748.674 CLOCK_50 
-    Info (332119):    -2.174            -505.114 AUD_BCLK 
-    Info (332119):    -0.406             -15.362 resetN 
-    Info (332119):     0.059               0.000 VGA_Controller:inst|oVGA_HS 
+    Info (332119):    -2.174            -751.879 CLOCK_50 
+    Info (332119):    -2.174            -455.815 AUD_BCLK 
+    Info (332119):    -0.410             -16.381 resetN 
+    Info (332119):     0.116               0.000 VGA_Controller:inst|oVGA_HS 
 Info (332114): Report Metastability: Found 39 synchronizer chains.
     Info (332114): Design MTBF is not calculated because the design doesn't meet its timing requirements.
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
 Info: Quartus Prime TimeQuest Timing Analyzer was successful. 0 errors, 11 warnings
     Info: Peak virtual memory: 5197 megabytes
-    Info: Processing ended: Sat Dec 21 23:43:51 2019
-    Info: Elapsed time: 00:00:19
-    Info: Total CPU time (on all processors): 00:00:25
+    Info: Processing ended: Sun Dec 22 19:29:25 2019
+    Info: Elapsed time: 00:00:14
+    Info: Total CPU time (on all processors): 00:00:20
 
 

@@ -1,5 +1,5 @@
 Archive Project report for BattleCity
-Sat Dec 21 13:57:04 2019
+Sun Dec 22 19:31:42 2019
 Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
 
 
@@ -36,7 +36,7 @@ agreement for further details.
 +----------------------------------------------------------------+
 ; Archive Project Summary                                        ;
 +------------------------+---------------------------------------+
-; Archive Project Status ; Successful - Sat Dec 21 13:57:04 2019 ;
+; Archive Project Status ; Successful - Sun Dec 22 19:31:42 2019 ;
 ; Revision Name          ; BattleCity                            ;
 ; Top-level Entity Name  ; TOP_VGA                               ;
 ; Family                 ; Cyclone V                             ;
@@ -59,8 +59,8 @@ Info: ----------------------------------------------------------
 Info: Generated report 'BattleCity.archive.rpt'
 Info (23030): Evaluation of Tcl script c:/intelfpga_lite/17.0/quartus/common/tcl/apps/qpm/qar.tcl was successful
 Info: Quartus Prime Shell was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 4835 megabytes
-    Info: Processing ended: Sat Dec 21 13:57:04 2019
+    Info: Peak virtual memory: 4836 megabytes
+    Info: Processing ended: Sun Dec 22 19:31:42 2019
     Info: Elapsed time: 00:00:02
     Info: Total CPU time (on all processors): 00:00:02
 
@@ -111,10 +111,12 @@ Info: Quartus Prime Shell was successful. 0 errors, 0 warnings
 ; RTL/MSS/TOP_MSS_DEMO.bdf                              ;
 ; RTL/Seg7/SEG7.SV                                      ;
 ; RTL/VGA/back_ground_draw.sv                           ;
+; RTL/VGA/brickBitMap.sv                                ;
 ; RTL/VGA/bricks_contorller.sv                          ;
 ; RTL/VGA/bricks_matrix.sv                              ;
 ; RTL/VGA/game_controller.sv                            ;
 ; RTL/VGA/missle_move.sv                                ;
+; RTL/VGA/missleBitMap.sv                               ;
 ; RTL/VGA/NumbersBitMap.sv                              ;
 ; RTL/VGA/objects_mux.sv                                ;
 ; RTL/VGA/smileyBitMap.sv                               ;
@@ -123,6 +125,7 @@ Info: Quartus Prime Shell was successful. 0 errors, 0 warnings
 ; RTL/VGA/square_object.sv                              ;
 ; RTL/VGA/tank_move.sv                                  ;
 ; RTL/VGA/tank_square_object.sv                         ;
+; RTL/VGA/tankBitMap.sv                                 ;
 ; RTL/VGA/TOP_VGA.bdf                                   ;
 ; RTL/VGA/VGA_Controller.sv                             ;
 ; tankDirConst.bsf                                      ;
