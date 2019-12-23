@@ -9,15 +9,19 @@ module	objects_mux	(
 					input		logic	clk,
 					input		logic	resetN,
 		// tank 
-					input		logic	tankDrawingRequest, // two set of inputs per unit
-					input		logic	[7:0] tankRGB, 
+					input		logic	tank1DrawingRequest, // two set of inputs per unit
+					input		logic	[7:0] tank1RGB,
+					input		logic	tank2DrawingRequest, // two set of inputs per unit
+					input		logic	[7:0] tank2RGB, 
 		// brick
 					input 	logic brickDrawingRequest,
-					input 	logic [7:0] brickRGB,
+					input 	logic [7:0] brickRGB,	
 					
 		// missle
-					input 	logic missleDrawingRequest,
-					input 	logic [7:0] missleRGB,
+					input 	logic missle1DrawingRequest,
+					input 	logic [7:0] missle1RGB,
+					input 	logic missle2DrawingRequest,
+					input 	logic [7:0] missle2RGB,
 										
 		// background 
 					input		logic	[7:0] backGroundRGB, 
@@ -41,11 +45,17 @@ begin
 			tmpRGB	<= 8'b0;
 	end
 	else begin
-		if (missleDrawingRequest == 1'b1)
-			tmpRGB <= missleRGB;
+		if (missle1DrawingRequest == 1'b1)
+			tmpRGB <= missle1RGB;
 		
-		else if (tankDrawingRequest == 1'b1 )   
-			tmpRGB <= tankRGB;  
+		else if (tank1DrawingRequest == 1'b1 )   
+			tmpRGB <= tank1RGB;  
+			
+		else if (missle2DrawingRequest == 1'b1)
+			tmpRGB <= missle2RGB;
+		
+		else if (tank2DrawingRequest == 1'b1 )   
+			tmpRGB <= tank2RGB;  
 		
 		else if (brickDrawingRequest == 1'b1)
 			tmpRGB <= brickRGB;

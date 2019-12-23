@@ -130,6 +130,77 @@ logic [0:OBJECT_WIDTH_X-1] [0:OBJECT_HEIGHT_Y-1] [8-1:0] object_colors3 = {
 {8'hDA, 8'hD6, 8'hD6, 8'hD6, 8'hDA, 8'hFA, 8'hDA, 8'hD6, 8'hD6, 8'hD6, 8'hD6, 8'hD6, 8'hD6, 8'hD6, 8'hD6, 8'hDA, 8'hFA, 8'hD6, 8'hD6, 8'hD6, 8'hD6, 8'hD6, 8'hD6, 8'hD6, 8'hD6, 8'hDA, 8'hFA, 8'hFA, 8'hFA, 8'hD6, 8'hDA, 8'hDA }
 };
 
+logic [0:OBJECT_WIDTH_X-1] [0:OBJECT_HEIGHT_Y-1] [8-1:0] object_colors4 = {
+{8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1A },
+{8'h1B, 8'h1F, 8'h1F, 8'h1F, 8'h1F, 8'h1F, 8'h1F, 8'h1F, 8'h1F, 8'h1F, 8'h1F, 8'h1F, 8'h1F, 8'h1F, 8'h1B, 8'h1B, 8'h1B, 8'h1B, 8'h1B, 8'h1B, 8'h1B, 8'h1B, 8'h1B, 8'h1B, 8'h1B, 8'h1B, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1A },
+{8'h1B, 8'h1F, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1A },
+{8'h1B, 8'h1F, 8'h1A, 8'h16, 8'h16, 8'h16, 8'h16, 8'h16, 8'h16, 8'h16, 8'h16, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1A },
+{8'h1B, 8'h1F, 8'h1A, 8'h16, 8'h1A, 8'h1B, 8'h1B, 8'h1B, 8'h1B, 8'h1B, 8'h1B, 8'h1B, 8'h1B, 8'h1B, 8'h1B, 8'h1B, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1A },
+{8'h1B, 8'h1F, 8'h1A, 8'h16, 8'h1F, 8'h1F, 8'h1F, 8'h1F, 8'h1F, 8'h1F, 8'h1F, 8'h1F, 8'h1F, 8'h1F, 8'h1B, 8'h1B, 8'h1B, 8'h1B, 8'h1B, 8'h1B, 8'h1B, 8'h1B, 8'h1B, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1B, 8'h1B, 8'h1A, 8'h1A },
+{8'h1B, 8'h1F, 8'h1A, 8'h16, 8'h1F, 8'h1F, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1B, 8'h1B, 8'h1A, 8'h1A },
+{8'h1B, 8'h1F, 8'h1A, 8'h16, 8'h1B, 8'h1F, 8'h16, 8'h16, 8'h16, 8'h16, 8'h16, 8'h16, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1B, 8'h1A, 8'h1A, 8'h1B, 8'h1B, 8'h1A, 8'h1A },
+{8'h1B, 8'h1F, 8'h1A, 8'h16, 8'h1B, 8'h1F, 8'h1A, 8'h16, 8'h1A, 8'h1B, 8'h1B, 8'h1B, 8'h1B, 8'h1B, 8'h1B, 8'h1B, 8'h1B, 8'h1B, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1B, 8'h1B, 8'h1A, 8'h1A, 8'h1B, 8'h1B, 8'h1A, 8'h1A },
+{8'h1B, 8'h1F, 8'h1A, 8'h16, 8'h1B, 8'h1F, 8'h1A, 8'h16, 8'h1B, 8'h1F, 8'h1F, 8'h1F, 8'h1F, 8'h1F, 8'h1B, 8'h1B, 8'h1B, 8'h1B, 8'h1B, 8'h1B, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1B, 8'h1B, 8'h1A, 8'h1A, 8'h1B, 8'h1B, 8'h1A, 8'h1A },
+{8'h1B, 8'h1F, 8'h1A, 8'h1A, 8'h1B, 8'h1F, 8'h1A, 8'h16, 8'h1B, 8'h1F, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1B, 8'h1B, 8'h1A, 8'h1A, 8'h1B, 8'h1B, 8'h1A, 8'h1A, 8'h1B, 8'h1B, 8'h1A, 8'h1A },
+{8'h1B, 8'h1F, 8'h1A, 8'h1A, 8'h1B, 8'h1F, 8'h1A, 8'h16, 8'h1B, 8'h1F, 8'h1A, 8'h16, 8'h16, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1B, 8'h1B, 8'h1A, 8'h1A, 8'h1B, 8'h1B, 8'h1A, 8'h1A, 8'h1B, 8'h1B, 8'h1A, 8'h1A },
+{8'h1B, 8'h1B, 8'h1A, 8'h1A, 8'h1B, 8'h1B, 8'h1A, 8'h1A, 8'h1B, 8'h1F, 8'h1A, 8'h16, 8'h1A, 8'h1B, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1B, 8'h1B, 8'h1A, 8'h1A, 8'h1B, 8'h1B, 8'h1A, 8'h1A, 8'h1B, 8'h1B, 8'h1A, 8'h1A },
+{8'h1B, 8'h1B, 8'h1A, 8'h1A, 8'h1B, 8'h1B, 8'h1A, 8'h1A, 8'h1B, 8'h1F, 8'h1A, 8'h1A, 8'h1B, 8'h1F, 8'h1B, 8'h1B, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1B, 8'h1B, 8'h1A, 8'h1A, 8'h1B, 8'h1B, 8'h1A, 8'h1A, 8'h1B, 8'h1B, 8'h1A, 8'h1A },
+{8'h1B, 8'h1B, 8'h1A, 8'h1A, 8'h1B, 8'h1B, 8'h1A, 8'h1A, 8'h1B, 8'h1B, 8'h1A, 8'h1A, 8'h1B, 8'h1B, 8'h1B, 8'h1B, 8'h1B, 8'h1B, 8'h1A, 8'h1A, 8'h1B, 8'h1B, 8'h1A, 8'h1A, 8'h1B, 8'h1B, 8'h1A, 8'h1A, 8'h1B, 8'h1B, 8'h1A, 8'h1A },
+{8'h1B, 8'h1B, 8'h1A, 8'h1A, 8'h1B, 8'h1B, 8'h1A, 8'h1A, 8'h1B, 8'h1B, 8'h1A, 8'h1A, 8'h1B, 8'h1B, 8'h1A, 8'h1A, 8'h1F, 8'h1F, 8'h1A, 8'h1A, 8'h1B, 8'h1B, 8'h1A, 8'h1A, 8'h1B, 8'h1F, 8'h1A, 8'h1A, 8'h1B, 8'h1B, 8'h1A, 8'h1A },
+{8'h1B, 8'h1B, 8'h1A, 8'h1A, 8'h1B, 8'h1B, 8'h1A, 8'h1A, 8'h1B, 8'h1B, 8'h1A, 8'h1A, 8'h1A, 8'h1B, 8'h1B, 8'h1B, 8'h1F, 8'h1F, 8'h1A, 8'h16, 8'h1F, 8'h1F, 8'h1A, 8'h16, 8'h1B, 8'h1F, 8'h1A, 8'h1A, 8'h1B, 8'h1B, 8'h1A, 8'h1A },
+{8'h1B, 8'h1B, 8'h1A, 8'h1A, 8'h1B, 8'h1B, 8'h1A, 8'h1A, 8'h1B, 8'h1B, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1F, 8'h1F, 8'h1F, 8'h1F, 8'h16, 8'h16, 8'h1F, 8'h1F, 8'h1A, 8'h16, 8'h1B, 8'h1F, 8'h1A, 8'h1A, 8'h1B, 8'h1B, 8'h1A, 8'h1A },
+{8'h1B, 8'h1B, 8'h1A, 8'h1A, 8'h1B, 8'h1B, 8'h1A, 8'h1A, 8'h1A, 8'h1B, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h16, 8'h16, 8'h1F, 8'h1F, 8'h16, 8'h16, 8'h1B, 8'h1F, 8'h1A, 8'h1A, 8'h1B, 8'h1F, 8'h1A, 8'h1A },
+{8'h1B, 8'h1B, 8'h1A, 8'h1A, 8'h1B, 8'h1B, 8'h1A, 8'h1A, 8'h1A, 8'h1B, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h16, 8'h16, 8'h16, 8'h16, 8'h16, 8'h1F, 8'h1F, 8'h16, 8'h16, 8'h1B, 8'h1F, 8'h1A, 8'h16, 8'h1B, 8'h1F, 8'h1A, 8'h1A },
+{8'h1B, 8'h1B, 8'h1A, 8'h1A, 8'h1B, 8'h1B, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1B, 8'h1B, 8'h1B, 8'h1B, 8'h1B, 8'h1B, 8'h1B, 8'h1B, 8'h1B, 8'h1B, 8'h1F, 8'h1F, 8'h16, 8'h16, 8'h1B, 8'h1F, 8'h1A, 8'h16, 8'h1B, 8'h1F, 8'h1A, 8'h16 },
+{8'h1B, 8'h1B, 8'h1A, 8'h1A, 8'h1B, 8'h1B, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1B, 8'h1B, 8'h1B, 8'h1B, 8'h1F, 8'h1F, 8'h1F, 8'h1F, 8'h1F, 8'h1F, 8'h1F, 8'h1F, 8'h16, 8'h16, 8'h1B, 8'h1F, 8'h1A, 8'h16, 8'h1B, 8'h1F, 8'h1A, 8'h16 },
+{8'h1A, 8'h1B, 8'h1A, 8'h1A, 8'h1A, 8'h1B, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h16, 8'h16, 8'h1F, 8'h1F, 8'h1A, 8'h16, 8'h1F, 8'h1F, 8'h1A, 8'h16 },
+{8'h1A, 8'h1B, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h16, 8'h16, 8'h16, 8'h16, 8'h16, 8'h16, 8'h16, 8'h16, 8'h1F, 8'h1F, 8'h1A, 8'h16, 8'h1F, 8'h1F, 8'h1A, 8'h16 },
+{8'h1A, 8'h1B, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1B, 8'h1B, 8'h1B, 8'h1B, 8'h1B, 8'h1B, 8'h1B, 8'h1B, 8'h1B, 8'h1B, 8'h1B, 8'h1B, 8'h1B, 8'h1B, 8'h1F, 8'h1F, 8'h1F, 8'h1F, 8'h16, 8'h16, 8'h1F, 8'h1F, 8'h1A, 8'h16 },
+{8'h1A, 8'h1B, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1B, 8'h1B, 8'h1B, 8'h1B, 8'h1B, 8'h1B, 8'h1B, 8'h1B, 8'h1F, 8'h1F, 8'h1F, 8'h1F, 8'h1F, 8'h1F, 8'h1F, 8'h1F, 8'h1F, 8'h1F, 8'h1F, 8'h1F, 8'h16, 8'h16, 8'h1F, 8'h1F, 8'h16, 8'h16 },
+{8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h16, 8'h16, 8'h1F, 8'h1F, 8'h16, 8'h16 },
+{8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h16, 8'h16, 8'h16, 8'h16, 8'h16, 8'h16, 8'h16, 8'h16, 8'h16, 8'h16, 8'h16, 8'h16, 8'h1F, 8'h1F, 8'h16, 8'h16 },
+{8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1B, 8'h1B, 8'h1B, 8'h1B, 8'h1B, 8'h1B, 8'h1B, 8'h1B, 8'h1B, 8'h1B, 8'h1B, 8'h1B, 8'h1B, 8'h1B, 8'h1B, 8'h1B, 8'h1B, 8'h1B, 8'h1B, 8'h1B, 8'h1B, 8'h1B, 8'h1F, 8'h1F, 8'h16, 8'h16 },
+{8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1B, 8'h1B, 8'h1B, 8'h1B, 8'h1B, 8'h1B, 8'h1B, 8'h1B, 8'h1B, 8'h1B, 8'h1F, 8'h1F, 8'h1F, 8'h1F, 8'h1F, 8'h1F, 8'h1F, 8'h1F, 8'h1F, 8'h1F, 8'h1F, 8'h1F, 8'h1F, 8'h1F, 8'h1F, 8'h1F, 8'h16, 8'h16 },
+{8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h16, 8'h16 },
+{8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h1A, 8'h16, 8'h16, 8'h16, 8'h16, 8'h16, 8'h16, 8'h16, 8'h16, 8'h16, 8'h16, 8'h16, 8'h16, 8'h16, 8'h16 }
+};
+
+logic [0:OBJECT_WIDTH_X-1] [0:OBJECT_HEIGHT_Y-1] [8-1:0] object_colors5 = {
+{8'hC4, 8'hC5, 8'hC9, 8'hC9, 8'hC9, 8'hC9, 8'hC9, 8'hC9, 8'hC9, 8'hC9, 8'hA4, 8'hA4, 8'hC9, 8'hC9, 8'hC9, 8'hC9, 8'hC9, 8'hC9, 8'hC9, 8'hC9, 8'hC9, 8'hC9, 8'hC5, 8'hC4, 8'hA4, 8'hA4, 8'hC9, 8'hC9, 8'hC9, 8'hC9, 8'hA4, 8'hA4 },
+{8'hC4, 8'hA4, 8'hC9, 8'hC9, 8'hC9, 8'hC9, 8'hC9, 8'hC9, 8'hC9, 8'hC9, 8'hA4, 8'hA4, 8'hC9, 8'hC9, 8'hC9, 8'hC9, 8'hC9, 8'hC9, 8'hC9, 8'hC9, 8'hC9, 8'hC9, 8'hC4, 8'hA4, 8'hA4, 8'hA4, 8'hC9, 8'hC9, 8'hC9, 8'hC9, 8'hC4, 8'hA4 },
+{8'hC4, 8'hA4, 8'hF6, 8'hF6, 8'hFB, 8'hFB, 8'hFB, 8'hFB, 8'hF2, 8'hED, 8'hED, 8'hF2, 8'hF6, 8'hF6, 8'hF6, 8'hF6, 8'hF6, 8'hF6, 8'hF2, 8'hF2, 8'hF2, 8'hED, 8'hED, 8'hE9, 8'hE9, 8'hED, 8'hF6, 8'hF6, 8'hF6, 8'hF6, 8'hC9, 8'hC5 },
+{8'hC4, 8'hC4, 8'hF6, 8'hFB, 8'hFF, 8'hFF, 8'hFF, 8'hFF, 8'hF2, 8'hF2, 8'hF2, 8'hF2, 8'hFA, 8'hFB, 8'hFB, 8'hFB, 8'hFB, 8'hFA, 8'hF2, 8'hF2, 8'hF2, 8'hF2, 8'hED, 8'hED, 8'hED, 8'hED, 8'hFA, 8'hFB, 8'hFB, 8'hF6, 8'hC9, 8'hC9 },
+{8'hC9, 8'hC9, 8'hFB, 8'hFF, 8'hF2, 8'hED, 8'hED, 8'hED, 8'hED, 8'hED, 8'hF6, 8'hF6, 8'hF2, 8'hF2, 8'hF2, 8'hF2, 8'hED, 8'hED, 8'hE9, 8'hE9, 8'hC9, 8'hC9, 8'hC9, 8'hC9, 8'hE9, 8'hE9, 8'hED, 8'hF2, 8'hFA, 8'hF6, 8'hC9, 8'hC9 },
+{8'hC9, 8'hC9, 8'hFB, 8'hFF, 8'hED, 8'hED, 8'hED, 8'hED, 8'hED, 8'hED, 8'hFA, 8'hFA, 8'hF2, 8'hF2, 8'hF2, 8'hF2, 8'hED, 8'hED, 8'hE9, 8'hC9, 8'hC9, 8'hC9, 8'hC9, 8'hC9, 8'hE9, 8'hE9, 8'hED, 8'hED, 8'hFA, 8'hF6, 8'hC9, 8'hC9 },
+{8'hC9, 8'hC9, 8'hFB, 8'hFF, 8'hED, 8'hED, 8'hED, 8'hED, 8'hF6, 8'hF6, 8'hF2, 8'hF2, 8'hF2, 8'hF2, 8'hED, 8'hED, 8'hED, 8'hED, 8'hE9, 8'hE9, 8'hC9, 8'hC9, 8'hC9, 8'hE9, 8'hED, 8'hED, 8'hED, 8'hED, 8'hF2, 8'hF2, 8'hA4, 8'hA4 },
+{8'hC9, 8'hC9, 8'hFB, 8'hFF, 8'hED, 8'hED, 8'hED, 8'hED, 8'hFA, 8'hFA, 8'hF2, 8'hF2, 8'hF2, 8'hF2, 8'hED, 8'hED, 8'hED, 8'hED, 8'hE9, 8'hE9, 8'hE9, 8'hE9, 8'hE9, 8'hE9, 8'hED, 8'hED, 8'hED, 8'hED, 8'hF2, 8'hED, 8'hA4, 8'hA0 },
+{8'hC9, 8'hC9, 8'hF2, 8'hF2, 8'hED, 8'hED, 8'hF2, 8'hF2, 8'hF2, 8'hF2, 8'hF2, 8'hF2, 8'hED, 8'hED, 8'hED, 8'hED, 8'hE9, 8'hE9, 8'hE9, 8'hE9, 8'hED, 8'hED, 8'hED, 8'hED, 8'hED, 8'hED, 8'hED, 8'hED, 8'hF2, 8'hF2, 8'hA4, 8'hA4 },
+{8'hC9, 8'hC9, 8'hED, 8'hF2, 8'hED, 8'hED, 8'hF2, 8'hF2, 8'hF2, 8'hF2, 8'hF2, 8'hF2, 8'hED, 8'hED, 8'hED, 8'hED, 8'hE9, 8'hE9, 8'hE9, 8'hE9, 8'hED, 8'hED, 8'hED, 8'hED, 8'hED, 8'hED, 8'hED, 8'hED, 8'hF2, 8'hED, 8'hC4, 8'hA4 },
+{8'hC5, 8'hC4, 8'hED, 8'hF2, 8'hF2, 8'hF2, 8'hF2, 8'hF2, 8'hF2, 8'hF2, 8'hED, 8'hED, 8'hED, 8'hED, 8'hE9, 8'hE9, 8'hE9, 8'hE9, 8'hED, 8'hED, 8'hF2, 8'hF2, 8'hF2, 8'hF2, 8'hED, 8'hED, 8'hE9, 8'hE9, 8'hC9, 8'hC9, 8'hA4, 8'hA4 },
+{8'hC4, 8'hC4, 8'hF2, 8'hF2, 8'hF2, 8'hF2, 8'hF2, 8'hF2, 8'hF2, 8'hF2, 8'hED, 8'hED, 8'hED, 8'hED, 8'hE9, 8'hE9, 8'hE9, 8'hE9, 8'hED, 8'hED, 8'hF2, 8'hF2, 8'hF2, 8'hF2, 8'hED, 8'hED, 8'hE9, 8'hC9, 8'hC9, 8'hC5, 8'hA4, 8'hA4 },
+{8'hC9, 8'hC9, 8'hF6, 8'hFA, 8'hF2, 8'hF2, 8'hF2, 8'hF2, 8'hED, 8'hED, 8'hED, 8'hED, 8'hED, 8'hED, 8'hED, 8'hED, 8'hED, 8'hED, 8'hF2, 8'hF2, 8'hF2, 8'hF2, 8'hED, 8'hED, 8'hE9, 8'hE9, 8'hC9, 8'hC9, 8'hC9, 8'hC9, 8'hA4, 8'hA0 },
+{8'hC9, 8'hC9, 8'hF6, 8'hFB, 8'hF2, 8'hF2, 8'hF2, 8'hF2, 8'hED, 8'hED, 8'hED, 8'hED, 8'hED, 8'hED, 8'hED, 8'hED, 8'hED, 8'hED, 8'hF2, 8'hF2, 8'hF2, 8'hF2, 8'hED, 8'hED, 8'hE9, 8'hC9, 8'hC9, 8'hC9, 8'hC9, 8'hC9, 8'hA4, 8'hA4 },
+{8'hC9, 8'hC9, 8'hF6, 8'hFB, 8'hF2, 8'hF2, 8'hED, 8'hED, 8'hED, 8'hED, 8'hED, 8'hED, 8'hED, 8'hED, 8'hED, 8'hED, 8'hED, 8'hED, 8'hED, 8'hED, 8'hED, 8'hED, 8'hE9, 8'hE9, 8'hE9, 8'hC9, 8'hC9, 8'hC9, 8'hC9, 8'hC9, 8'hA4, 8'hC4 },
+{8'hC9, 8'hC9, 8'hF6, 8'hFA, 8'hF2, 8'hF2, 8'hED, 8'hED, 8'hED, 8'hED, 8'hED, 8'hED, 8'hED, 8'hED, 8'hED, 8'hED, 8'hED, 8'hED, 8'hED, 8'hED, 8'hED, 8'hED, 8'hE9, 8'hE9, 8'hE9, 8'hC9, 8'hC9, 8'hC9, 8'hE9, 8'hC9, 8'hA4, 8'hC4 },
+{8'hC9, 8'hC9, 8'hF2, 8'hF2, 8'hED, 8'hED, 8'hED, 8'hED, 8'hED, 8'hED, 8'hED, 8'hED, 8'hED, 8'hED, 8'hED, 8'hED, 8'hED, 8'hED, 8'hED, 8'hED, 8'hED, 8'hED, 8'hE9, 8'hE9, 8'hE9, 8'hE9, 8'hC9, 8'hE9, 8'hED, 8'hE9, 8'hA4, 8'hC4 },
+{8'hC9, 8'hC9, 8'hF2, 8'hF2, 8'hED, 8'hED, 8'hED, 8'hED, 8'hED, 8'hED, 8'hED, 8'hED, 8'hED, 8'hED, 8'hED, 8'hED, 8'hED, 8'hED, 8'hED, 8'hED, 8'hED, 8'hED, 8'hE9, 8'hE9, 8'hE9, 8'hE9, 8'hE9, 8'hE9, 8'hED, 8'hED, 8'hA4, 8'hC4 },
+{8'hC5, 8'hC4, 8'hED, 8'hF2, 8'hED, 8'hED, 8'hED, 8'hED, 8'hED, 8'hED, 8'hED, 8'hED, 8'hED, 8'hED, 8'hED, 8'hED, 8'hED, 8'hED, 8'hED, 8'hED, 8'hED, 8'hED, 8'hED, 8'hED, 8'hE9, 8'hE9, 8'hED, 8'hED, 8'hED, 8'hE9, 8'hA4, 8'hA4 },
+{8'hC4, 8'hA4, 8'hED, 8'hF2, 8'hED, 8'hED, 8'hED, 8'hED, 8'hED, 8'hED, 8'hED, 8'hED, 8'hED, 8'hED, 8'hED, 8'hED, 8'hED, 8'hED, 8'hED, 8'hED, 8'hED, 8'hED, 8'hED, 8'hED, 8'hE9, 8'hE9, 8'hED, 8'hED, 8'hED, 8'hE9, 8'hA4, 8'hA4 },
+{8'hC4, 8'hA4, 8'hED, 8'hED, 8'hED, 8'hED, 8'hED, 8'hED, 8'hED, 8'hED, 8'hF2, 8'hF2, 8'hF2, 8'hF2, 8'hED, 8'hED, 8'hED, 8'hED, 8'hED, 8'hED, 8'hED, 8'hED, 8'hED, 8'hED, 8'hF2, 8'hF2, 8'hED, 8'hED, 8'hE9, 8'hC9, 8'hA0, 8'hA4 },
+{8'hC4, 8'hA4, 8'hE9, 8'hED, 8'hED, 8'hED, 8'hED, 8'hED, 8'hED, 8'hED, 8'hF2, 8'hF2, 8'hF2, 8'hF2, 8'hED, 8'hED, 8'hED, 8'hED, 8'hED, 8'hED, 8'hED, 8'hED, 8'hED, 8'hED, 8'hF2, 8'hF2, 8'hED, 8'hED, 8'hE9, 8'hC9, 8'hA0, 8'hA4 },
+{8'hC4, 8'hA4, 8'hC9, 8'hE9, 8'hED, 8'hED, 8'hED, 8'hED, 8'hF2, 8'hF2, 8'hF2, 8'hF2, 8'hED, 8'hED, 8'hE9, 8'hE9, 8'hE9, 8'hE9, 8'hED, 8'hED, 8'hE9, 8'hE9, 8'hF2, 8'hF2, 8'hF2, 8'hF2, 8'hED, 8'hED, 8'hE9, 8'hC9, 8'hA0, 8'hA4 },
+{8'hC4, 8'hA4, 8'hC9, 8'hE9, 8'hED, 8'hED, 8'hED, 8'hED, 8'hF2, 8'hF2, 8'hF2, 8'hF2, 8'hED, 8'hED, 8'hC9, 8'hC9, 8'hC9, 8'hE9, 8'hED, 8'hED, 8'hE9, 8'hE9, 8'hF2, 8'hF2, 8'hF2, 8'hF2, 8'hED, 8'hED, 8'hE9, 8'hC9, 8'hA4, 8'hA4 },
+{8'hA4, 8'hA0, 8'hC9, 8'hE9, 8'hED, 8'hED, 8'hF2, 8'hF2, 8'hF2, 8'hF2, 8'hED, 8'hED, 8'hE9, 8'hC9, 8'hC9, 8'hC9, 8'hC9, 8'hC9, 8'hE9, 8'hE9, 8'hED, 8'hED, 8'hED, 8'hED, 8'hED, 8'hED, 8'hE9, 8'hE9, 8'hED, 8'hE9, 8'hA4, 8'hC4 },
+{8'hA4, 8'hA0, 8'hC9, 8'hE9, 8'hED, 8'hED, 8'hF2, 8'hF2, 8'hF2, 8'hF2, 8'hED, 8'hED, 8'hE9, 8'hC9, 8'hC9, 8'hC9, 8'hC9, 8'hC9, 8'hE9, 8'hE9, 8'hED, 8'hED, 8'hED, 8'hED, 8'hED, 8'hED, 8'hE9, 8'hE9, 8'hED, 8'hED, 8'hC4, 8'hC5 },
+{8'hA4, 8'hA0, 8'hC5, 8'hC9, 8'hED, 8'hED, 8'hED, 8'hED, 8'hED, 8'hED, 8'hE9, 8'hE9, 8'hC9, 8'hC9, 8'hC9, 8'hC9, 8'hC9, 8'hE9, 8'hED, 8'hED, 8'hED, 8'hED, 8'hED, 8'hED, 8'hE9, 8'hE9, 8'hC9, 8'hE9, 8'hED, 8'hED, 8'hC9, 8'hC9 },
+{8'hA4, 8'hA0, 8'hC9, 8'hC9, 8'hED, 8'hED, 8'hED, 8'hED, 8'hED, 8'hED, 8'hC9, 8'hC9, 8'hC9, 8'hC9, 8'hC9, 8'hC9, 8'hE9, 8'hE9, 8'hED, 8'hED, 8'hED, 8'hED, 8'hED, 8'hED, 8'hE9, 8'hE9, 8'hE9, 8'hE9, 8'hED, 8'hED, 8'hC9, 8'hC9 },
+{8'hA9, 8'hA0, 8'hC9, 8'hE9, 8'hC9, 8'hC9, 8'hE9, 8'hE9, 8'hE9, 8'hE9, 8'hC9, 8'hC9, 8'hC9, 8'hC9, 8'hE9, 8'hE9, 8'hED, 8'hED, 8'hED, 8'hED, 8'hE9, 8'hE9, 8'hE9, 8'hE9, 8'hED, 8'hED, 8'hED, 8'hED, 8'hF2, 8'hED, 8'hC9, 8'hC9 },
+{8'hC9, 8'hA0, 8'hC9, 8'hC9, 8'hC9, 8'hC5, 8'hC9, 8'hC9, 8'hC9, 8'hC9, 8'hC9, 8'hC9, 8'hC9, 8'hC9, 8'hC9, 8'hC9, 8'hE9, 8'hED, 8'hED, 8'hE9, 8'hC9, 8'hC9, 8'hC9, 8'hC9, 8'hED, 8'hED, 8'hED, 8'hED, 8'hF2, 8'hED, 8'hC9, 8'hC9 },
+{8'hC9, 8'hA0, 8'hA0, 8'hA0, 8'hA0, 8'hA0, 8'hA4, 8'hA4, 8'hA4, 8'hA4, 8'hA4, 8'hA4, 8'hA4, 8'hA4, 8'hA0, 8'hA0, 8'hA4, 8'hA4, 8'hA4, 8'hA4, 8'hA4, 8'hA4, 8'hA4, 8'hA4, 8'hA4, 8'hC4, 8'hC9, 8'hC9, 8'hC9, 8'hC9, 8'hC9, 8'hC9 },
+{8'hCD, 8'hC9, 8'hC9, 8'hC9, 8'hA4, 8'hA4, 8'hC4, 8'hC4, 8'hC4, 8'hC4, 8'hC4, 8'hC4, 8'hC4, 8'hC4, 8'hA4, 8'hA4, 8'hA4, 8'hA4, 8'hA4, 8'hA4, 8'hC4, 8'hA4, 8'hA4, 8'hA4, 8'hA4, 8'hC4, 8'hC9, 8'hC9, 8'hC9, 8'hC9, 8'hC9, 8'hC9 }
+};
+
+
 // pipeline (ff) to get the pixel color from the array 	 
 
 //======--------------------------------------------------------------------------------------------------------------=
@@ -143,7 +214,9 @@ begin
 			case (brickNum)
 			3'b001: RGBout <= object_colors1[offsetY][offsetX];	//get RGB from the colors table  
 			3'b010: RGBout <= object_colors2[offsetY][offsetX];	//get RGB from the colors table  
-			3'b011: RGBout <= object_colors3[offsetY][offsetX];	//get RGB from the colors table  
+			3'b011: RGBout <= object_colors3[offsetY][offsetX];	//get RGB from the colors table
+			3'b100: RGBout <= object_colors4[offsetY][offsetX];
+			3'b101: RGBout <= object_colors5[offsetY][offsetX];		
 			endcase
 		else 
 			RGBout <= TRANSPARENT_ENCODING ; // force color to transparent so it will not be displayed 

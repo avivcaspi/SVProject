@@ -1,8 +1,3 @@
-//-- Alex Grinshpun Apr 2017
-//-- Dudy Nov 13 2017
-// System-Verilog Alex Grinshpun May 2018
-// New coding convention dudy December 2018
-
 
 module	missle_move	(	
  
@@ -26,15 +21,13 @@ parameter int MOVEMENT_X_SPEED = 300;
 parameter int MOVEMENT_Y_SPEED = 300;
 
 const int	MULTIPLIER	=	64;
-// multiplier is used to work with integers in high resolution 
-// we devide at the end by multiplier which must be 2^n 
-const int	x_FRAME_SIZE	=	639 * MULTIPLIER;
-const int	y_FRAME_SIZE	=	479 * MULTIPLIER;
 
+const int halfTankWidth = 7 * MULTIPLIER; // middle index of tank
+const int halfTankHeight = 7 * MULTIPLIER;
 
 int Xspeed, topLeftX_tmp; // local parameters 
 int Yspeed, topLeftY_tmp;
-int flag;
+int flag;	// flag that collision happened recently
 int lastSpeedX;
 int lastSpeedY;
 
@@ -95,21 +88,23 @@ begin
 	begin
 		drawEn <= 1'b0;
 		flag <= 0;
-		topLeftX_tmp	<= tankTopLeftX * MULTIPLIER;
-		topLeftY_tmp	<= tankTopLeftY * MULTIPLIER;
+		topLeftX_tmp	<= tankTopLeftX * MULTIPLIER + halfTankWidth;
+		topLeftY_tmp	<= tankTopLeftY * MULTIPLIER + halfTankHeight;
 	end
 	else begin
-		if(inputKeyPressed == 1'b1 && flag == 0) begin
+		// firing handling 
+		if(inputKeyPressed == 1'b1 && flag == 0) begin 
 			drawEn <= 1'b1;
 			flag <= 1;
-			topLeftX_tmp <= (tankTopLeftX) * MULTIPLIER;
-			topLeftY_tmp <= (tankTopLeftY) * MULTIPLIER;
+			topLeftX_tmp <= tankTopLeftX * MULTIPLIER + halfTankWidth;
+			topLeftY_tmp	<= tankTopLeftY * MULTIPLIER + halfTankHeight;
 		end
+		// collision handling
 		if(collision == 1'b1) begin
 			drawEn <= 1'b0;
 			flag <= 0;
-			topLeftX_tmp	<= tankTopLeftX * MULTIPLIER;
-			topLeftY_tmp	<= tankTopLeftY * MULTIPLIER;
+			//topLeftX_tmp	<= tankTopLeftX * MULTIPLIER + halfTankWidth;
+			//topLeftY_tmp	<= tankTopLeftY * MULTIPLIER + halfTankHeight;
 		end
 		else if (startOfFrame == 1'b1 && drawEn == 1'b1) begin // perform only 30 times per second 
 				topLeftX_tmp  <= topLeftX_tmp + Xspeed; 	

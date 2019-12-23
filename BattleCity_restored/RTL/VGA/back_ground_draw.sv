@@ -39,9 +39,9 @@ begin
 	else begin
 	
 	// defaults 
-		greenBits <= DARK_COLOR ; 
-		redBits <= 3'b111 ;
-		blueBits <= LIGHT_COLOR;
+		greenBits <= 3'b101 ; 
+		redBits <= 3'b101 ;
+		blueBits <= 3'b11;
 					
 		// draw  four lines with "bracketOffset" offset from the border 
 		
@@ -60,9 +60,9 @@ begin
 						pixelX < 544 + bracketOffset&& 
 						pixelY < 448 + bracketOffset) 
 			begin 
-					redBits <= 3'b101 ;	
-					greenBits <= 3'b011  ;	
-					blueBits <= DARK_COLOR ;	 
+					redBits <= LIGHT_COLOR ;	
+					greenBits <= LIGHT_COLOR  ;	
+					blueBits <= LIGHT_COLOR ;	 
 			end	 	
 	end; 	
 end 

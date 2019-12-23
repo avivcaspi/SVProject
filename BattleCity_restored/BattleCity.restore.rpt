@@ -1,5 +1,5 @@
 Restore Archived Project report for BattleCity
-Tue Dec 17 14:20:39 2019
+Mon Dec 23 16:55:03 2019
 Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
 
 
@@ -37,7 +37,7 @@ agreement for further details.
 +-------------------------------------------------------------------------+
 ; Restore Archived Project Summary                                        ;
 +---------------------------------+---------------------------------------+
-; Restore Archived Project Status ; Successful - Tue Dec 17 14:20:39 2019 ;
+; Restore Archived Project Status ; Successful - Mon Dec 23 16:55:03 2019 ;
 ; Revision Name                   ; BattleCity                            ;
 ; Top-level Entity Name           ; TOP_VGA                               ;
 ; Family                          ; Cyclone V                             ;
@@ -51,8 +51,8 @@ Info: Successfully restored 'C:/Users/aviv_/Documents/SVProject/BattleCity.qar' 
 Info: Generated report 'BattleCity.restore.rpt'
 Info (23030): Evaluation of Tcl script c:/intelfpga_lite/17.0/quartus/common/tcl/apps/qpm/qar.tcl was successful
 Info: Quartus Prime Shell was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 4835 megabytes
-    Info: Processing ended: Tue Dec 17 14:20:39 2019
+    Info: Peak virtual memory: 4834 megabytes
+    Info: Processing ended: Mon Dec 23 16:55:03 2019
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 
@@ -65,6 +65,10 @@ Info: Quartus Prime Shell was successful. 0 errors, 0 warnings
 ; qar_info.json                                         ;
 ; BattleCity.qpf                                        ;
 ; BattleCity.qsf                                        ;
+; CONST_1.bsf                                           ;
+; CONST_1.qip                                           ;
+; CONST_1.v                                             ;
+; CONST_1_bb.v                                          ;
 ; Const_0.bsf                                           ;
 ; Const_0.qip                                           ;
 ; Const_0.v                                             ;
@@ -96,19 +100,23 @@ Info: Quartus Prime Shell was successful. 0 errors, 0 warnings
 ; RTL/VGA/TOP_VGA.bdf                                   ;
 ; RTL/VGA/VGA_Controller.sv                             ;
 ; RTL/VGA/back_ground_draw.sv                           ;
+; RTL/VGA/brickBitMap.sv                                ;
+; RTL/VGA/bricks_contorller.sv                          ;
 ; RTL/VGA/bricks_matrix.sv                              ;
 ; RTL/VGA/game_controller.sv                            ;
+; RTL/VGA/hit_detection.sv                              ;
+; RTL/VGA/missleBitMap.sv                               ;
 ; RTL/VGA/missle_move.sv                                ;
 ; RTL/VGA/objects_mux.sv                                ;
 ; RTL/VGA/smileyBitMap.sv                               ;
 ; RTL/VGA/smileyBitMap4Bit.sv                           ;
 ; RTL/VGA/smileyface_move.sv                            ;
 ; RTL/VGA/square_object.sv                              ;
+; RTL/VGA/tankBitMap.sv                                 ;
 ; RTL/VGA/tank_move.sv                                  ;
 ; RTL/VGA/tank_square_object.sv                         ;
 ; RTL/audio_codec_controller/audio_codec_controller.qxp ;
 ; assignment_defaults.qdf                               ;
-; db/stp1_auto_stripped.stp                             ;
 ; matrixX.bsf                                           ;
 ; matrixX.qip                                           ;
 ; matrixX.v                                             ;
@@ -118,7 +126,6 @@ Info: Quartus Prime Shell was successful. 0 errors, 0 warnings
 ; matrixY.v                                             ;
 ; matrixY_bb.v                                          ;
 ; pin.tcl                                               ;
-; stp1.stp                                              ;
 ; tankDirConst.bsf                                      ;
 ; tankDirConst.qip                                      ;
 ; tankDirConst.v                                        ;

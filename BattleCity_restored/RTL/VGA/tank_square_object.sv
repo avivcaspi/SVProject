@@ -56,6 +56,7 @@ begin
 		begin 
 			RGBout  <= OBJECT_COLOR ;	// colors table 
 			drawingRequest <= 1'b1 ;
+			// twisting the bitmap according to the direction
 			case (tankDir)
 			2'b00 : begin
 						offsetX <= OBJECT_WIDTH_X - (pixelY - topLeftY);//up

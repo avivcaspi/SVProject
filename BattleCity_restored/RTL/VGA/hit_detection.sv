@@ -1,6 +1,6 @@
 
 
-module game_controller	(	
+module hit_detection	(	
 					input	logic	clk,
 					input	logic	resetN,
 					input logic tank1DrawingRequest,

@@ -1,19 +1,16 @@
-//-- Alex Grinshpun Apr 2017
-//-- Dudy Nov 13 2017
-// System-Verilog Alex Grinshpun May 2018
-// New coding convention dudy December 2018
-
 
 module	tank_move	(	
  
 					input	logic	clk,
 					input	logic	resetN,
 					input	logic	startOfFrame,  // short pulse every start of frame 30Hz 
-					input logic collision,
+					input logic brickCollision,	// collisions signals
+					input logic missleCollision,
+					input logic tankCollision,
 					input logic [3:0] inputKeyPressed,
 					output	logic	[10:0]	topLeftX,// output the top left corner 
 					output	logic	[10:0]	topLeftY,
-					output 	logic [1:0] 	tankDir
+					output 	logic [1:0] 	tankDir	//tank firing direction
 					
 );
 
@@ -28,15 +25,10 @@ parameter int MOVEMENT_X_SPEED = 20;
 parameter int MOVEMENT_Y_SPEED = 20;
 
 const int	MULTIPLIER	=	64;
-// multiplier is used to work with integers in high resolution 
-// we devide at the end by multiplier which must be 2^n 
-const int	x_FRAME_SIZE	=	639 * MULTIPLIER;
-const int	y_FRAME_SIZE	=	479 * MULTIPLIER;
-
 
 int Xspeed, topLeftX_tmp; // local parameters 
 int Yspeed, topLeftY_tmp;
-int flag;
+int flag;		// collision flag
 int lastSpeedX;
 int lastSpeedY;
 
@@ -50,6 +42,7 @@ begin
 		Xspeed	<= INITIAL_X_SPEED;
 	end
 	else 	begin
+		// allows only one key pressed at a time
 		if(inputKeyPressed[2] ^ inputKeyPressed[3] && !inputKeyPressed[0] && !inputKeyPressed[1]) begin
 			if(inputKeyPressed[2]) begin
 				Xspeed <= -MOVEMENT_X_SPEED;
@@ -74,6 +67,7 @@ begin
 		Yspeed	<= INITIAL_Y_SPEED;
 	end 
 	else 	begin
+	// allows only one key pressed at a time
 		if(inputKeyPressed[0] ^ inputKeyPressed[1] && !inputKeyPressed[2] && !inputKeyPressed[3]) begin
 			if(inputKeyPressed[0]) begin
 				Yspeed <= MOVEMENT_Y_SPEED;
@@ -102,17 +96,21 @@ begin
 		tankDir <= 2'b01; //right 
 	end
 	else begin
-		if(collision == 1'b1 && flag == 0) begin
+		// handling tank and brick collision (should stop the tank)
+		if((brickCollision == 1'b1 || tankCollision == 1'b1) && flag == 0) begin
 			topLeftX_tmp  <= topLeftX_tmp - lastSpeedX; 	
 			topLeftY_tmp  <= topLeftY_tmp - lastSpeedY; 
 			flag <= 1;
 		end
+		
 		else if (startOfFrame == 1'b1) begin // perform only 30 times per second 
 				topLeftX_tmp  <= topLeftX_tmp + Xspeed; 	
 				topLeftY_tmp  <= topLeftY_tmp + Yspeed; 
 				lastSpeedX <= Xspeed;
 				lastSpeedY <= Yspeed;
 				flag <= 0;
+				
+				// determine tank direction
 				case (inputKeyPressed)
 				4'b0001: tankDir <= 2; //down
 				4'b0010: tankDir <= 0;	//up
