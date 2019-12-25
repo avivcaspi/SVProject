@@ -1,5 +1,5 @@
 Archive Project report for BattleCity
-Mon Dec 23 22:39:19 2019
+Wed Dec 25 17:56:13 2019
 Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
 
 
@@ -36,7 +36,7 @@ agreement for further details.
 +----------------------------------------------------------------+
 ; Archive Project Summary                                        ;
 +------------------------+---------------------------------------+
-; Archive Project Status ; Successful - Mon Dec 23 22:39:19 2019 ;
+; Archive Project Status ; Successful - Wed Dec 25 17:56:13 2019 ;
 ; Revision Name          ; BattleCity                            ;
 ; Top-level Entity Name  ; TOP_VGA                               ;
 ; Family                 ; Cyclone V                             ;
@@ -59,8 +59,8 @@ Info: ----------------------------------------------------------
 Info: Generated report 'BattleCity.archive.rpt'
 Info (23030): Evaluation of Tcl script c:/intelfpga_lite/17.0/quartus/common/tcl/apps/qpm/qar.tcl was successful
 Info: Quartus Prime Shell was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 4837 megabytes
-    Info: Processing ended: Mon Dec 23 22:39:19 2019
+    Info: Peak virtual memory: 4838 megabytes
+    Info: Processing ended: Wed Dec 25 17:56:13 2019
     Info: Elapsed time: 00:00:02
     Info: Total CPU time (on all processors): 00:00:02
 
@@ -81,6 +81,14 @@ Info: Quartus Prime Shell was successful. 0 errors, 0 warnings
 ; CONST_1.qip                                           ;
 ; CONST_1.v                                             ;
 ; CONST_1_bb.v                                          ;
+; const_4.bsf                                           ;
+; const_4.qip                                           ;
+; const_4.v                                             ;
+; const_4_bb.v                                          ;
+; const_5.bsf                                           ;
+; const_5.qip                                           ;
+; const_5.v                                             ;
+; const_5_bb.v                                          ;
 ; matrixX.bsf                                           ;
 ; matrixX.qip                                           ;
 ; matrixX.v                                             ;
@@ -118,12 +126,16 @@ Info: Quartus Prime Shell was successful. 0 errors, 0 warnings
 ; RTL/VGA/brickBitMap.sv                                ;
 ; RTL/VGA/bricks_contorller.sv                          ;
 ; RTL/VGA/bricks_matrix.sv                              ;
+; RTL/VGA/election_house.sv                             ;
+; RTL/VGA/election_house_counter.sv                     ;
 ; RTL/VGA/game_controller.sv                            ;
 ; RTL/VGA/hit_detection.sv                              ;
 ; RTL/VGA/missle_move.sv                                ;
 ; RTL/VGA/missleBitMap.sv                               ;
 ; RTL/VGA/NumbersBitMap.sv                              ;
 ; RTL/VGA/objects_mux.sv                                ;
+; RTL/VGA/one_sec_counter.sv                            ;
+; RTL/VGA/randomCheck.sv                                ;
 ; RTL/VGA/smileyBitMap.sv                               ;
 ; RTL/VGA/smileyBitMap4Bit.sv                           ;
 ; RTL/VGA/smileyface_move.sv                            ;
@@ -131,12 +143,14 @@ Info: Quartus Prime Shell was successful. 0 errors, 0 warnings
 ; RTL/VGA/tank_move.sv                                  ;
 ; RTL/VGA/tank_square_object.sv                         ;
 ; RTL/VGA/tankBitMap.sv                                 ;
+; RTL/VGA/timer.sv                                      ;
 ; RTL/VGA/TOP_VGA.bdf                                   ;
 ; RTL/VGA/VGA_Controller.sv                             ;
 ; tankDirConst.bsf                                      ;
 ; tankDirConst.qip                                      ;
 ; tankDirConst.v                                        ;
 ; tankDirConst_bb.v                                     ;
+; Waveform.vwf                                          ;
 +-------------------------------------------------------+
 
 
