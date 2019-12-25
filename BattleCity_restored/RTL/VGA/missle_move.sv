@@ -97,14 +97,14 @@ begin
 			drawEn <= 1'b1;
 			flag <= 1;
 			topLeftX_tmp <= tankTopLeftX * MULTIPLIER + halfTankWidth;
-			topLeftY_tmp	<= tankTopLeftY * MULTIPLIER + halfTankHeight;
+			topLeftY_tmp <= tankTopLeftY * MULTIPLIER + halfTankHeight;
 		end
 		// collision handling
 		if(collision == 1'b1) begin
 			drawEn <= 1'b0;
 			flag <= 0;
-			//topLeftX_tmp	<= tankTopLeftX * MULTIPLIER + halfTankWidth;
-			//topLeftY_tmp	<= tankTopLeftY * MULTIPLIER + halfTankHeight;
+			topLeftX_tmp <= tankTopLeftX * MULTIPLIER + halfTankWidth;
+			topLeftY_tmp <= tankTopLeftY * MULTIPLIER + halfTankHeight;
 		end
 		else if (startOfFrame == 1'b1 && drawEn == 1'b1) begin // perform only 30 times per second 
 				topLeftX_tmp  <= topLeftX_tmp + Xspeed; 	

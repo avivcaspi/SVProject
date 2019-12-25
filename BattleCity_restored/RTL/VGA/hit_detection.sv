@@ -17,6 +17,11 @@ module hit_detection	(
 					input logic [10:0] missle2TopLeftY,
 					input logic brickDrawingRequest,
 					input logic [0:13][0:16] brickMatrix,
+					input logic buff1DrawingRequest,
+					input logic buff2DrawingRequest,
+					input logic buff3DrawingRequest,
+					input logic buff4DrawingRequest,
+					input logic electionDrawingRequest,
 					input logic [10:0] matrixTopLeftX,
 					input logic [10:0] matrixTopLeftY,
 					input logic [10:0] pixelX,
@@ -31,6 +36,16 @@ module hit_detection	(
 					output logic collisionTank1missle2,	//tank1 missle2 collision
 					output logic collisionTank2missle1,	//tank2 missle 1 collision
 					output logic collisionMissle1Missle2,	//tank2 missle 1 collision
+					output logic collisionTank1Buff1,
+					output logic collisionTank2Buff1,
+					output logic collisionTank1Buff2,
+					output logic collisionTank2Buff2,
+					output logic collisionTank1Buff3,
+					output logic collisionTank2Buff3,
+					output logic collisionTank1Buff4,
+					output logic collisionTank2Buff4,
+					output logic collisionTank1Election,
+					output logic collisionTank2Election,
 					output logic [4:0] brickCollisionX,
 					output logic [3:0] brickCollisionY
 );
@@ -186,6 +201,87 @@ begin
 		end
 		else begin
 			collisionMissle1Missle2 <= 1'b0;
+		end
+		
+		
+		// check tank1 buff1 collision
+		if (tank1DrawingRequest && buff1DrawingRequest) begin
+			collisionTank1Buff1 <= 1'b1;
+		end
+		else begin
+			collisionTank1Buff1 <= 1'b0;
+		end
+		
+		// check tank2 buff1 collision
+		if (tank2DrawingRequest && buff1DrawingRequest) begin
+			collisionTank2Buff1 <= 1'b1;
+		end
+		else begin
+			collisionTank2Buff1 <= 1'b0;
+		end
+		
+		// check tank1 buff2 collision
+		if (tank1DrawingRequest && buff2DrawingRequest) begin
+			collisionTank1Buff2 <= 1'b1;
+		end
+		else begin
+			collisionTank1Buff2 <= 1'b0;
+		end
+		
+		// check tank2 buff2 collision
+		if (tank2DrawingRequest && buff2DrawingRequest) begin
+			collisionTank2Buff2 <= 1'b1;
+		end
+		else begin
+			collisionTank2Buff2 <= 1'b0;
+		end
+		
+		// check tank1 buff3 collision
+		if (tank1DrawingRequest && buff3DrawingRequest) begin
+			collisionTank1Buff3 <= 1'b1;
+		end
+		else begin
+			collisionTank1Buff3 <= 1'b0;
+		end
+		
+		// check tank2 buff3 collision
+		if (tank2DrawingRequest && buff3DrawingRequest) begin
+			collisionTank2Buff3 <= 1'b1;
+		end
+		else begin
+			collisionTank2Buff3 <= 1'b0;
+		end
+		
+		// check tank1 buff4 collision
+		if (tank1DrawingRequest && buff4DrawingRequest) begin
+			collisionTank1Buff4 <= 1'b1;
+		end
+		else begin
+			collisionTank1Buff4 <= 1'b0;
+		end
+		
+		// check tank2 buff4 collision
+		if (tank2DrawingRequest && buff4DrawingRequest) begin
+			collisionTank2Buff4 <= 1'b1;
+		end
+		else begin
+			collisionTank2Buff4 <= 1'b0;
+		end
+		
+		// check tank1 election house collision
+		if (tank1DrawingRequest && electionDrawingRequest) begin
+			collisionTank1Election <= 1'b1;
+		end
+		else begin
+			collisionTank1Election <= 1'b0;
+		end
+		
+		// check tank2 election house collision
+		if (tank2DrawingRequest && electionDrawingRequest) begin
+			collisionTank2Election <= 1'b1;
+		end
+		else begin
+			collisionTank2Election <= 1'b0;
 		end
 	end
 end

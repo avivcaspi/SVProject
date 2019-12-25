@@ -15,12 +15,12 @@ module keyPad_decoder
   	 
   ) ;
   
-  localparam NUM_OF_KEYS  = 16 ;
+  localparam NUM_OF_KEYS  = 10 ;
 
  logic[0:(NUM_OF_KEYS-1)][8:0] KEYS_ENCODEING =  // table holding the encoding of each key 
-//    0      1       2       3       4       5        6       7       8       9      a       b       c       d       e       f
+//    up     left   down   right        a       w       s       d       sapce       enter
   
-  {9'h045, 9'h016, 9'h01e, 9'h026, 9'h025, 9'h02e, 9'h036, 9'h03d, 9'h03e, 9'h046, 9'h01c, 9'h032, 9'h021, 9'h023, 9'h024 , 9'h02b } ; 
+  {9'h175, 9'h16b, 9'h172, 9'h174,    9'h01c, 9'h01d, 9'h01b, 9'h023, 9'h029 , 9'h05a } ; 
   
 									           
 	
