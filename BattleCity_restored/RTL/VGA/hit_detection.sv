@@ -85,8 +85,6 @@ assign tank2MatrixOffsetX = tank2OffsetX / BRICK_WIDTH;
 assign tank2MatrixOffsetY = tank2OffsetY / BRICK_HEIGHT;
 assign reminderRight2 = (tank2OffsetX + tankWidth) / BRICK_WIDTH - tank2MatrixOffsetX;
 assign reminderBottom2 = (tank2OffsetY + tankHeight) / BRICK_HEIGHT - tank2MatrixOffsetY;
-assign brickCollisionX = (pixelX - matrixTopLeftX) / BRICK_WIDTH;
-assign brickCollisionY = (pixelY - matrixTopLeftY) / BRICK_HEIGHT;
 
 
 
@@ -99,8 +97,32 @@ begin
 			collisionTank2BrickWall	<= 1'b0;
 			collisionMissle2Wall 	<= 1'b0;
 			collisionMissle2Brick 	<= 1'b0;
+			collisionTank1BrickWall <= 1'b0;
+			collisionMissle1Wall		<= 1'b0;
+			collisionMissle1Brick	<= 1'b0;
+			collisionTank2BrickWall	<= 1'b0;
+			collisionMissle2Wall		<= 1'b0;
+			collisionMissle2Brick	<= 1'b0;
+			collisionTank1Tank2		<= 1'b0;
+			collisionTank1missle2	<= 1'b0;
+			collisionTank2missle1	<= 1'b0;
+			collisionMissle1Missle2	<= 1'b0;
+			collisionTank1Buff1		<= 1'b0;
+			collisionTank2Buff1		<= 1'b0;
+			collisionTank1Buff2		<= 1'b0;
+			collisionTank2Buff2		<= 1'b0;
+			collisionTank1Buff3		<= 1'b0;
+			collisionTank2Buff3		<= 1'b0;
+			collisionTank1Buff4		<= 1'b0;
+			collisionTank2Buff4		<= 1'b0;
+			collisionTank1Election	<= 1'b0;
+			collisionTank2Election 	<= 1'b0;
+			brickCollisionX 			<= 5'b0000;
+			brickCollisionY 			<= 4'b0000;
 	end
 	else begin
+		brickCollisionX <= (pixelX - 1 - matrixTopLeftX) / BRICK_WIDTH;
+		brickCollisionY <= (pixelY - matrixTopLeftY) / BRICK_HEIGHT;
 		//Check tank1 collision with bricks
 		if (brickMatrix[tank1MatrixOffsetY][tank1MatrixOffsetX])
 				collisionTank1BrickWall <= 1'b1;

@@ -43,17 +43,19 @@ begin
 	end
 	else 	begin
 		// allows only one key pressed at a time
-		if(inputKeyPressed[2] ^ inputKeyPressed[3] && !inputKeyPressed[0] && !inputKeyPressed[1]) begin
-			if(inputKeyPressed[2]) begin
-				Xspeed <= -MOVEMENT_X_SPEED;
-				
+		if(brickCollision == 1'b0 &&  tankCollision == 1'b0) begin
+			if(inputKeyPressed[2] ^ inputKeyPressed[3] && !inputKeyPressed[0] && !inputKeyPressed[1]) begin
+				if(inputKeyPressed[2]) begin
+					Xspeed <= -MOVEMENT_X_SPEED;
+					
+				end
+				else begin
+					Xspeed <= MOVEMENT_X_SPEED;
+				end
 			end
-			else begin
-				Xspeed <= MOVEMENT_X_SPEED;
-			end
+			else 
+				Xspeed <= 0;
 		end
-		else 
-			Xspeed <= 0;
 	end
 end
 
@@ -68,16 +70,18 @@ begin
 	end 
 	else 	begin
 	// allows only one key pressed at a time
-		if(inputKeyPressed[0] ^ inputKeyPressed[1] && !inputKeyPressed[2] && !inputKeyPressed[3]) begin
-			if(inputKeyPressed[0]) begin
-				Yspeed <= MOVEMENT_Y_SPEED;
+		if(brickCollision == 1'b0 &&  tankCollision == 1'b0) begin
+			if(inputKeyPressed[0] ^ inputKeyPressed[1] && !inputKeyPressed[2] && !inputKeyPressed[3]) begin
+				if(inputKeyPressed[0]) begin
+					Yspeed <= MOVEMENT_Y_SPEED;
+				end
+				else begin
+					Yspeed <= -MOVEMENT_Y_SPEED;
+				end
 			end
-			else begin
-				Yspeed <= -MOVEMENT_Y_SPEED;
-			end
+			else
+				Yspeed <= 0;
 		end
-		else
-			Yspeed <= 0;
 	end
 end
 

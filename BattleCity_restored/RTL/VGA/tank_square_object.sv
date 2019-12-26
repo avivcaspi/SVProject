@@ -59,17 +59,17 @@ begin
 			// twisting the bitmap according to the direction
 			case (tankDir)
 			2'b00 : begin
-						offsetX <= OBJECT_WIDTH_X - (pixelY - topLeftY);//up
+						offsetX <= (OBJECT_WIDTH_X - 1) - (pixelY - topLeftY);//up
 						offsetY <= (pixelX - topLeftX);
 						
 						end
 			2'b10 : begin
 						offsetX <= (pixelY - topLeftY);//down
-						offsetY <= OBJECT_WIDTH_X - (pixelX - topLeftX);
+						offsetY <= (OBJECT_WIDTH_X - 1) - (pixelX - topLeftX);
 						end
 			2'b11 :begin
-						offsetX <= OBJECT_WIDTH_X - (pixelX - topLeftX);//left
-						offsetY <= OBJECT_WIDTH_X - (pixelY - topLeftY);
+						offsetX <= (OBJECT_WIDTH_X - 1) - (pixelX - topLeftX);//left
+						offsetY <= (OBJECT_WIDTH_X - 1) - (pixelY - topLeftY);
 						end
 			default : begin 
 						offsetX	<= (pixelX - topLeftX); //calculate relative offsets from top left corner

@@ -1,5 +1,5 @@
 Analysis & Synthesis report for BattleCity
-Wed Dec 25 17:50:59 2019
+Thu Dec 26 12:11:52 2019
 Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
 
 
@@ -75,10 +75,9 @@ Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
  67. Parameter Settings for User Entity Instance: TOP_MSS_DEMO:inst9|addr_counter:inst9
  68. In-System Memory Content Editor Settings
  69. Post-Synthesis Netlist Statistics for Top Partition
- 70. Post-Synthesis Netlist Statistics for Partition sld_hub:auto_hub
- 71. Elapsed Time Per Partition
- 72. Analysis & Synthesis Messages
- 73. Analysis & Synthesis Suppressed Messages
+ 70. Elapsed Time Per Partition
+ 71. Analysis & Synthesis Messages
+ 72. Analysis & Synthesis Suppressed Messages
 
 
 
@@ -105,13 +104,13 @@ agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Wed Dec 25 17:50:59 2019       ;
+; Analysis & Synthesis Status     ; Successful - Thu Dec 26 12:11:52 2019       ;
 ; Quartus Prime Version           ; 17.0.0 Build 595 04/25/2017 SJ Lite Edition ;
 ; Revision Name                   ; BattleCity                                  ;
 ; Top-level Entity Name           ; TOP_VGA                                     ;
 ; Family                          ; Cyclone V                                   ;
 ; Logic utilization (in ALMs)     ; N/A                                         ;
-; Total registers                 ; 2584                                        ;
+; Total registers                 ; 2528                                        ;
 ; Total pins                      ; 49                                          ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 128                                         ;
@@ -293,16 +292,16 @@ agreement for further details.
 +---------------------------------------------+----------------+
 ; Resource                                    ; Usage          ;
 +---------------------------------------------+----------------+
-; Estimate of Logic utilization (ALMs needed) ; 3820           ;
+; Estimate of Logic utilization (ALMs needed) ; 3527           ;
 ;                                             ;                ;
-; Combinational ALUT usage for logic          ; 5745           ;
-;     -- 7 input functions                    ; 120            ;
-;     -- 6 input functions                    ; 1701           ;
-;     -- 5 input functions                    ; 1036           ;
-;     -- 4 input functions                    ; 506            ;
-;     -- <=3 input functions                  ; 2382           ;
+; Combinational ALUT usage for logic          ; 5655           ;
+;     -- 7 input functions                    ; 124            ;
+;     -- 6 input functions                    ; 1201           ;
+;     -- 5 input functions                    ; 1399           ;
+;     -- 4 input functions                    ; 479            ;
+;     -- <=3 input functions                  ; 2452           ;
 ;                                             ;                ;
-; Dedicated logic registers                   ; 2584           ;
+; Dedicated logic registers                   ; 2528           ;
 ;                                             ;                ;
 ; I/O pins                                    ; 49             ;
 ; Total MLAB memory bits                      ; 0              ;
@@ -311,9 +310,9 @@ agreement for further details.
 ; Total DSP Blocks                            ; 0              ;
 ;                                             ;                ;
 ; Maximum fan-out node                        ; CLOCK_50~input ;
-; Maximum fan-out                             ; 2091           ;
-; Total fan-out                               ; 33348          ;
-; Average fan-out                             ; 3.95           ;
+; Maximum fan-out                             ; 2035           ;
+; Total fan-out                               ; 32106          ;
+; Average fan-out                             ; 3.87           ;
 +---------------------------------------------+----------------+
 
 
@@ -322,7 +321,7 @@ agreement for further details.
 +-----------------------------------------------------------------------------------------------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------+--------------+
 ; Compilation Hierarchy Node                                                                                                              ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                                                                                                                                                                                                                                 ; Entity Name                       ; Library Name ;
 +-----------------------------------------------------------------------------------------------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------+--------------+
-; |TOP_VGA                                                                                                                                ; 5745 (8)            ; 2584 (0)                  ; 128               ; 0          ; 49   ; 0            ; |TOP_VGA                                                                                                                                                                                                                                                                                                                                            ; TOP_VGA                           ; work         ;
+; |TOP_VGA                                                                                                                                ; 5655 (8)            ; 2528 (0)                  ; 128               ; 0          ; 49   ; 0            ; |TOP_VGA                                                                                                                                                                                                                                                                                                                                            ; TOP_VGA                           ; work         ;
 ;    |Const_0:inst45|                                                                                                                     ; 21 (0)              ; 13 (0)                    ; 0                 ; 0          ; 0    ; 0            ; |TOP_VGA|Const_0:inst45                                                                                                                                                                                                                                                                                                                             ; Const_0                           ; work         ;
 ;       |lpm_constant:LPM_CONSTANT_component|                                                                                             ; 21 (0)              ; 13 (0)                    ; 0                 ; 0          ; 0    ; 0            ; |TOP_VGA|Const_0:inst45|lpm_constant:LPM_CONSTANT_component                                                                                                                                                                                                                                                                                         ; lpm_constant                      ; work         ;
 ;          |lpm_constant_v58:ag|                                                                                                          ; 21 (0)              ; 13 (0)                    ; 0                 ; 0          ; 0    ; 0            ; |TOP_VGA|Const_0:inst45|lpm_constant:LPM_CONSTANT_component|lpm_constant_v58:ag                                                                                                                                                                                                                                                                     ; lpm_constant_v58                  ; work         ;
@@ -437,13 +436,13 @@ agreement for further details.
 ;       |prescaler:inst3|                                                                                                                 ; 43 (43)             ; 33 (33)                   ; 0                 ; 0          ; 0    ; 0            ; |TOP_VGA|TOP_MSS_DEMO:inst9|prescaler:inst3                                                                                                                                                                                                                                                                                                         ; prescaler                         ; work         ;
 ;       |sintable:inst1|                                                                                                                  ; 40 (40)             ; 8 (8)                     ; 0                 ; 0          ; 0    ; 0            ; |TOP_VGA|TOP_MSS_DEMO:inst9|sintable:inst1                                                                                                                                                                                                                                                                                                          ; sintable                          ; work         ;
 ;    |ToneDecoder:inst3|                                                                                                                  ; 8 (8)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TOP_VGA|ToneDecoder:inst3                                                                                                                                                                                                                                                                                                                          ; ToneDecoder                       ; work         ;
-;    |VGA_Controller:inst|                                                                                                                ; 76 (76)             ; 26 (26)                   ; 0                 ; 0          ; 0    ; 0            ; |TOP_VGA|VGA_Controller:inst                                                                                                                                                                                                                                                                                                                        ; VGA_Controller                    ; work         ;
+;    |VGA_Controller:inst|                                                                                                                ; 75 (75)             ; 26 (26)                   ; 0                 ; 0          ; 0    ; 0            ; |TOP_VGA|VGA_Controller:inst                                                                                                                                                                                                                                                                                                                        ; VGA_Controller                    ; work         ;
 ;    |back_ground_draw:inst12|                                                                                                            ; 14 (14)             ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |TOP_VGA|back_ground_draw:inst12                                                                                                                                                                                                                                                                                                                    ; back_ground_draw                  ; work         ;
 ;    |brickBitMap:inst24|                                                                                                                 ; 631 (631)           ; 8 (8)                     ; 0                 ; 0          ; 0    ; 0            ; |TOP_VGA|brickBitMap:inst24                                                                                                                                                                                                                                                                                                                         ; brickBitMap                       ; work         ;
-;    |bricks_matrix:inst22|                                                                                                               ; 1255 (1255)         ; 600 (600)                 ; 0                 ; 0          ; 0    ; 0            ; |TOP_VGA|bricks_matrix:inst22                                                                                                                                                                                                                                                                                                                       ; bricks_matrix                     ; work         ;
+;    |bricks_matrix:inst22|                                                                                                               ; 1258 (1258)         ; 600 (600)                 ; 0                 ; 0          ; 0    ; 0            ; |TOP_VGA|bricks_matrix:inst22                                                                                                                                                                                                                                                                                                                       ; bricks_matrix                     ; work         ;
 ;    |election_house:inst68|                                                                                                              ; 35 (35)             ; 5 (5)                     ; 0                 ; 0          ; 0    ; 0            ; |TOP_VGA|election_house:inst68                                                                                                                                                                                                                                                                                                                      ; election_house                    ; work         ;
-;    |election_house_counter:inst69|                                                                                                      ; 213 (213)           ; 164 (164)                 ; 0                 ; 0          ; 0    ; 0            ; |TOP_VGA|election_house_counter:inst69                                                                                                                                                                                                                                                                                                              ; election_house_counter            ; work         ;
-;    |hit_detection:inst33|                                                                                                               ; 587 (587)           ; 20 (20)                   ; 0                 ; 0          ; 0    ; 0            ; |TOP_VGA|hit_detection:inst33                                                                                                                                                                                                                                                                                                                       ; hit_detection                     ; work         ;
+;    |election_house_counter:inst69|                                                                                                      ; 129 (129)           ; 99 (99)                   ; 0                 ; 0          ; 0    ; 0            ; |TOP_VGA|election_house_counter:inst69                                                                                                                                                                                                                                                                                                              ; election_house_counter            ; work         ;
+;    |hit_detection:inst33|                                                                                                               ; 572 (572)           ; 29 (29)                   ; 0                 ; 0          ; 0    ; 0            ; |TOP_VGA|hit_detection:inst33                                                                                                                                                                                                                                                                                                                       ; hit_detection                     ; work         ;
 ;    |missle_move:inst21|                                                                                                                 ; 192 (192)           ; 67 (67)                   ; 0                 ; 0          ; 0    ; 0            ; |TOP_VGA|missle_move:inst21                                                                                                                                                                                                                                                                                                                         ; missle_move                       ; work         ;
 ;    |missle_move:inst7|                                                                                                                  ; 192 (192)           ; 67 (67)                   ; 0                 ; 0          ; 0    ; 0            ; |TOP_VGA|missle_move:inst7                                                                                                                                                                                                                                                                                                                          ; missle_move                       ; work         ;
 ;    |objects_mux:inst13|                                                                                                                 ; 34 (34)             ; 8 (8)                     ; 0                 ; 0          ; 0    ; 0            ; |TOP_VGA|objects_mux:inst13                                                                                                                                                                                                                                                                                                                         ; objects_mux                       ; work         ;
@@ -473,13 +472,13 @@ agreement for further details.
 ;    |square_object:inst37|                                                                                                               ; 22 (22)             ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |TOP_VGA|square_object:inst37                                                                                                                                                                                                                                                                                                                       ; square_object                     ; work         ;
 ;    |square_object:inst46|                                                                                                               ; 23 (23)             ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |TOP_VGA|square_object:inst46                                                                                                                                                                                                                                                                                                                       ; square_object                     ; work         ;
 ;    |square_object:inst55|                                                                                                               ; 23 (23)             ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |TOP_VGA|square_object:inst55                                                                                                                                                                                                                                                                                                                       ; square_object                     ; work         ;
-;    |square_object:inst63|                                                                                                               ; 24 (24)             ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |TOP_VGA|square_object:inst63                                                                                                                                                                                                                                                                                                                       ; square_object                     ; work         ;
+;    |square_object:inst63|                                                                                                               ; 25 (25)             ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |TOP_VGA|square_object:inst63                                                                                                                                                                                                                                                                                                                       ; square_object                     ; work         ;
 ;    |tankBitMap:inst25|                                                                                                                  ; 286 (286)           ; 8 (8)                     ; 0                 ; 0          ; 0    ; 0            ; |TOP_VGA|tankBitMap:inst25                                                                                                                                                                                                                                                                                                                          ; tankBitMap                        ; work         ;
-;    |tankBitMap:inst29|                                                                                                                  ; 153 (153)           ; 8 (8)                     ; 0                 ; 0          ; 0    ; 0            ; |TOP_VGA|tankBitMap:inst29                                                                                                                                                                                                                                                                                                                          ; tankBitMap                        ; work         ;
+;    |tankBitMap:inst29|                                                                                                                  ; 155 (155)           ; 8 (8)                     ; 0                 ; 0          ; 0    ; 0            ; |TOP_VGA|tankBitMap:inst29                                                                                                                                                                                                                                                                                                                          ; tankBitMap                        ; work         ;
 ;    |tank_move:inst15|                                                                                                                   ; 100 (100)           ; 71 (71)                   ; 0                 ; 0          ; 0    ; 0            ; |TOP_VGA|tank_move:inst15                                                                                                                                                                                                                                                                                                                           ; tank_move                         ; work         ;
 ;    |tank_move:inst23|                                                                                                                   ; 105 (105)           ; 71 (71)                   ; 0                 ; 0          ; 0    ; 0            ; |TOP_VGA|tank_move:inst23                                                                                                                                                                                                                                                                                                                           ; tank_move                         ; work         ;
-;    |tank_square_object:inst20|                                                                                                          ; 82 (82)             ; 11 (11)                   ; 0                 ; 0          ; 0    ; 0            ; |TOP_VGA|tank_square_object:inst20                                                                                                                                                                                                                                                                                                                  ; tank_square_object                ; work         ;
-;    |tank_square_object:inst27|                                                                                                          ; 82 (82)             ; 11 (11)                   ; 0                 ; 0          ; 0    ; 0            ; |TOP_VGA|tank_square_object:inst27                                                                                                                                                                                                                                                                                                                  ; tank_square_object                ; work         ;
+;    |tank_square_object:inst20|                                                                                                          ; 84 (84)             ; 11 (11)                   ; 0                 ; 0          ; 0    ; 0            ; |TOP_VGA|tank_square_object:inst20                                                                                                                                                                                                                                                                                                                  ; tank_square_object                ; work         ;
+;    |tank_square_object:inst27|                                                                                                          ; 84 (84)             ; 11 (11)                   ; 0                 ; 0          ; 0    ; 0            ; |TOP_VGA|tank_square_object:inst27                                                                                                                                                                                                                                                                                                                  ; tank_square_object                ; work         ;
 ;    |timer:inst18|                                                                                                                       ; 40 (40)             ; 33 (33)                   ; 0                 ; 0          ; 0    ; 0            ; |TOP_VGA|timer:inst18                                                                                                                                                                                                                                                                                                                               ; timer                             ; work         ;
 ;    |timer:inst66|                                                                                                                       ; 40 (40)             ; 33 (33)                   ; 0                 ; 0          ; 0    ; 0            ; |TOP_VGA|timer:inst66                                                                                                                                                                                                                                                                                                                               ; timer                             ; work         ;
 ;    |timer:inst67|                                                                                                                       ; 40 (40)             ; 33 (33)                   ; 0                 ; 0          ; 0    ; 0            ; |TOP_VGA|timer:inst67                                                                                                                                                                                                                                                                                                                               ; timer                             ; work         ;
@@ -802,7 +801,8 @@ Encoding Type:  One-Hot
 ; back_ground_draw:inst12|redBits[1]                                ; Merged with back_ground_draw:inst12|greenBits[1]                 ;
 ; square_object:inst37|RGBout[5,7]                                  ; Merged with square_object:inst37|RGBout[2]                       ;
 ; election_house:inst68|RGBout[6]                                   ; Merged with election_house:inst68|RGBout[5]                      ;
-; election_house_counter:inst69|flag[1..9,11..31]                   ; Merged with election_house_counter:inst69|flag[10]               ;
+; election_house_counter:inst69|tank1Collisionflag[1..9,11..31]     ; Merged with election_house_counter:inst69|tank1Collisionflag[10] ;
+; election_house_counter:inst69|tank2Collisionflag[1..9,11..31]     ; Merged with election_house_counter:inst69|tank2Collisionflag[10] ;
 ; random:inst57|counter[4]                                          ; Merged with random:inst1|counter[4]                              ;
 ; random:inst5|counter[4]                                           ; Merged with random:inst1|counter[4]                              ;
 ; random:inst64|counter[4]                                          ; Merged with random:inst1|counter[4]                              ;
@@ -836,8 +836,6 @@ Encoding Type:  One-Hot
 ; random:inst56|flag[1..9,11..31]                                   ; Merged with random:inst56|flag[10]                               ;
 ; random:inst1|flag[1..9,11..31]                                    ; Merged with random:inst1|flag[10]                                ;
 ; random:inst41|flag[1..9,11..31]                                   ; Merged with random:inst41|flag[10]                               ;
-; election_house_counter:inst69|tank1Collisionflag[1..9,11..31]     ; Merged with election_house_counter:inst69|tank1Collisionflag[10] ;
-; election_house_counter:inst69|tank2Collisionflag[1..9,11..31]     ; Merged with election_house_counter:inst69|tank2Collisionflag[10] ;
 ; tank_move:inst23|lastSpeedY[5,7..9,11..31]                        ; Merged with tank_move:inst23|lastSpeedY[10]                      ;
 ; tank_move:inst23|flag[1..9,11..31]                                ; Merged with tank_move:inst23|flag[10]                            ;
 ; tank_move:inst23|lastSpeedX[5,7..9,11..31]                        ; Merged with tank_move:inst23|lastSpeedX[10]                      ;
@@ -859,7 +857,6 @@ Encoding Type:  One-Hot
 ; tank_move:inst23|topLeftY_tmp[3]                                  ; Merged with tank_move:inst23|topLeftX_tmp[3]                     ;
 ; tank_move:inst15|topLeftY_tmp[3]                                  ; Merged with tank_move:inst23|topLeftX_tmp[3]                     ;
 ; tank_move:inst15|topLeftX_tmp[0,2]                                ; Merged with tank_move:inst23|topLeftX_tmp[3]                     ;
-; election_house_counter:inst69|flag[10]                            ; Stuck at GND due to stuck port data_in                           ;
 ; election_house_counter:inst69|tank1Collisionflag[10]              ; Stuck at GND due to stuck port data_in                           ;
 ; election_house_counter:inst69|tank2Collisionflag[10]              ; Stuck at GND due to stuck port data_in                           ;
 ; random:inst65|flag[10]                                            ; Stuck at GND due to stuck port data_in                           ;
@@ -1113,273 +1110,271 @@ Encoding Type:  One-Hot
 ; TOP_KBD_DEMOALL:inst8|KBDINTF:inst4|byterec:inst3|present_state~5 ; Lost fanout                                                      ;
 ; TOP_KBD_DEMOALL:inst8|KBDINTF:inst4|byterec:inst3|present_state~6 ; Lost fanout                                                      ;
 ; TOP_KBD_DEMOALL:inst8|KBDINTF:inst4|byterec:inst3|present_state~7 ; Lost fanout                                                      ;
-; Total Number of Removed Registers = 1628                          ;                                                                  ;
+; Total Number of Removed Registers = 1597                          ;                                                                  ;
 +-------------------------------------------------------------------+------------------------------------------------------------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------+
-; Removed Registers Triggering Further Register Optimizations                                                                                  ;
-+----------------------------------------+---------------------------+-------------------------------------------------------------------------+
-; Register name                          ; Reason for Removal        ; Registers Removed due to This Register                                  ;
-+----------------------------------------+---------------------------+-------------------------------------------------------------------------+
-; bricks_matrix:inst22|flag[31]          ; Stuck at GND              ; bricks_matrix:inst22|bricks_matrix[8][16][2],                           ;
-;                                        ; due to stuck port data_in ; bricks_matrix:inst22|bricks_matrix[9][0][2],                            ;
-;                                        ;                           ; bricks_matrix:inst22|bricks_matrix[9][1][2],                            ;
-;                                        ;                           ; bricks_matrix:inst22|bricks_matrix[9][2][2],                            ;
-;                                        ;                           ; bricks_matrix:inst22|bricks_matrix[9][3][2],                            ;
-;                                        ;                           ; bricks_matrix:inst22|bricks_matrix[9][4][2],                            ;
-;                                        ;                           ; bricks_matrix:inst22|bricks_matrix[9][5][2],                            ;
-;                                        ;                           ; bricks_matrix:inst22|bricks_matrix[9][6][2],                            ;
-;                                        ;                           ; bricks_matrix:inst22|bricks_matrix[9][7][2],                            ;
-;                                        ;                           ; bricks_matrix:inst22|bricks_matrix[9][9][2],                            ;
-;                                        ;                           ; bricks_matrix:inst22|bricks_matrix[9][11][2],                           ;
-;                                        ;                           ; bricks_matrix:inst22|bricks_matrix[9][12][2],                           ;
-;                                        ;                           ; bricks_matrix:inst22|bricks_matrix[9][13][2],                           ;
-;                                        ;                           ; bricks_matrix:inst22|bricks_matrix[9][14][2],                           ;
-;                                        ;                           ; bricks_matrix:inst22|bricks_matrix[9][15][2],                           ;
-;                                        ;                           ; bricks_matrix:inst22|bricks_matrix[9][16][2],                           ;
-;                                        ;                           ; bricks_matrix:inst22|bricks_matrix[8][0][2],                            ;
-;                                        ;                           ; bricks_matrix:inst22|bricks_matrix[8][1][2],                            ;
-;                                        ;                           ; bricks_matrix:inst22|bricks_matrix[8][2][2],                            ;
-;                                        ;                           ; bricks_matrix:inst22|bricks_matrix[8][3][2],                            ;
-;                                        ;                           ; bricks_matrix:inst22|bricks_matrix[8][4][2],                            ;
-;                                        ;                           ; bricks_matrix:inst22|bricks_matrix[8][5][2],                            ;
-;                                        ;                           ; bricks_matrix:inst22|bricks_matrix[8][6][2],                            ;
-;                                        ;                           ; bricks_matrix:inst22|bricks_matrix[8][7][2],                            ;
-;                                        ;                           ; bricks_matrix:inst22|bricks_matrix[8][8][2],                            ;
-;                                        ;                           ; bricks_matrix:inst22|bricks_matrix[8][9][2],                            ;
-;                                        ;                           ; bricks_matrix:inst22|bricks_matrix[8][10][2],                           ;
-;                                        ;                           ; bricks_matrix:inst22|bricks_matrix[8][11][2],                           ;
-;                                        ;                           ; bricks_matrix:inst22|bricks_matrix[8][12][2],                           ;
-;                                        ;                           ; bricks_matrix:inst22|bricks_matrix[8][13][2],                           ;
-;                                        ;                           ; bricks_matrix:inst22|bricks_matrix[8][14][2],                           ;
-;                                        ;                           ; bricks_matrix:inst22|bricks_matrix[8][15][2],                           ;
-;                                        ;                           ; bricks_matrix:inst22|bricks_matrix[10][16][2],                          ;
-;                                        ;                           ; bricks_matrix:inst22|bricks_matrix[11][0][2],                           ;
-;                                        ;                           ; bricks_matrix:inst22|bricks_matrix[11][1][2],                           ;
-;                                        ;                           ; bricks_matrix:inst22|bricks_matrix[11][2][2],                           ;
-;                                        ;                           ; bricks_matrix:inst22|bricks_matrix[11][3][2],                           ;
-;                                        ;                           ; bricks_matrix:inst22|bricks_matrix[11][4][2],                           ;
-;                                        ;                           ; bricks_matrix:inst22|bricks_matrix[11][5][2],                           ;
-;                                        ;                           ; bricks_matrix:inst22|bricks_matrix[11][6][2],                           ;
-;                                        ;                           ; bricks_matrix:inst22|bricks_matrix[11][7][2],                           ;
-;                                        ;                           ; bricks_matrix:inst22|bricks_matrix[11][9][2],                           ;
-;                                        ;                           ; bricks_matrix:inst22|bricks_matrix[11][11][2],                          ;
-;                                        ;                           ; bricks_matrix:inst22|bricks_matrix[11][12][2],                          ;
-;                                        ;                           ; bricks_matrix:inst22|bricks_matrix[11][13][2],                          ;
-;                                        ;                           ; bricks_matrix:inst22|bricks_matrix[11][14][2],                          ;
-;                                        ;                           ; bricks_matrix:inst22|bricks_matrix[11][15][2],                          ;
-;                                        ;                           ; bricks_matrix:inst22|bricks_matrix[11][16][2],                          ;
-;                                        ;                           ; bricks_matrix:inst22|bricks_matrix[10][0][2],                           ;
-;                                        ;                           ; bricks_matrix:inst22|bricks_matrix[10][1][2],                           ;
-;                                        ;                           ; bricks_matrix:inst22|bricks_matrix[10][2][2],                           ;
-;                                        ;                           ; bricks_matrix:inst22|bricks_matrix[10][3][2],                           ;
-;                                        ;                           ; bricks_matrix:inst22|bricks_matrix[10][4][2],                           ;
-;                                        ;                           ; bricks_matrix:inst22|bricks_matrix[10][5][2],                           ;
-;                                        ;                           ; bricks_matrix:inst22|bricks_matrix[10][6][2],                           ;
-;                                        ;                           ; bricks_matrix:inst22|bricks_matrix[10][7][2],                           ;
-;                                        ;                           ; bricks_matrix:inst22|bricks_matrix[10][9][2],                           ;
-;                                        ;                           ; bricks_matrix:inst22|bricks_matrix[10][11][2],                          ;
-;                                        ;                           ; bricks_matrix:inst22|bricks_matrix[10][12][2],                          ;
-;                                        ;                           ; bricks_matrix:inst22|bricks_matrix[10][13][2],                          ;
-;                                        ;                           ; bricks_matrix:inst22|bricks_matrix[10][14][2],                          ;
-;                                        ;                           ; bricks_matrix:inst22|bricks_matrix[10][15][2],                          ;
-;                                        ;                           ; bricks_matrix:inst22|bricks_matrix[12][16][2],                          ;
-;                                        ;                           ; bricks_matrix:inst22|bricks_matrix[13][0][2],                           ;
-;                                        ;                           ; bricks_matrix:inst22|bricks_matrix[13][1][2],                           ;
-;                                        ;                           ; bricks_matrix:inst22|bricks_matrix[13][2][2],                           ;
-;                                        ;                           ; bricks_matrix:inst22|bricks_matrix[13][3][2],                           ;
-;                                        ;                           ; bricks_matrix:inst22|bricks_matrix[13][4][2],                           ;
-;                                        ;                           ; bricks_matrix:inst22|bricks_matrix[13][5][2],                           ;
-;                                        ;                           ; bricks_matrix:inst22|bricks_matrix[13][6][2],                           ;
-;                                        ;                           ; bricks_matrix:inst22|bricks_matrix[13][7][2],                           ;
-;                                        ;                           ; bricks_matrix:inst22|bricks_matrix[13][8][2],                           ;
-;                                        ;                           ; bricks_matrix:inst22|bricks_matrix[13][9][2],                           ;
-;                                        ;                           ; bricks_matrix:inst22|bricks_matrix[13][10][2],                          ;
-;                                        ;                           ; bricks_matrix:inst22|bricks_matrix[13][11][2],                          ;
-;                                        ;                           ; bricks_matrix:inst22|bricks_matrix[13][14][2],                          ;
-;                                        ;                           ; bricks_matrix:inst22|bricks_matrix[13][15][2],                          ;
-;                                        ;                           ; bricks_matrix:inst22|bricks_matrix[13][16][2],                          ;
-;                                        ;                           ; bricks_matrix:inst22|bricks_matrix[12][0][2],                           ;
-;                                        ;                           ; bricks_matrix:inst22|bricks_matrix[12][1][2],                           ;
-;                                        ;                           ; bricks_matrix:inst22|bricks_matrix[12][2][2],                           ;
-;                                        ;                           ; bricks_matrix:inst22|bricks_matrix[12][3][2],                           ;
-;                                        ;                           ; bricks_matrix:inst22|bricks_matrix[12][4][2],                           ;
-;                                        ;                           ; bricks_matrix:inst22|bricks_matrix[12][5][2],                           ;
-;                                        ;                           ; bricks_matrix:inst22|bricks_matrix[12][6][2],                           ;
-;                                        ;                           ; bricks_matrix:inst22|bricks_matrix[12][7][2],                           ;
-;                                        ;                           ; bricks_matrix:inst22|bricks_matrix[12][8][2],                           ;
-;                                        ;                           ; bricks_matrix:inst22|bricks_matrix[12][9][2],                           ;
-;                                        ;                           ; bricks_matrix:inst22|bricks_matrix[12][10][2],                          ;
-;                                        ;                           ; bricks_matrix:inst22|bricks_matrix[12][11][2],                          ;
-;                                        ;                           ; bricks_matrix:inst22|bricks_matrix[12][12][2],                          ;
-;                                        ;                           ; bricks_matrix:inst22|bricks_matrix[12][13][2],                          ;
-;                                        ;                           ; bricks_matrix:inst22|bricks_matrix[12][14][2],                          ;
-;                                        ;                           ; bricks_matrix:inst22|bricks_matrix[12][15][2],                          ;
-;                                        ;                           ; bricks_matrix:inst22|bricks_matrix[0][16][2],                           ;
-;                                        ;                           ; bricks_matrix:inst22|bricks_matrix[1][0][2],                            ;
-;                                        ;                           ; bricks_matrix:inst22|bricks_matrix[1][1][2],                            ;
-;                                        ;                           ; bricks_matrix:inst22|bricks_matrix[1][2][2],                            ;
-;                                        ;                           ; bricks_matrix:inst22|bricks_matrix[1][3][2],                            ;
-;                                        ;                           ; bricks_matrix:inst22|bricks_matrix[1][4][2],                            ;
-;                                        ;                           ; bricks_matrix:inst22|bricks_matrix[1][5][2],                            ;
-;                                        ;                           ; bricks_matrix:inst22|bricks_matrix[1][6][2],                            ;
-;                                        ;                           ; bricks_matrix:inst22|bricks_matrix[1][7][2],                            ;
-;                                        ;                           ; bricks_matrix:inst22|bricks_matrix[1][8][2],                            ;
-;                                        ;                           ; bricks_matrix:inst22|bricks_matrix[1][9][2],                            ;
-;                                        ;                           ; bricks_matrix:inst22|bricks_matrix[1][10][2],                           ;
-;                                        ;                           ; bricks_matrix:inst22|bricks_matrix[1][11][2],                           ;
-;                                        ;                           ; bricks_matrix:inst22|bricks_matrix[1][12][2],                           ;
-;                                        ;                           ; bricks_matrix:inst22|bricks_matrix[1][13][2],                           ;
-;                                        ;                           ; bricks_matrix:inst22|bricks_matrix[1][14][2],                           ;
-;                                        ;                           ; bricks_matrix:inst22|bricks_matrix[1][15][2],                           ;
-;                                        ;                           ; bricks_matrix:inst22|bricks_matrix[1][16][2],                           ;
-;                                        ;                           ; bricks_matrix:inst22|bricks_matrix[0][0][2],                            ;
-;                                        ;                           ; bricks_matrix:inst22|bricks_matrix[0][1][2],                            ;
-;                                        ;                           ; bricks_matrix:inst22|bricks_matrix[0][2][2],                            ;
-;                                        ;                           ; bricks_matrix:inst22|bricks_matrix[0][3][2],                            ;
-;                                        ;                           ; bricks_matrix:inst22|bricks_matrix[0][4][2],                            ;
-;                                        ;                           ; bricks_matrix:inst22|bricks_matrix[0][5][2],                            ;
-;                                        ;                           ; bricks_matrix:inst22|bricks_matrix[0][6][2],                            ;
-;                                        ;                           ; bricks_matrix:inst22|bricks_matrix[0][7][2],                            ;
-;                                        ;                           ; bricks_matrix:inst22|bricks_matrix[0][8][2],                            ;
-;                                        ;                           ; bricks_matrix:inst22|bricks_matrix[0][9][2],                            ;
-;                                        ;                           ; bricks_matrix:inst22|bricks_matrix[0][10][2],                           ;
-;                                        ;                           ; bricks_matrix:inst22|bricks_matrix[0][11][2],                           ;
-;                                        ;                           ; bricks_matrix:inst22|bricks_matrix[0][14][2],                           ;
-;                                        ;                           ; bricks_matrix:inst22|bricks_matrix[0][15][2],                           ;
-;                                        ;                           ; bricks_matrix:inst22|bricks_matrix[2][16][2],                           ;
-;                                        ;                           ; bricks_matrix:inst22|bricks_matrix[3][0][2],                            ;
-;                                        ;                           ; bricks_matrix:inst22|bricks_matrix[3][1][2],                            ;
-;                                        ;                           ; bricks_matrix:inst22|bricks_matrix[3][2][2],                            ;
-;                                        ;                           ; bricks_matrix:inst22|bricks_matrix[3][3][2],                            ;
-;                                        ;                           ; bricks_matrix:inst22|bricks_matrix[3][4][2],                            ;
-;                                        ;                           ; bricks_matrix:inst22|bricks_matrix[3][5][2],                            ;
-;                                        ;                           ; bricks_matrix:inst22|bricks_matrix[3][6][2],                            ;
-;                                        ;                           ; bricks_matrix:inst22|bricks_matrix[3][7][2],                            ;
-;                                        ;                           ; bricks_matrix:inst22|bricks_matrix[3][9][2],                            ;
-;                                        ;                           ; bricks_matrix:inst22|bricks_matrix[3][11][2],                           ;
-;                                        ;                           ; bricks_matrix:inst22|bricks_matrix[3][12][2],                           ;
-;                                        ;                           ; bricks_matrix:inst22|bricks_matrix[3][13][2],                           ;
-;                                        ;                           ; bricks_matrix:inst22|bricks_matrix[3][14][2],                           ;
-;                                        ;                           ; bricks_matrix:inst22|bricks_matrix[3][15][2],                           ;
-;                                        ;                           ; bricks_matrix:inst22|bricks_matrix[3][16][2],                           ;
-;                                        ;                           ; bricks_matrix:inst22|bricks_matrix[2][0][2],                            ;
-;                                        ;                           ; bricks_matrix:inst22|bricks_matrix[2][1][2],                            ;
-;                                        ;                           ; bricks_matrix:inst22|bricks_matrix[2][2][2],                            ;
-;                                        ;                           ; bricks_matrix:inst22|bricks_matrix[2][3][2],                            ;
-;                                        ;                           ; bricks_matrix:inst22|bricks_matrix[2][4][2],                            ;
-;                                        ;                           ; bricks_matrix:inst22|bricks_matrix[2][5][2],                            ;
-;                                        ;                           ; bricks_matrix:inst22|bricks_matrix[2][6][2],                            ;
-;                                        ;                           ; bricks_matrix:inst22|bricks_matrix[2][7][2],                            ;
-;                                        ;                           ; bricks_matrix:inst22|bricks_matrix[2][9][2],                            ;
-;                                        ;                           ; bricks_matrix:inst22|bricks_matrix[2][11][2],                           ;
-;                                        ;                           ; bricks_matrix:inst22|bricks_matrix[2][12][2],                           ;
-;                                        ;                           ; bricks_matrix:inst22|bricks_matrix[2][13][2],                           ;
-;                                        ;                           ; bricks_matrix:inst22|bricks_matrix[2][14][2],                           ;
-;                                        ;                           ; bricks_matrix:inst22|bricks_matrix[2][15][2],                           ;
-;                                        ;                           ; bricks_matrix:inst22|bricks_matrix[4][16][2],                           ;
-;                                        ;                           ; bricks_matrix:inst22|bricks_matrix[5][0][2],                            ;
-;                                        ;                           ; bricks_matrix:inst22|bricks_matrix[5][1][2],                            ;
-;                                        ;                           ; bricks_matrix:inst22|bricks_matrix[5][2][2],                            ;
-;                                        ;                           ; bricks_matrix:inst22|bricks_matrix[5][3][2],                            ;
-;                                        ;                           ; bricks_matrix:inst22|bricks_matrix[5][4][2],                            ;
-;                                        ;                           ; bricks_matrix:inst22|bricks_matrix[5][5][2],                            ;
-;                                        ;                           ; bricks_matrix:inst22|bricks_matrix[5][6][2],                            ;
-;                                        ;                           ; bricks_matrix:inst22|bricks_matrix[5][7][2],                            ;
-;                                        ;                           ; bricks_matrix:inst22|bricks_matrix[5][8][2],                            ;
-;                                        ;                           ; bricks_matrix:inst22|bricks_matrix[5][9][2],                            ;
-;                                        ;                           ; bricks_matrix:inst22|bricks_matrix[5][10][2],                           ;
-;                                        ;                           ; bricks_matrix:inst22|bricks_matrix[5][11][2],                           ;
-;                                        ;                           ; bricks_matrix:inst22|bricks_matrix[5][12][2],                           ;
-;                                        ;                           ; bricks_matrix:inst22|bricks_matrix[5][13][2],                           ;
-;                                        ;                           ; bricks_matrix:inst22|bricks_matrix[5][15][2],                           ;
-;                                        ;                           ; bricks_matrix:inst22|bricks_matrix[5][16][2],                           ;
-;                                        ;                           ; bricks_matrix:inst22|bricks_matrix[4][0][2],                            ;
-;                                        ;                           ; bricks_matrix:inst22|bricks_matrix[4][1][2],                            ;
-;                                        ;                           ; bricks_matrix:inst22|bricks_matrix[4][2][2],                            ;
-;                                        ;                           ; bricks_matrix:inst22|bricks_matrix[4][3][2],                            ;
-;                                        ;                           ; bricks_matrix:inst22|bricks_matrix[4][4][2],                            ;
-;                                        ;                           ; bricks_matrix:inst22|bricks_matrix[4][5][2],                            ;
-;                                        ;                           ; bricks_matrix:inst22|bricks_matrix[4][6][2],                            ;
-;                                        ;                           ; bricks_matrix:inst22|bricks_matrix[4][7][2],                            ;
-;                                        ;                           ; bricks_matrix:inst22|bricks_matrix[4][9][2],                            ;
-;                                        ;                           ; bricks_matrix:inst22|bricks_matrix[4][11][2],                           ;
-;                                        ;                           ; bricks_matrix:inst22|bricks_matrix[4][12][2],                           ;
-;                                        ;                           ; bricks_matrix:inst22|bricks_matrix[4][13][2],                           ;
-;                                        ;                           ; bricks_matrix:inst22|bricks_matrix[4][14][2],                           ;
-;                                        ;                           ; bricks_matrix:inst22|bricks_matrix[4][15][2],                           ;
-;                                        ;                           ; bricks_matrix:inst22|bricks_matrix[6][16][2],                           ;
-;                                        ;                           ; bricks_matrix:inst22|bricks_matrix[7][0][2],                            ;
-;                                        ;                           ; bricks_matrix:inst22|bricks_matrix[7][1][2],                            ;
-;                                        ;                           ; bricks_matrix:inst22|bricks_matrix[7][2][2],                            ;
-;                                        ;                           ; bricks_matrix:inst22|bricks_matrix[7][3][2],                            ;
-;                                        ;                           ; bricks_matrix:inst22|bricks_matrix[7][4][2],                            ;
-;                                        ;                           ; bricks_matrix:inst22|bricks_matrix[7][5][2],                            ;
-;                                        ;                           ; bricks_matrix:inst22|bricks_matrix[7][6][2],                            ;
-;                                        ;                           ; bricks_matrix:inst22|bricks_matrix[7][7][2],                            ;
-;                                        ;                           ; bricks_matrix:inst22|bricks_matrix[7][8][2],                            ;
-;                                        ;                           ; bricks_matrix:inst22|bricks_matrix[7][9][2],                            ;
-;                                        ;                           ; bricks_matrix:inst22|bricks_matrix[7][10][2],                           ;
-;                                        ;                           ; bricks_matrix:inst22|bricks_matrix[7][11][2],                           ;
-;                                        ;                           ; bricks_matrix:inst22|bricks_matrix[7][12][2],                           ;
-;                                        ;                           ; bricks_matrix:inst22|bricks_matrix[7][13][2],                           ;
-;                                        ;                           ; bricks_matrix:inst22|bricks_matrix[7][15][2],                           ;
-;                                        ;                           ; bricks_matrix:inst22|bricks_matrix[7][16][2],                           ;
-;                                        ;                           ; bricks_matrix:inst22|bricks_matrix[6][0][2],                            ;
-;                                        ;                           ; bricks_matrix:inst22|bricks_matrix[6][1][2],                            ;
-;                                        ;                           ; bricks_matrix:inst22|bricks_matrix[6][2][2],                            ;
-;                                        ;                           ; bricks_matrix:inst22|bricks_matrix[6][3][2],                            ;
-;                                        ;                           ; bricks_matrix:inst22|bricks_matrix[6][4][2],                            ;
-;                                        ;                           ; bricks_matrix:inst22|bricks_matrix[6][5][2],                            ;
-;                                        ;                           ; bricks_matrix:inst22|bricks_matrix[6][6][2],                            ;
-;                                        ;                           ; bricks_matrix:inst22|bricks_matrix[6][7][2],                            ;
-;                                        ;                           ; bricks_matrix:inst22|bricks_matrix[6][8][2],                            ;
-;                                        ;                           ; bricks_matrix:inst22|bricks_matrix[6][9][2],                            ;
-;                                        ;                           ; bricks_matrix:inst22|bricks_matrix[6][10][2],                           ;
-;                                        ;                           ; bricks_matrix:inst22|bricks_matrix[6][11][2],                           ;
-;                                        ;                           ; bricks_matrix:inst22|bricks_matrix[6][12][2],                           ;
-;                                        ;                           ; bricks_matrix:inst22|bricks_matrix[6][13][2],                           ;
-;                                        ;                           ; bricks_matrix:inst22|bricks_matrix[6][15][2]                            ;
-; missle_move:inst21|flag[31]            ; Stuck at GND              ; missle_move:inst21|topLeftY_tmp[0], missle_move:inst21|topLeftX_tmp[1], ;
-;                                        ; due to stuck port data_in ; missle_move:inst21|topLeftX_tmp[0], missle_move:inst21|topLeftY_tmp[1]  ;
-; missle_move:inst7|flag[31]             ; Stuck at GND              ; missle_move:inst7|topLeftY_tmp[0], missle_move:inst7|topLeftX_tmp[1],   ;
-;                                        ; due to stuck port data_in ; missle_move:inst7|topLeftX_tmp[0], missle_move:inst7|topLeftY_tmp[1]    ;
-; election_house_counter:inst69|flag[10] ; Stuck at GND              ; election_house_counter:inst69|tank1Collisionflag[10],                   ;
-;                                        ; due to stuck port data_in ; election_house_counter:inst69|tank2Collisionflag[10]                    ;
-; tank_move:inst23|Xspeed[3]             ; Stuck at GND              ; tank_move:inst23|lastSpeedX[3]                                          ;
-;                                        ; due to stuck port data_in ;                                                                         ;
-; tank_move:inst23|Xspeed[2]             ; Stuck at GND              ; tank_move:inst23|lastSpeedX[2]                                          ;
-;                                        ; due to stuck port data_in ;                                                                         ;
-; tank_move:inst23|Xspeed[1]             ; Stuck at GND              ; tank_move:inst23|lastSpeedX[1]                                          ;
-;                                        ; due to stuck port data_in ;                                                                         ;
-; tank_move:inst23|Xspeed[0]             ; Stuck at GND              ; tank_move:inst23|lastSpeedX[0]                                          ;
-;                                        ; due to stuck port data_in ;                                                                         ;
-; tank_move:inst23|Yspeed[3]             ; Stuck at GND              ; tank_move:inst23|lastSpeedY[3]                                          ;
-;                                        ; due to stuck port data_in ;                                                                         ;
-; tank_move:inst23|Yspeed[2]             ; Stuck at GND              ; tank_move:inst23|lastSpeedY[2]                                          ;
-;                                        ; due to stuck port data_in ;                                                                         ;
-; tank_move:inst23|Yspeed[1]             ; Stuck at GND              ; tank_move:inst23|lastSpeedY[1]                                          ;
-;                                        ; due to stuck port data_in ;                                                                         ;
-; tank_move:inst23|Yspeed[0]             ; Stuck at GND              ; tank_move:inst23|lastSpeedY[0]                                          ;
-;                                        ; due to stuck port data_in ;                                                                         ;
-; tank_move:inst15|Xspeed[3]             ; Stuck at GND              ; tank_move:inst15|lastSpeedX[3]                                          ;
-;                                        ; due to stuck port data_in ;                                                                         ;
-; tank_move:inst15|Xspeed[2]             ; Stuck at GND              ; tank_move:inst15|lastSpeedX[2]                                          ;
-;                                        ; due to stuck port data_in ;                                                                         ;
-; tank_move:inst15|Xspeed[1]             ; Stuck at GND              ; tank_move:inst15|lastSpeedX[1]                                          ;
-;                                        ; due to stuck port data_in ;                                                                         ;
-; tank_move:inst15|Xspeed[0]             ; Stuck at GND              ; tank_move:inst15|lastSpeedX[0]                                          ;
-;                                        ; due to stuck port data_in ;                                                                         ;
-; tank_move:inst15|Yspeed[3]             ; Stuck at GND              ; tank_move:inst15|lastSpeedY[3]                                          ;
-;                                        ; due to stuck port data_in ;                                                                         ;
-; tank_move:inst15|Yspeed[2]             ; Stuck at GND              ; tank_move:inst15|lastSpeedY[2]                                          ;
-;                                        ; due to stuck port data_in ;                                                                         ;
-; tank_move:inst15|Yspeed[1]             ; Stuck at GND              ; tank_move:inst15|lastSpeedY[1]                                          ;
-;                                        ; due to stuck port data_in ;                                                                         ;
-; tank_move:inst15|Yspeed[0]             ; Stuck at GND              ; tank_move:inst15|lastSpeedY[0]                                          ;
-;                                        ; due to stuck port data_in ;                                                                         ;
-+----------------------------------------+---------------------------+-------------------------------------------------------------------------+
++-------------------------------------------------------------------------------------------------------------------------------------+
+; Removed Registers Triggering Further Register Optimizations                                                                         ;
++-------------------------------+---------------------------+-------------------------------------------------------------------------+
+; Register name                 ; Reason for Removal        ; Registers Removed due to This Register                                  ;
++-------------------------------+---------------------------+-------------------------------------------------------------------------+
+; bricks_matrix:inst22|flag[31] ; Stuck at GND              ; bricks_matrix:inst22|bricks_matrix[8][16][2],                           ;
+;                               ; due to stuck port data_in ; bricks_matrix:inst22|bricks_matrix[9][0][2],                            ;
+;                               ;                           ; bricks_matrix:inst22|bricks_matrix[9][1][2],                            ;
+;                               ;                           ; bricks_matrix:inst22|bricks_matrix[9][2][2],                            ;
+;                               ;                           ; bricks_matrix:inst22|bricks_matrix[9][3][2],                            ;
+;                               ;                           ; bricks_matrix:inst22|bricks_matrix[9][4][2],                            ;
+;                               ;                           ; bricks_matrix:inst22|bricks_matrix[9][5][2],                            ;
+;                               ;                           ; bricks_matrix:inst22|bricks_matrix[9][6][2],                            ;
+;                               ;                           ; bricks_matrix:inst22|bricks_matrix[9][7][2],                            ;
+;                               ;                           ; bricks_matrix:inst22|bricks_matrix[9][9][2],                            ;
+;                               ;                           ; bricks_matrix:inst22|bricks_matrix[9][11][2],                           ;
+;                               ;                           ; bricks_matrix:inst22|bricks_matrix[9][12][2],                           ;
+;                               ;                           ; bricks_matrix:inst22|bricks_matrix[9][13][2],                           ;
+;                               ;                           ; bricks_matrix:inst22|bricks_matrix[9][14][2],                           ;
+;                               ;                           ; bricks_matrix:inst22|bricks_matrix[9][15][2],                           ;
+;                               ;                           ; bricks_matrix:inst22|bricks_matrix[9][16][2],                           ;
+;                               ;                           ; bricks_matrix:inst22|bricks_matrix[8][0][2],                            ;
+;                               ;                           ; bricks_matrix:inst22|bricks_matrix[8][1][2],                            ;
+;                               ;                           ; bricks_matrix:inst22|bricks_matrix[8][2][2],                            ;
+;                               ;                           ; bricks_matrix:inst22|bricks_matrix[8][3][2],                            ;
+;                               ;                           ; bricks_matrix:inst22|bricks_matrix[8][4][2],                            ;
+;                               ;                           ; bricks_matrix:inst22|bricks_matrix[8][5][2],                            ;
+;                               ;                           ; bricks_matrix:inst22|bricks_matrix[8][6][2],                            ;
+;                               ;                           ; bricks_matrix:inst22|bricks_matrix[8][7][2],                            ;
+;                               ;                           ; bricks_matrix:inst22|bricks_matrix[8][8][2],                            ;
+;                               ;                           ; bricks_matrix:inst22|bricks_matrix[8][9][2],                            ;
+;                               ;                           ; bricks_matrix:inst22|bricks_matrix[8][10][2],                           ;
+;                               ;                           ; bricks_matrix:inst22|bricks_matrix[8][11][2],                           ;
+;                               ;                           ; bricks_matrix:inst22|bricks_matrix[8][12][2],                           ;
+;                               ;                           ; bricks_matrix:inst22|bricks_matrix[8][13][2],                           ;
+;                               ;                           ; bricks_matrix:inst22|bricks_matrix[8][14][2],                           ;
+;                               ;                           ; bricks_matrix:inst22|bricks_matrix[8][15][2],                           ;
+;                               ;                           ; bricks_matrix:inst22|bricks_matrix[10][16][2],                          ;
+;                               ;                           ; bricks_matrix:inst22|bricks_matrix[11][0][2],                           ;
+;                               ;                           ; bricks_matrix:inst22|bricks_matrix[11][1][2],                           ;
+;                               ;                           ; bricks_matrix:inst22|bricks_matrix[11][2][2],                           ;
+;                               ;                           ; bricks_matrix:inst22|bricks_matrix[11][3][2],                           ;
+;                               ;                           ; bricks_matrix:inst22|bricks_matrix[11][4][2],                           ;
+;                               ;                           ; bricks_matrix:inst22|bricks_matrix[11][5][2],                           ;
+;                               ;                           ; bricks_matrix:inst22|bricks_matrix[11][6][2],                           ;
+;                               ;                           ; bricks_matrix:inst22|bricks_matrix[11][7][2],                           ;
+;                               ;                           ; bricks_matrix:inst22|bricks_matrix[11][9][2],                           ;
+;                               ;                           ; bricks_matrix:inst22|bricks_matrix[11][11][2],                          ;
+;                               ;                           ; bricks_matrix:inst22|bricks_matrix[11][12][2],                          ;
+;                               ;                           ; bricks_matrix:inst22|bricks_matrix[11][13][2],                          ;
+;                               ;                           ; bricks_matrix:inst22|bricks_matrix[11][14][2],                          ;
+;                               ;                           ; bricks_matrix:inst22|bricks_matrix[11][15][2],                          ;
+;                               ;                           ; bricks_matrix:inst22|bricks_matrix[11][16][2],                          ;
+;                               ;                           ; bricks_matrix:inst22|bricks_matrix[10][0][2],                           ;
+;                               ;                           ; bricks_matrix:inst22|bricks_matrix[10][1][2],                           ;
+;                               ;                           ; bricks_matrix:inst22|bricks_matrix[10][2][2],                           ;
+;                               ;                           ; bricks_matrix:inst22|bricks_matrix[10][3][2],                           ;
+;                               ;                           ; bricks_matrix:inst22|bricks_matrix[10][4][2],                           ;
+;                               ;                           ; bricks_matrix:inst22|bricks_matrix[10][5][2],                           ;
+;                               ;                           ; bricks_matrix:inst22|bricks_matrix[10][6][2],                           ;
+;                               ;                           ; bricks_matrix:inst22|bricks_matrix[10][7][2],                           ;
+;                               ;                           ; bricks_matrix:inst22|bricks_matrix[10][9][2],                           ;
+;                               ;                           ; bricks_matrix:inst22|bricks_matrix[10][11][2],                          ;
+;                               ;                           ; bricks_matrix:inst22|bricks_matrix[10][12][2],                          ;
+;                               ;                           ; bricks_matrix:inst22|bricks_matrix[10][13][2],                          ;
+;                               ;                           ; bricks_matrix:inst22|bricks_matrix[10][14][2],                          ;
+;                               ;                           ; bricks_matrix:inst22|bricks_matrix[10][15][2],                          ;
+;                               ;                           ; bricks_matrix:inst22|bricks_matrix[12][16][2],                          ;
+;                               ;                           ; bricks_matrix:inst22|bricks_matrix[13][0][2],                           ;
+;                               ;                           ; bricks_matrix:inst22|bricks_matrix[13][1][2],                           ;
+;                               ;                           ; bricks_matrix:inst22|bricks_matrix[13][2][2],                           ;
+;                               ;                           ; bricks_matrix:inst22|bricks_matrix[13][3][2],                           ;
+;                               ;                           ; bricks_matrix:inst22|bricks_matrix[13][4][2],                           ;
+;                               ;                           ; bricks_matrix:inst22|bricks_matrix[13][5][2],                           ;
+;                               ;                           ; bricks_matrix:inst22|bricks_matrix[13][6][2],                           ;
+;                               ;                           ; bricks_matrix:inst22|bricks_matrix[13][7][2],                           ;
+;                               ;                           ; bricks_matrix:inst22|bricks_matrix[13][8][2],                           ;
+;                               ;                           ; bricks_matrix:inst22|bricks_matrix[13][9][2],                           ;
+;                               ;                           ; bricks_matrix:inst22|bricks_matrix[13][10][2],                          ;
+;                               ;                           ; bricks_matrix:inst22|bricks_matrix[13][11][2],                          ;
+;                               ;                           ; bricks_matrix:inst22|bricks_matrix[13][14][2],                          ;
+;                               ;                           ; bricks_matrix:inst22|bricks_matrix[13][15][2],                          ;
+;                               ;                           ; bricks_matrix:inst22|bricks_matrix[13][16][2],                          ;
+;                               ;                           ; bricks_matrix:inst22|bricks_matrix[12][0][2],                           ;
+;                               ;                           ; bricks_matrix:inst22|bricks_matrix[12][1][2],                           ;
+;                               ;                           ; bricks_matrix:inst22|bricks_matrix[12][2][2],                           ;
+;                               ;                           ; bricks_matrix:inst22|bricks_matrix[12][3][2],                           ;
+;                               ;                           ; bricks_matrix:inst22|bricks_matrix[12][4][2],                           ;
+;                               ;                           ; bricks_matrix:inst22|bricks_matrix[12][5][2],                           ;
+;                               ;                           ; bricks_matrix:inst22|bricks_matrix[12][6][2],                           ;
+;                               ;                           ; bricks_matrix:inst22|bricks_matrix[12][7][2],                           ;
+;                               ;                           ; bricks_matrix:inst22|bricks_matrix[12][8][2],                           ;
+;                               ;                           ; bricks_matrix:inst22|bricks_matrix[12][9][2],                           ;
+;                               ;                           ; bricks_matrix:inst22|bricks_matrix[12][10][2],                          ;
+;                               ;                           ; bricks_matrix:inst22|bricks_matrix[12][11][2],                          ;
+;                               ;                           ; bricks_matrix:inst22|bricks_matrix[12][12][2],                          ;
+;                               ;                           ; bricks_matrix:inst22|bricks_matrix[12][13][2],                          ;
+;                               ;                           ; bricks_matrix:inst22|bricks_matrix[12][14][2],                          ;
+;                               ;                           ; bricks_matrix:inst22|bricks_matrix[12][15][2],                          ;
+;                               ;                           ; bricks_matrix:inst22|bricks_matrix[0][16][2],                           ;
+;                               ;                           ; bricks_matrix:inst22|bricks_matrix[1][0][2],                            ;
+;                               ;                           ; bricks_matrix:inst22|bricks_matrix[1][1][2],                            ;
+;                               ;                           ; bricks_matrix:inst22|bricks_matrix[1][2][2],                            ;
+;                               ;                           ; bricks_matrix:inst22|bricks_matrix[1][3][2],                            ;
+;                               ;                           ; bricks_matrix:inst22|bricks_matrix[1][4][2],                            ;
+;                               ;                           ; bricks_matrix:inst22|bricks_matrix[1][5][2],                            ;
+;                               ;                           ; bricks_matrix:inst22|bricks_matrix[1][6][2],                            ;
+;                               ;                           ; bricks_matrix:inst22|bricks_matrix[1][7][2],                            ;
+;                               ;                           ; bricks_matrix:inst22|bricks_matrix[1][8][2],                            ;
+;                               ;                           ; bricks_matrix:inst22|bricks_matrix[1][9][2],                            ;
+;                               ;                           ; bricks_matrix:inst22|bricks_matrix[1][10][2],                           ;
+;                               ;                           ; bricks_matrix:inst22|bricks_matrix[1][11][2],                           ;
+;                               ;                           ; bricks_matrix:inst22|bricks_matrix[1][12][2],                           ;
+;                               ;                           ; bricks_matrix:inst22|bricks_matrix[1][13][2],                           ;
+;                               ;                           ; bricks_matrix:inst22|bricks_matrix[1][14][2],                           ;
+;                               ;                           ; bricks_matrix:inst22|bricks_matrix[1][15][2],                           ;
+;                               ;                           ; bricks_matrix:inst22|bricks_matrix[1][16][2],                           ;
+;                               ;                           ; bricks_matrix:inst22|bricks_matrix[0][0][2],                            ;
+;                               ;                           ; bricks_matrix:inst22|bricks_matrix[0][1][2],                            ;
+;                               ;                           ; bricks_matrix:inst22|bricks_matrix[0][2][2],                            ;
+;                               ;                           ; bricks_matrix:inst22|bricks_matrix[0][3][2],                            ;
+;                               ;                           ; bricks_matrix:inst22|bricks_matrix[0][4][2],                            ;
+;                               ;                           ; bricks_matrix:inst22|bricks_matrix[0][5][2],                            ;
+;                               ;                           ; bricks_matrix:inst22|bricks_matrix[0][6][2],                            ;
+;                               ;                           ; bricks_matrix:inst22|bricks_matrix[0][7][2],                            ;
+;                               ;                           ; bricks_matrix:inst22|bricks_matrix[0][8][2],                            ;
+;                               ;                           ; bricks_matrix:inst22|bricks_matrix[0][9][2],                            ;
+;                               ;                           ; bricks_matrix:inst22|bricks_matrix[0][10][2],                           ;
+;                               ;                           ; bricks_matrix:inst22|bricks_matrix[0][11][2],                           ;
+;                               ;                           ; bricks_matrix:inst22|bricks_matrix[0][14][2],                           ;
+;                               ;                           ; bricks_matrix:inst22|bricks_matrix[0][15][2],                           ;
+;                               ;                           ; bricks_matrix:inst22|bricks_matrix[2][16][2],                           ;
+;                               ;                           ; bricks_matrix:inst22|bricks_matrix[3][0][2],                            ;
+;                               ;                           ; bricks_matrix:inst22|bricks_matrix[3][1][2],                            ;
+;                               ;                           ; bricks_matrix:inst22|bricks_matrix[3][2][2],                            ;
+;                               ;                           ; bricks_matrix:inst22|bricks_matrix[3][3][2],                            ;
+;                               ;                           ; bricks_matrix:inst22|bricks_matrix[3][4][2],                            ;
+;                               ;                           ; bricks_matrix:inst22|bricks_matrix[3][5][2],                            ;
+;                               ;                           ; bricks_matrix:inst22|bricks_matrix[3][6][2],                            ;
+;                               ;                           ; bricks_matrix:inst22|bricks_matrix[3][7][2],                            ;
+;                               ;                           ; bricks_matrix:inst22|bricks_matrix[3][9][2],                            ;
+;                               ;                           ; bricks_matrix:inst22|bricks_matrix[3][11][2],                           ;
+;                               ;                           ; bricks_matrix:inst22|bricks_matrix[3][12][2],                           ;
+;                               ;                           ; bricks_matrix:inst22|bricks_matrix[3][13][2],                           ;
+;                               ;                           ; bricks_matrix:inst22|bricks_matrix[3][14][2],                           ;
+;                               ;                           ; bricks_matrix:inst22|bricks_matrix[3][15][2],                           ;
+;                               ;                           ; bricks_matrix:inst22|bricks_matrix[3][16][2],                           ;
+;                               ;                           ; bricks_matrix:inst22|bricks_matrix[2][0][2],                            ;
+;                               ;                           ; bricks_matrix:inst22|bricks_matrix[2][1][2],                            ;
+;                               ;                           ; bricks_matrix:inst22|bricks_matrix[2][2][2],                            ;
+;                               ;                           ; bricks_matrix:inst22|bricks_matrix[2][3][2],                            ;
+;                               ;                           ; bricks_matrix:inst22|bricks_matrix[2][4][2],                            ;
+;                               ;                           ; bricks_matrix:inst22|bricks_matrix[2][5][2],                            ;
+;                               ;                           ; bricks_matrix:inst22|bricks_matrix[2][6][2],                            ;
+;                               ;                           ; bricks_matrix:inst22|bricks_matrix[2][7][2],                            ;
+;                               ;                           ; bricks_matrix:inst22|bricks_matrix[2][9][2],                            ;
+;                               ;                           ; bricks_matrix:inst22|bricks_matrix[2][11][2],                           ;
+;                               ;                           ; bricks_matrix:inst22|bricks_matrix[2][12][2],                           ;
+;                               ;                           ; bricks_matrix:inst22|bricks_matrix[2][13][2],                           ;
+;                               ;                           ; bricks_matrix:inst22|bricks_matrix[2][14][2],                           ;
+;                               ;                           ; bricks_matrix:inst22|bricks_matrix[2][15][2],                           ;
+;                               ;                           ; bricks_matrix:inst22|bricks_matrix[4][16][2],                           ;
+;                               ;                           ; bricks_matrix:inst22|bricks_matrix[5][0][2],                            ;
+;                               ;                           ; bricks_matrix:inst22|bricks_matrix[5][1][2],                            ;
+;                               ;                           ; bricks_matrix:inst22|bricks_matrix[5][2][2],                            ;
+;                               ;                           ; bricks_matrix:inst22|bricks_matrix[5][3][2],                            ;
+;                               ;                           ; bricks_matrix:inst22|bricks_matrix[5][4][2],                            ;
+;                               ;                           ; bricks_matrix:inst22|bricks_matrix[5][5][2],                            ;
+;                               ;                           ; bricks_matrix:inst22|bricks_matrix[5][6][2],                            ;
+;                               ;                           ; bricks_matrix:inst22|bricks_matrix[5][7][2],                            ;
+;                               ;                           ; bricks_matrix:inst22|bricks_matrix[5][8][2],                            ;
+;                               ;                           ; bricks_matrix:inst22|bricks_matrix[5][9][2],                            ;
+;                               ;                           ; bricks_matrix:inst22|bricks_matrix[5][10][2],                           ;
+;                               ;                           ; bricks_matrix:inst22|bricks_matrix[5][11][2],                           ;
+;                               ;                           ; bricks_matrix:inst22|bricks_matrix[5][12][2],                           ;
+;                               ;                           ; bricks_matrix:inst22|bricks_matrix[5][13][2],                           ;
+;                               ;                           ; bricks_matrix:inst22|bricks_matrix[5][15][2],                           ;
+;                               ;                           ; bricks_matrix:inst22|bricks_matrix[5][16][2],                           ;
+;                               ;                           ; bricks_matrix:inst22|bricks_matrix[4][0][2],                            ;
+;                               ;                           ; bricks_matrix:inst22|bricks_matrix[4][1][2],                            ;
+;                               ;                           ; bricks_matrix:inst22|bricks_matrix[4][2][2],                            ;
+;                               ;                           ; bricks_matrix:inst22|bricks_matrix[4][3][2],                            ;
+;                               ;                           ; bricks_matrix:inst22|bricks_matrix[4][4][2],                            ;
+;                               ;                           ; bricks_matrix:inst22|bricks_matrix[4][5][2],                            ;
+;                               ;                           ; bricks_matrix:inst22|bricks_matrix[4][6][2],                            ;
+;                               ;                           ; bricks_matrix:inst22|bricks_matrix[4][7][2],                            ;
+;                               ;                           ; bricks_matrix:inst22|bricks_matrix[4][9][2],                            ;
+;                               ;                           ; bricks_matrix:inst22|bricks_matrix[4][11][2],                           ;
+;                               ;                           ; bricks_matrix:inst22|bricks_matrix[4][12][2],                           ;
+;                               ;                           ; bricks_matrix:inst22|bricks_matrix[4][13][2],                           ;
+;                               ;                           ; bricks_matrix:inst22|bricks_matrix[4][14][2],                           ;
+;                               ;                           ; bricks_matrix:inst22|bricks_matrix[4][15][2],                           ;
+;                               ;                           ; bricks_matrix:inst22|bricks_matrix[6][16][2],                           ;
+;                               ;                           ; bricks_matrix:inst22|bricks_matrix[7][0][2],                            ;
+;                               ;                           ; bricks_matrix:inst22|bricks_matrix[7][1][2],                            ;
+;                               ;                           ; bricks_matrix:inst22|bricks_matrix[7][2][2],                            ;
+;                               ;                           ; bricks_matrix:inst22|bricks_matrix[7][3][2],                            ;
+;                               ;                           ; bricks_matrix:inst22|bricks_matrix[7][4][2],                            ;
+;                               ;                           ; bricks_matrix:inst22|bricks_matrix[7][5][2],                            ;
+;                               ;                           ; bricks_matrix:inst22|bricks_matrix[7][6][2],                            ;
+;                               ;                           ; bricks_matrix:inst22|bricks_matrix[7][7][2],                            ;
+;                               ;                           ; bricks_matrix:inst22|bricks_matrix[7][8][2],                            ;
+;                               ;                           ; bricks_matrix:inst22|bricks_matrix[7][9][2],                            ;
+;                               ;                           ; bricks_matrix:inst22|bricks_matrix[7][10][2],                           ;
+;                               ;                           ; bricks_matrix:inst22|bricks_matrix[7][11][2],                           ;
+;                               ;                           ; bricks_matrix:inst22|bricks_matrix[7][12][2],                           ;
+;                               ;                           ; bricks_matrix:inst22|bricks_matrix[7][13][2],                           ;
+;                               ;                           ; bricks_matrix:inst22|bricks_matrix[7][15][2],                           ;
+;                               ;                           ; bricks_matrix:inst22|bricks_matrix[7][16][2],                           ;
+;                               ;                           ; bricks_matrix:inst22|bricks_matrix[6][0][2],                            ;
+;                               ;                           ; bricks_matrix:inst22|bricks_matrix[6][1][2],                            ;
+;                               ;                           ; bricks_matrix:inst22|bricks_matrix[6][2][2],                            ;
+;                               ;                           ; bricks_matrix:inst22|bricks_matrix[6][3][2],                            ;
+;                               ;                           ; bricks_matrix:inst22|bricks_matrix[6][4][2],                            ;
+;                               ;                           ; bricks_matrix:inst22|bricks_matrix[6][5][2],                            ;
+;                               ;                           ; bricks_matrix:inst22|bricks_matrix[6][6][2],                            ;
+;                               ;                           ; bricks_matrix:inst22|bricks_matrix[6][7][2],                            ;
+;                               ;                           ; bricks_matrix:inst22|bricks_matrix[6][8][2],                            ;
+;                               ;                           ; bricks_matrix:inst22|bricks_matrix[6][9][2],                            ;
+;                               ;                           ; bricks_matrix:inst22|bricks_matrix[6][10][2],                           ;
+;                               ;                           ; bricks_matrix:inst22|bricks_matrix[6][11][2],                           ;
+;                               ;                           ; bricks_matrix:inst22|bricks_matrix[6][12][2],                           ;
+;                               ;                           ; bricks_matrix:inst22|bricks_matrix[6][13][2],                           ;
+;                               ;                           ; bricks_matrix:inst22|bricks_matrix[6][15][2]                            ;
+; missle_move:inst21|flag[31]   ; Stuck at GND              ; missle_move:inst21|topLeftY_tmp[0], missle_move:inst21|topLeftX_tmp[1], ;
+;                               ; due to stuck port data_in ; missle_move:inst21|topLeftX_tmp[0], missle_move:inst21|topLeftY_tmp[1]  ;
+; missle_move:inst7|flag[31]    ; Stuck at GND              ; missle_move:inst7|topLeftY_tmp[0], missle_move:inst7|topLeftX_tmp[1],   ;
+;                               ; due to stuck port data_in ; missle_move:inst7|topLeftX_tmp[0], missle_move:inst7|topLeftY_tmp[1]    ;
+; tank_move:inst23|Xspeed[3]    ; Stuck at GND              ; tank_move:inst23|lastSpeedX[3]                                          ;
+;                               ; due to stuck port data_in ;                                                                         ;
+; tank_move:inst23|Xspeed[2]    ; Stuck at GND              ; tank_move:inst23|lastSpeedX[2]                                          ;
+;                               ; due to stuck port data_in ;                                                                         ;
+; tank_move:inst23|Xspeed[1]    ; Stuck at GND              ; tank_move:inst23|lastSpeedX[1]                                          ;
+;                               ; due to stuck port data_in ;                                                                         ;
+; tank_move:inst23|Xspeed[0]    ; Stuck at GND              ; tank_move:inst23|lastSpeedX[0]                                          ;
+;                               ; due to stuck port data_in ;                                                                         ;
+; tank_move:inst23|Yspeed[3]    ; Stuck at GND              ; tank_move:inst23|lastSpeedY[3]                                          ;
+;                               ; due to stuck port data_in ;                                                                         ;
+; tank_move:inst23|Yspeed[2]    ; Stuck at GND              ; tank_move:inst23|lastSpeedY[2]                                          ;
+;                               ; due to stuck port data_in ;                                                                         ;
+; tank_move:inst23|Yspeed[1]    ; Stuck at GND              ; tank_move:inst23|lastSpeedY[1]                                          ;
+;                               ; due to stuck port data_in ;                                                                         ;
+; tank_move:inst23|Yspeed[0]    ; Stuck at GND              ; tank_move:inst23|lastSpeedY[0]                                          ;
+;                               ; due to stuck port data_in ;                                                                         ;
+; tank_move:inst15|Xspeed[3]    ; Stuck at GND              ; tank_move:inst15|lastSpeedX[3]                                          ;
+;                               ; due to stuck port data_in ;                                                                         ;
+; tank_move:inst15|Xspeed[2]    ; Stuck at GND              ; tank_move:inst15|lastSpeedX[2]                                          ;
+;                               ; due to stuck port data_in ;                                                                         ;
+; tank_move:inst15|Xspeed[1]    ; Stuck at GND              ; tank_move:inst15|lastSpeedX[1]                                          ;
+;                               ; due to stuck port data_in ;                                                                         ;
+; tank_move:inst15|Xspeed[0]    ; Stuck at GND              ; tank_move:inst15|lastSpeedX[0]                                          ;
+;                               ; due to stuck port data_in ;                                                                         ;
+; tank_move:inst15|Yspeed[3]    ; Stuck at GND              ; tank_move:inst15|lastSpeedY[3]                                          ;
+;                               ; due to stuck port data_in ;                                                                         ;
+; tank_move:inst15|Yspeed[2]    ; Stuck at GND              ; tank_move:inst15|lastSpeedY[2]                                          ;
+;                               ; due to stuck port data_in ;                                                                         ;
+; tank_move:inst15|Yspeed[1]    ; Stuck at GND              ; tank_move:inst15|lastSpeedY[1]                                          ;
+;                               ; due to stuck port data_in ;                                                                         ;
+; tank_move:inst15|Yspeed[0]    ; Stuck at GND              ; tank_move:inst15|lastSpeedY[0]                                          ;
+;                               ; due to stuck port data_in ;                                                                         ;
++-------------------------------+---------------------------+-------------------------------------------------------------------------+
 
 
 +------------------------------------------------------+
@@ -1387,12 +1382,12 @@ Encoding Type:  One-Hot
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 2584  ;
-; Number of registers using Synchronous Clear  ; 985   ;
+; Total registers                              ; 2528  ;
+; Number of registers using Synchronous Clear  ; 921   ;
 ; Number of registers using Synchronous Load   ; 40    ;
-; Number of registers using Asynchronous Clear ; 2047  ;
+; Number of registers using Asynchronous Clear ; 2069  ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 1377  ;
+; Number of registers using Clock Enable       ; 1311  ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -1402,7 +1397,7 @@ Encoding Type:  One-Hot
 +-----------------------------------------------+---------+
 ; Inverted Register                             ; Fan out ;
 +-----------------------------------------------+---------+
-; VGA_Controller:inst|oVGA_VS                   ; 23      ;
+; VGA_Controller:inst|oVGA_VS                   ; 20      ;
 ; VGA_Controller:inst|oVGA_HS                   ; 14      ;
 ; back_ground_draw:inst12|blueBits[0]           ; 2       ;
 ; back_ground_draw:inst12|greenBits[1]          ; 2       ;
@@ -1507,72 +1502,59 @@ Encoding Type:  One-Hot
 * Table truncated at 100 items. To change the number of inverted registers reported, set the "Number of Inverted Registers Reported" option under Assignments->Settings->Analysis and Synthesis Settings->More Settings
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                                                                                                                                                                                                                                                                                                                  ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                                                                                                                                                                                                                                                                                                        ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; 3:1                ; 10 bits   ; 20 LEs        ; 0 LEs                ; 20 LEs                 ; Yes        ; |TOP_VGA|TOP_KBD_DEMOALL:inst8|keyToggle_decoder:inst9|keyIsPressed                                                                                                                                                                                                                                                                                               ;
-; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; Yes        ; |TOP_VGA|election_house:inst68|RGBout[5]                                                                                                                                                                                                                                                                                                                          ;
-; 3:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |TOP_VGA|missle_move:inst21|Yspeed[2]                                                                                                                                                                                                                                                                                                                             ;
-; 3:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |TOP_VGA|missle_move:inst7|Yspeed[2]                                                                                                                                                                                                                                                                                                                              ;
-; 4:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |TOP_VGA|randomCheck:inst62|counter[19]                                                                                                                                                                                                                                                                                                                           ;
-; 4:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |TOP_VGA|randomCheck:inst54|counter[22]                                                                                                                                                                                                                                                                                                                           ;
-; 4:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |TOP_VGA|randomCheck:inst49|counter[10]                                                                                                                                                                                                                                                                                                                           ;
-; 4:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |TOP_VGA|randomCheck:inst28|counter[9]                                                                                                                                                                                                                                                                                                                            ;
-; 4:1                ; 36 bits   ; 72 LEs        ; 0 LEs                ; 72 LEs                 ; Yes        ; |TOP_VGA|missle_move:inst21|topLeftX_tmp[4]                                                                                                                                                                                                                                                                                                                       ;
-; 4:1                ; 36 bits   ; 72 LEs        ; 0 LEs                ; 72 LEs                 ; Yes        ; |TOP_VGA|missle_move:inst7|topLeftX_tmp[25]                                                                                                                                                                                                                                                                                                                       ;
-; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |TOP_VGA|Const_0:inst45|lpm_constant:LPM_CONSTANT_component|lpm_constant_v58:ag|sld_mod_ram_rom:mgl_prim1|sld_rom_sr:\constant_logic_gen:name_gen:info_rom_sr|word_counter[0]                                                                                                                                                                                     ;
-; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |TOP_VGA|Const_0:inst4|lpm_constant:LPM_CONSTANT_component|lpm_constant_v58:ag|sld_mod_ram_rom:mgl_prim1|sld_rom_sr:\constant_logic_gen:name_gen:info_rom_sr|word_counter[1]                                                                                                                                                                                      ;
-; 5:1                ; 10 bits   ; 30 LEs        ; 20 LEs               ; 10 LEs                 ; Yes        ; |TOP_VGA|tank_square_object:inst27|offsetY[0]                                                                                                                                                                                                                                                                                                                     ;
-; 5:1                ; 10 bits   ; 30 LEs        ; 20 LEs               ; 10 LEs                 ; Yes        ; |TOP_VGA|tank_square_object:inst20|offsetX[4]                                                                                                                                                                                                                                                                                                                     ;
-; 5:1                ; 32 bits   ; 96 LEs        ; 0 LEs                ; 96 LEs                 ; Yes        ; |TOP_VGA|election_house_counter:inst69|counterTank1[1]                                                                                                                                                                                                                                                                                                            ;
-; 5:1                ; 32 bits   ; 96 LEs        ; 0 LEs                ; 96 LEs                 ; Yes        ; |TOP_VGA|election_house_counter:inst69|sof_counter1[9]                                                                                                                                                                                                                                                                                                            ;
-; 5:1                ; 32 bits   ; 96 LEs        ; 0 LEs                ; 96 LEs                 ; Yes        ; |TOP_VGA|election_house_counter:inst69|counterTank2[0]                                                                                                                                                                                                                                                                                                            ;
-; 5:1                ; 32 bits   ; 96 LEs        ; 0 LEs                ; 96 LEs                 ; Yes        ; |TOP_VGA|election_house_counter:inst69|sof_counter2[16]                                                                                                                                                                                                                                                                                                           ;
-; 7:1                ; 2 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |TOP_VGA|objects_mux:inst13|tmpRGB[0]                                                                                                                                                                                                                                                                                                                             ;
-; 7:1                ; 2 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |TOP_VGA|objects_mux:inst13|tmpRGB[5]                                                                                                                                                                                                                                                                                                                             ;
-; 16:1               ; 4 bits    ; 40 LEs        ; 28 LEs               ; 12 LEs                 ; Yes        ; |TOP_VGA|Const_0:inst45|lpm_constant:LPM_CONSTANT_component|lpm_constant_v58:ag|sld_mod_ram_rom:mgl_prim1|sld_rom_sr:\constant_logic_gen:name_gen:info_rom_sr|WORD_SR[2]                                                                                                                                                                                          ;
-; 16:1               ; 4 bits    ; 40 LEs        ; 28 LEs               ; 12 LEs                 ; Yes        ; |TOP_VGA|Const_0:inst4|lpm_constant:LPM_CONSTANT_component|lpm_constant_v58:ag|sld_mod_ram_rom:mgl_prim1|sld_rom_sr:\constant_logic_gen:name_gen:info_rom_sr|WORD_SR[1]                                                                                                                                                                                           ;
-; 15:1               ; 2 bits    ; 20 LEs        ; 18 LEs               ; 2 LEs                  ; Yes        ; |TOP_VGA|tankBitMap:inst29|RGBout[4]                                                                                                                                                                                                                                                                                                                              ;
-; 10:1               ; 3 bits    ; 18 LEs        ; 18 LEs               ; 0 LEs                  ; Yes        ; |TOP_VGA|TOP_KBD_DEMOALL:inst8|keyPad_decoder:inst2|key[3]                                                                                                                                                                                                                                                                                                        ;
-; 4:1                ; 24 bits   ; 48 LEs        ; 24 LEs               ; 24 LEs                 ; Yes        ; |TOP_VGA|missle_move:inst21|topLeftY_tmp[13]                                                                                                                                                                                                                                                                                                                      ;
-; 4:1                ; 24 bits   ; 48 LEs        ; 24 LEs               ; 24 LEs                 ; Yes        ; |TOP_VGA|missle_move:inst7|topLeftX_tmp[7]                                                                                                                                                                                                                                                                                                                        ;
-; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |TOP_VGA|brickBitMap:inst24|Mux62                                                                                                                                                                                                                                                                                                                                 ;
-; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |TOP_VGA|tankBitMap:inst25|Mux108                                                                                                                                                                                                                                                                                                                                 ;
-; 32:1               ; 2 bits    ; 42 LEs        ; 20 LEs               ; 22 LEs                 ; No         ; |TOP_VGA|hit_detection:inst33|Mux32                                                                                                                                                                                                                                                                                                                               ;
-; 32:1               ; 2 bits    ; 42 LEs        ; 20 LEs               ; 22 LEs                 ; No         ; |TOP_VGA|hit_detection:inst33|Mux63                                                                                                                                                                                                                                                                                                                               ;
-; 17:1               ; 2 bits    ; 22 LEs        ; 16 LEs               ; 6 LEs                  ; No         ; |TOP_VGA|hit_detection:inst33|Mux38                                                                                                                                                                                                                                                                                                                               ;
-; 17:1               ; 2 bits    ; 22 LEs        ; 20 LEs               ; 2 LEs                  ; No         ; |TOP_VGA|hit_detection:inst33|Mux44                                                                                                                                                                                                                                                                                                                               ;
-; 17:1               ; 2 bits    ; 22 LEs        ; 18 LEs               ; 4 LEs                  ; No         ; |TOP_VGA|hit_detection:inst33|Mux40                                                                                                                                                                                                                                                                                                                               ;
-; 17:1               ; 2 bits    ; 22 LEs        ; 16 LEs               ; 6 LEs                  ; No         ; |TOP_VGA|hit_detection:inst33|Mux52                                                                                                                                                                                                                                                                                                                               ;
-; 17:1               ; 2 bits    ; 22 LEs        ; 20 LEs               ; 2 LEs                  ; No         ; |TOP_VGA|hit_detection:inst33|Mux59                                                                                                                                                                                                                                                                                                                               ;
-; 17:1               ; 2 bits    ; 22 LEs        ; 18 LEs               ; 4 LEs                  ; No         ; |TOP_VGA|hit_detection:inst33|Mux55                                                                                                                                                                                                                                                                                                                               ;
-; 32:1               ; 2 bits    ; 42 LEs        ; 20 LEs               ; 22 LEs                 ; No         ; |TOP_VGA|hit_detection:inst33|Mux0                                                                                                                                                                                                                                                                                                                                ;
-; 32:1               ; 2 bits    ; 42 LEs        ; 20 LEs               ; 22 LEs                 ; No         ; |TOP_VGA|hit_detection:inst33|Mux31                                                                                                                                                                                                                                                                                                                               ;
-; 17:1               ; 2 bits    ; 22 LEs        ; 16 LEs               ; 6 LEs                  ; No         ; |TOP_VGA|hit_detection:inst33|Mux5                                                                                                                                                                                                                                                                                                                                ;
-; 17:1               ; 2 bits    ; 22 LEs        ; 20 LEs               ; 2 LEs                  ; No         ; |TOP_VGA|hit_detection:inst33|Mux12                                                                                                                                                                                                                                                                                                                               ;
-; 17:1               ; 2 bits    ; 22 LEs        ; 18 LEs               ; 4 LEs                  ; No         ; |TOP_VGA|hit_detection:inst33|Mux8                                                                                                                                                                                                                                                                                                                                ;
-; 17:1               ; 2 bits    ; 22 LEs        ; 16 LEs               ; 6 LEs                  ; No         ; |TOP_VGA|hit_detection:inst33|Mux21                                                                                                                                                                                                                                                                                                                               ;
-; 17:1               ; 2 bits    ; 22 LEs        ; 20 LEs               ; 2 LEs                  ; No         ; |TOP_VGA|hit_detection:inst33|Mux28                                                                                                                                                                                                                                                                                                                               ;
-; 17:1               ; 2 bits    ; 22 LEs        ; 18 LEs               ; 4 LEs                  ; No         ; |TOP_VGA|hit_detection:inst33|Mux25                                                                                                                                                                                                                                                                                                                               ;
-; 9:1                ; 3 bits    ; 18 LEs        ; 9 LEs                ; 9 LEs                  ; No         ; |TOP_VGA|TOP_KBD_DEMOALL:inst8|KBDINTF:inst4|bitrec:inst4|Selector7                                                                                                                                                                                                                                                                                               ;
-; 8:1                ; 3 bits    ; 15 LEs        ; 12 LEs               ; 3 LEs                  ; No         ; |TOP_VGA|TOP_KBD_DEMOALL:inst8|KBDINTF:inst4|byterec:inst3|Selector1                                                                                                                                                                                                                                                                                              ;
-; 10:1               ; 2 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; No         ; |TOP_VGA|TOP_KBD_DEMOALL:inst8|KBDINTF:inst4|bitrec:inst4|Selector8                                                                                                                                                                                                                                                                                               ;
-; 450:1              ; 3 bits    ; 900 LEs       ; 588 LEs              ; 312 LEs                ; No         ; |TOP_VGA|bricks_matrix:inst22|Mux42                                                                                                                                                                                                                                                                                                                               ;
-; 914:1              ; 3 bits    ; 1827 LEs      ; 618 LEs              ; 1209 LEs               ; No         ; |TOP_VGA|bricks_matrix:inst22|Mux801                                                                                                                                                                                                                                                                                                                              ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 0 LEs                ; 16 LEs                 ; Yes        ; |TOP_VGA|sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric|alt_sld_fab_alt_sld_fab:alt_sld_fab|alt_sld_fab_alt_sld_fab_sldfabric:sldfabric|sld_jtag_hub:\jtag_hub_gen:real_sld_jtag_hub|shadow_irf_reg[1][2]                    ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 0 LEs                ; 16 LEs                 ; Yes        ; |TOP_VGA|sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric|alt_sld_fab_alt_sld_fab:alt_sld_fab|alt_sld_fab_alt_sld_fab_sldfabric:sldfabric|sld_jtag_hub:\jtag_hub_gen:real_sld_jtag_hub|shadow_irf_reg[2][2]                    ;
-; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |TOP_VGA|sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric|alt_sld_fab_alt_sld_fab:alt_sld_fab|alt_sld_fab_alt_sld_fab_sldfabric:sldfabric|sld_jtag_hub:\jtag_hub_gen:real_sld_jtag_hub|hub_minor_ver_reg[2]                    ;
-; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |TOP_VGA|sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric|alt_sld_fab_alt_sld_fab:alt_sld_fab|alt_sld_fab_alt_sld_fab_sldfabric:sldfabric|sld_jtag_hub:\jtag_hub_gen:real_sld_jtag_hub|hub_minor_ver_reg[3]                    ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 0 LEs                ; 16 LEs                 ; Yes        ; |TOP_VGA|sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric|alt_sld_fab_alt_sld_fab:alt_sld_fab|alt_sld_fab_alt_sld_fab_sldfabric:sldfabric|sld_jtag_hub:\jtag_hub_gen:real_sld_jtag_hub|irf_reg[1][6]                           ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 0 LEs                ; 16 LEs                 ; Yes        ; |TOP_VGA|sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric|alt_sld_fab_alt_sld_fab:alt_sld_fab|alt_sld_fab_alt_sld_fab_sldfabric:sldfabric|sld_jtag_hub:\jtag_hub_gen:real_sld_jtag_hub|irf_reg[2][6]                           ;
-; 4:1                ; 5 bits    ; 10 LEs        ; 10 LEs               ; 0 LEs                  ; Yes        ; |TOP_VGA|sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric|alt_sld_fab_alt_sld_fab:alt_sld_fab|alt_sld_fab_alt_sld_fab_sldfabric:sldfabric|sld_jtag_hub:\jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal[4]              ;
-; 4:1                ; 5 bits    ; 10 LEs        ; 10 LEs               ; 0 LEs                  ; Yes        ; |TOP_VGA|sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric|alt_sld_fab_alt_sld_fab:alt_sld_fab|alt_sld_fab_alt_sld_fab_sldfabric:sldfabric|sld_jtag_hub:\jtag_hub_gen:real_sld_jtag_hub|sld_rom_sr:hub_info_reg|word_counter[0] ;
-; 6:1                ; 8 bits    ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |TOP_VGA|sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric|alt_sld_fab_alt_sld_fab:alt_sld_fab|alt_sld_fab_alt_sld_fab_sldfabric:sldfabric|sld_jtag_hub:\jtag_hub_gen:real_sld_jtag_hub|irsr_reg[7]                             ;
-; 34:1               ; 4 bits    ; 88 LEs        ; 64 LEs               ; 24 LEs                 ; Yes        ; |TOP_VGA|sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric|alt_sld_fab_alt_sld_fab:alt_sld_fab|alt_sld_fab_alt_sld_fab_sldfabric:sldfabric|sld_jtag_hub:\jtag_hub_gen:real_sld_jtag_hub|design_hash_reg[0]                      ;
-; 28:1               ; 4 bits    ; 72 LEs        ; 56 LEs               ; 16 LEs                 ; Yes        ; |TOP_VGA|sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric|alt_sld_fab_alt_sld_fab:alt_sld_fab|alt_sld_fab_alt_sld_fab_sldfabric:sldfabric|sld_jtag_hub:\jtag_hub_gen:real_sld_jtag_hub|sld_rom_sr:hub_info_reg|WORD_SR[0]      ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                                                                                                                              ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                                                                                                                    ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; 3:1                ; 10 bits   ; 20 LEs        ; 0 LEs                ; 20 LEs                 ; Yes        ; |TOP_VGA|TOP_KBD_DEMOALL:inst8|keyToggle_decoder:inst11|keyIsPressed                                                                                                          ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; Yes        ; |TOP_VGA|election_house:inst68|RGBout[1]                                                                                                                                      ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |TOP_VGA|election_house_counter:inst69|sof_counter2[20]                                                                                                                       ;
+; 3:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |TOP_VGA|missle_move:inst21|Xspeed[2]                                                                                                                                         ;
+; 3:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |TOP_VGA|missle_move:inst7|Yspeed[2]                                                                                                                                          ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |TOP_VGA|randomCheck:inst62|counter[22]                                                                                                                                       ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |TOP_VGA|randomCheck:inst54|counter[2]                                                                                                                                        ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |TOP_VGA|randomCheck:inst49|counter[31]                                                                                                                                       ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |TOP_VGA|randomCheck:inst28|counter[2]                                                                                                                                        ;
+; 4:1                ; 36 bits   ; 72 LEs        ; 0 LEs                ; 72 LEs                 ; Yes        ; |TOP_VGA|missle_move:inst21|topLeftX_tmp[3]                                                                                                                                   ;
+; 4:1                ; 36 bits   ; 72 LEs        ; 0 LEs                ; 72 LEs                 ; Yes        ; |TOP_VGA|missle_move:inst7|topLeftY_tmp[25]                                                                                                                                   ;
+; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |TOP_VGA|Const_0:inst45|lpm_constant:LPM_CONSTANT_component|lpm_constant_v58:ag|sld_mod_ram_rom:mgl_prim1|sld_rom_sr:\constant_logic_gen:name_gen:info_rom_sr|word_counter[2] ;
+; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |TOP_VGA|Const_0:inst4|lpm_constant:LPM_CONSTANT_component|lpm_constant_v58:ag|sld_mod_ram_rom:mgl_prim1|sld_rom_sr:\constant_logic_gen:name_gen:info_rom_sr|word_counter[0]  ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |TOP_VGA|election_house_counter:inst69|sof_counter1[9]                                                                                                                        ;
+; 5:1                ; 10 bits   ; 30 LEs        ; 20 LEs               ; 10 LEs                 ; Yes        ; |TOP_VGA|tank_square_object:inst27|offsetX[4]                                                                                                                                 ;
+; 5:1                ; 10 bits   ; 30 LEs        ; 20 LEs               ; 10 LEs                 ; Yes        ; |TOP_VGA|tank_square_object:inst20|offsetX[0]                                                                                                                                 ;
+; 7:1                ; 2 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |TOP_VGA|objects_mux:inst13|tmpRGB[1]                                                                                                                                         ;
+; 7:1                ; 2 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |TOP_VGA|objects_mux:inst13|tmpRGB[5]                                                                                                                                         ;
+; 16:1               ; 4 bits    ; 40 LEs        ; 28 LEs               ; 12 LEs                 ; Yes        ; |TOP_VGA|Const_0:inst45|lpm_constant:LPM_CONSTANT_component|lpm_constant_v58:ag|sld_mod_ram_rom:mgl_prim1|sld_rom_sr:\constant_logic_gen:name_gen:info_rom_sr|WORD_SR[2]      ;
+; 16:1               ; 4 bits    ; 40 LEs        ; 28 LEs               ; 12 LEs                 ; Yes        ; |TOP_VGA|Const_0:inst4|lpm_constant:LPM_CONSTANT_component|lpm_constant_v58:ag|sld_mod_ram_rom:mgl_prim1|sld_rom_sr:\constant_logic_gen:name_gen:info_rom_sr|WORD_SR[1]       ;
+; 15:1               ; 2 bits    ; 20 LEs        ; 18 LEs               ; 2 LEs                  ; Yes        ; |TOP_VGA|tankBitMap:inst29|RGBout[7]                                                                                                                                          ;
+; 10:1               ; 3 bits    ; 18 LEs        ; 18 LEs               ; 0 LEs                  ; Yes        ; |TOP_VGA|TOP_KBD_DEMOALL:inst8|keyPad_decoder:inst2|key[0]                                                                                                                    ;
+; 4:1                ; 24 bits   ; 48 LEs        ; 24 LEs               ; 24 LEs                 ; Yes        ; |TOP_VGA|missle_move:inst21|topLeftX_tmp[16]                                                                                                                                  ;
+; 4:1                ; 24 bits   ; 48 LEs        ; 24 LEs               ; 24 LEs                 ; Yes        ; |TOP_VGA|missle_move:inst7|topLeftY_tmp[11]                                                                                                                                   ;
+; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |TOP_VGA|brickBitMap:inst24|Mux62                                                                                                                                             ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |TOP_VGA|tankBitMap:inst25|Mux108                                                                                                                                             ;
+; 32:1               ; 2 bits    ; 42 LEs        ; 20 LEs               ; 22 LEs                 ; No         ; |TOP_VGA|hit_detection:inst33|Mux32                                                                                                                                           ;
+; 32:1               ; 2 bits    ; 42 LEs        ; 20 LEs               ; 22 LEs                 ; No         ; |TOP_VGA|hit_detection:inst33|Mux63                                                                                                                                           ;
+; 17:1               ; 2 bits    ; 22 LEs        ; 16 LEs               ; 6 LEs                  ; No         ; |TOP_VGA|hit_detection:inst33|Mux37                                                                                                                                           ;
+; 17:1               ; 2 bits    ; 22 LEs        ; 20 LEs               ; 2 LEs                  ; No         ; |TOP_VGA|hit_detection:inst33|Mux44                                                                                                                                           ;
+; 17:1               ; 2 bits    ; 22 LEs        ; 18 LEs               ; 4 LEs                  ; No         ; |TOP_VGA|hit_detection:inst33|Mux40                                                                                                                                           ;
+; 17:1               ; 2 bits    ; 22 LEs        ; 16 LEs               ; 6 LEs                  ; No         ; |TOP_VGA|hit_detection:inst33|Mux52                                                                                                                                           ;
+; 17:1               ; 2 bits    ; 22 LEs        ; 20 LEs               ; 2 LEs                  ; No         ; |TOP_VGA|hit_detection:inst33|Mux60                                                                                                                                           ;
+; 17:1               ; 2 bits    ; 22 LEs        ; 18 LEs               ; 4 LEs                  ; No         ; |TOP_VGA|hit_detection:inst33|Mux55                                                                                                                                           ;
+; 32:1               ; 2 bits    ; 42 LEs        ; 20 LEs               ; 22 LEs                 ; No         ; |TOP_VGA|hit_detection:inst33|Mux0                                                                                                                                            ;
+; 32:1               ; 2 bits    ; 42 LEs        ; 20 LEs               ; 22 LEs                 ; No         ; |TOP_VGA|hit_detection:inst33|Mux16                                                                                                                                           ;
+; 17:1               ; 2 bits    ; 22 LEs        ; 16 LEs               ; 6 LEs                  ; No         ; |TOP_VGA|hit_detection:inst33|Mux5                                                                                                                                            ;
+; 17:1               ; 2 bits    ; 22 LEs        ; 20 LEs               ; 2 LEs                  ; No         ; |TOP_VGA|hit_detection:inst33|Mux12                                                                                                                                           ;
+; 17:1               ; 2 bits    ; 22 LEs        ; 18 LEs               ; 4 LEs                  ; No         ; |TOP_VGA|hit_detection:inst33|Mux8                                                                                                                                            ;
+; 17:1               ; 2 bits    ; 22 LEs        ; 16 LEs               ; 6 LEs                  ; No         ; |TOP_VGA|hit_detection:inst33|Mux20                                                                                                                                           ;
+; 17:1               ; 2 bits    ; 22 LEs        ; 20 LEs               ; 2 LEs                  ; No         ; |TOP_VGA|hit_detection:inst33|Mux27                                                                                                                                           ;
+; 17:1               ; 2 bits    ; 22 LEs        ; 18 LEs               ; 4 LEs                  ; No         ; |TOP_VGA|hit_detection:inst33|Mux23                                                                                                                                           ;
+; 9:1                ; 3 bits    ; 18 LEs        ; 9 LEs                ; 9 LEs                  ; No         ; |TOP_VGA|TOP_KBD_DEMOALL:inst8|KBDINTF:inst4|bitrec:inst4|Selector5                                                                                                           ;
+; 8:1                ; 3 bits    ; 15 LEs        ; 12 LEs               ; 3 LEs                  ; No         ; |TOP_VGA|TOP_KBD_DEMOALL:inst8|KBDINTF:inst4|byterec:inst3|Selector1                                                                                                          ;
+; 10:1               ; 2 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; No         ; |TOP_VGA|TOP_KBD_DEMOALL:inst8|KBDINTF:inst4|bitrec:inst4|Selector4                                                                                                           ;
+; 450:1              ; 3 bits    ; 900 LEs       ; 588 LEs              ; 312 LEs                ; No         ; |TOP_VGA|bricks_matrix:inst22|Mux43                                                                                                                                           ;
+; 914:1              ; 3 bits    ; 1827 LEs      ; 618 LEs              ; 1209 LEs               ; No         ; |TOP_VGA|bricks_matrix:inst22|Mux801                                                                                                                                          ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
 +---------------------------------------------------------------------------------------------------------------------------------------------+
@@ -2547,33 +2529,33 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-------------------------------------+---------------+
 ; Type                                ; Count         ;
 +-------------------------------------+---------------+
-; arriav_ff                           ; 1918          ;
-;     CLR                             ; 727           ;
+; arriav_ff                           ; 1862          ;
+;     CLR                             ; 737           ;
 ;     CLR SCLR                        ; 87            ;
 ;     CLR SLD                         ; 1             ;
-;     ENA                             ; 38            ;
-;     ENA CLR                         ; 299           ;
+;     ENA                             ; 24            ;
+;     ENA CLR                         ; 311           ;
 ;     ENA CLR SCLR                    ; 634           ;
-;     ENA SCLR                        ; 126           ;
+;     ENA SCLR                        ; 62            ;
 ;     plain                           ; 6             ;
-; arriav_lcell_comb                   ; 5208          ;
-;     arith                           ; 1411          ;
-;         0 data inputs               ; 22            ;
-;         1 data inputs               ; 1074          ;
+; arriav_lcell_comb                   ; 5118          ;
+;     arith                           ; 1346          ;
+;         0 data inputs               ; 21            ;
+;         1 data inputs               ; 1010          ;
 ;         2 data inputs               ; 141           ;
 ;         3 data inputs               ; 7             ;
 ;         4 data inputs               ; 33            ;
 ;         5 data inputs               ; 134           ;
-;     extend                          ; 115           ;
-;         7 data inputs               ; 115           ;
-;     normal                          ; 3594          ;
+;     extend                          ; 119           ;
+;         7 data inputs               ; 119           ;
+;     normal                          ; 3565          ;
 ;         0 data inputs               ; 2             ;
-;         1 data inputs               ; 49            ;
-;         2 data inputs               ; 367           ;
-;         3 data inputs               ; 328           ;
-;         4 data inputs               ; 410           ;
-;         5 data inputs               ; 828           ;
-;         6 data inputs               ; 1610          ;
+;         1 data inputs               ; 48            ;
+;         2 data inputs               ; 404           ;
+;         3 data inputs               ; 427           ;
+;         4 data inputs               ; 383           ;
+;         5 data inputs               ; 1191          ;
+;         6 data inputs               ; 1110          ;
 ;     shared                          ; 88            ;
 ;         0 data inputs               ; 4             ;
 ;         1 data inputs               ; 44            ;
@@ -2582,49 +2564,18 @@ Note: In order to hide this table in the UI and the text report file, please set
 ;         udio_codec_controller:inst2 ; 1             ;
 ; boundary_port                       ; 103           ;
 ;                                     ;               ;
-; Max LUT depth                       ; 12.70         ;
-; Average LUT depth                   ; 6.34          ;
+; Max LUT depth                       ; 12.00         ;
+; Average LUT depth                   ; 6.17          ;
 +-------------------------------------+---------------+
 
 
-+------------------------------------------------------------------+
-; Post-Synthesis Netlist Statistics for Partition sld_hub:auto_hub ;
-+-----------------------+------------------------------------------+
-; Type                  ; Count                                    ;
-+-----------------------+------------------------------------------+
-; arriav_ff             ; 114                                      ;
-;     CLR               ; 5                                        ;
-;     ENA               ; 30                                       ;
-;     ENA CLR           ; 17                                       ;
-;     ENA CLR SLD       ; 39                                       ;
-;     SCLR              ; 7                                        ;
-;     plain             ; 16                                       ;
-; arriav_lcell_comb     ; 109                                      ;
-;     extend            ; 2                                        ;
-;         7 data inputs ; 2                                        ;
-;     normal            ; 107                                      ;
-;         0 data inputs ; 1                                        ;
-;         1 data inputs ; 4                                        ;
-;         2 data inputs ; 23                                       ;
-;         3 data inputs ; 15                                       ;
-;         4 data inputs ; 10                                       ;
-;         5 data inputs ; 31                                       ;
-;         6 data inputs ; 23                                       ;
-; boundary_port         ; 165                                      ;
-;                       ;                                          ;
-; Max LUT depth         ; 3.00                                     ;
-; Average LUT depth     ; 1.33                                     ;
-+-----------------------+------------------------------------------+
-
-
-+---------------------------------+
-; Elapsed Time Per Partition      ;
-+------------------+--------------+
-; Partition Name   ; Elapsed Time ;
-+------------------+--------------+
-; Top              ; 00:00:26     ;
-; sld_hub:auto_hub ; 00:00:00     ;
-+------------------+--------------+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:23     ;
++----------------+--------------+
 
 
 +-------------------------------+
@@ -2633,7 +2584,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
-    Info: Processing started: Wed Dec 25 17:50:01 2019
+    Info: Processing started: Thu Dec 26 12:10:46 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off BattleCity -c BattleCity
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
@@ -2754,12 +2705,12 @@ Warning (10230): Verilog HDL assignment warning at tank_square_object.sv(68): tr
 Warning (10230): Verilog HDL assignment warning at tank_square_object.sv(71): truncated value with size 32 to match size of target (11) File: C:/Users/aviv_/Documents/SVProject/BattleCity_restored/RTL/VGA/tank_square_object.sv Line: 71
 Warning (10230): Verilog HDL assignment warning at tank_square_object.sv(72): truncated value with size 32 to match size of target (11) File: C:/Users/aviv_/Documents/SVProject/BattleCity_restored/RTL/VGA/tank_square_object.sv Line: 72
 Info (12128): Elaborating entity "tank_move" for hierarchy "tank_move:inst15"
-Info (10264): Verilog HDL Case Statement information at tank_move.sv(114): all case item expressions in this case statement are onehot File: C:/Users/aviv_/Documents/SVProject/BattleCity_restored/RTL/VGA/tank_move.sv Line: 114
-Warning (10230): Verilog HDL assignment warning at tank_move.sv(128): truncated value with size 32 to match size of target (11) File: C:/Users/aviv_/Documents/SVProject/BattleCity_restored/RTL/VGA/tank_move.sv Line: 128
-Warning (10230): Verilog HDL assignment warning at tank_move.sv(129): truncated value with size 32 to match size of target (11) File: C:/Users/aviv_/Documents/SVProject/BattleCity_restored/RTL/VGA/tank_move.sv Line: 129
+Info (10264): Verilog HDL Case Statement information at tank_move.sv(118): all case item expressions in this case statement are onehot File: C:/Users/aviv_/Documents/SVProject/BattleCity_restored/RTL/VGA/tank_move.sv Line: 118
+Warning (10230): Verilog HDL assignment warning at tank_move.sv(132): truncated value with size 32 to match size of target (11) File: C:/Users/aviv_/Documents/SVProject/BattleCity_restored/RTL/VGA/tank_move.sv Line: 132
+Warning (10230): Verilog HDL assignment warning at tank_move.sv(133): truncated value with size 32 to match size of target (11) File: C:/Users/aviv_/Documents/SVProject/BattleCity_restored/RTL/VGA/tank_move.sv Line: 133
 Info (12128): Elaborating entity "hit_detection" for hierarchy "hit_detection:inst33"
-Warning (10230): Verilog HDL assignment warning at hit_detection.sv(88): truncated value with size 32 to match size of target (5) File: C:/Users/aviv_/Documents/SVProject/BattleCity_restored/RTL/VGA/hit_detection.sv Line: 88
-Warning (10230): Verilog HDL assignment warning at hit_detection.sv(89): truncated value with size 32 to match size of target (4) File: C:/Users/aviv_/Documents/SVProject/BattleCity_restored/RTL/VGA/hit_detection.sv Line: 89
+Warning (10230): Verilog HDL assignment warning at hit_detection.sv(124): truncated value with size 32 to match size of target (5) File: C:/Users/aviv_/Documents/SVProject/BattleCity_restored/RTL/VGA/hit_detection.sv Line: 124
+Warning (10230): Verilog HDL assignment warning at hit_detection.sv(125): truncated value with size 32 to match size of target (4) File: C:/Users/aviv_/Documents/SVProject/BattleCity_restored/RTL/VGA/hit_detection.sv Line: 125
 Info (12128): Elaborating entity "square_object" for hierarchy "square_object:inst11"
 Info (12128): Elaborating entity "missle_move" for hierarchy "missle_move:inst7"
 Warning (10230): Verilog HDL assignment warning at missle_move.sv(120): truncated value with size 32 to match size of target (11) File: C:/Users/aviv_/Documents/SVProject/BattleCity_restored/RTL/VGA/missle_move.sv Line: 120
@@ -2782,9 +2733,9 @@ Info (12128): Elaborating entity "keyToggle_decoder" for hierarchy "TOP_KBD_DEMO
 Info (12128): Elaborating entity "keyToggle_decoder" for hierarchy "TOP_KBD_DEMOALL:inst8|keyToggle_decoder:inst10"
 Info (12128): Elaborating entity "keyToggle_decoder" for hierarchy "TOP_KBD_DEMOALL:inst8|keyToggle_decoder:inst12"
 Info (12128): Elaborating entity "tank_move" for hierarchy "tank_move:inst23"
-Info (10264): Verilog HDL Case Statement information at tank_move.sv(114): all case item expressions in this case statement are onehot File: C:/Users/aviv_/Documents/SVProject/BattleCity_restored/RTL/VGA/tank_move.sv Line: 114
-Warning (10230): Verilog HDL assignment warning at tank_move.sv(128): truncated value with size 32 to match size of target (11) File: C:/Users/aviv_/Documents/SVProject/BattleCity_restored/RTL/VGA/tank_move.sv Line: 128
-Warning (10230): Verilog HDL assignment warning at tank_move.sv(129): truncated value with size 32 to match size of target (11) File: C:/Users/aviv_/Documents/SVProject/BattleCity_restored/RTL/VGA/tank_move.sv Line: 129
+Info (10264): Verilog HDL Case Statement information at tank_move.sv(118): all case item expressions in this case statement are onehot File: C:/Users/aviv_/Documents/SVProject/BattleCity_restored/RTL/VGA/tank_move.sv Line: 118
+Warning (10230): Verilog HDL assignment warning at tank_move.sv(132): truncated value with size 32 to match size of target (11) File: C:/Users/aviv_/Documents/SVProject/BattleCity_restored/RTL/VGA/tank_move.sv Line: 132
+Warning (10230): Verilog HDL assignment warning at tank_move.sv(133): truncated value with size 32 to match size of target (11) File: C:/Users/aviv_/Documents/SVProject/BattleCity_restored/RTL/VGA/tank_move.sv Line: 133
 Info (12128): Elaborating entity "CONST_1" for hierarchy "CONST_1:inst34"
 Info (12128): Elaborating entity "lpm_constant" for hierarchy "CONST_1:inst34|lpm_constant:LPM_CONSTANT_component" File: C:/Users/aviv_/Documents/SVProject/BattleCity_restored/CONST_1.v Line: 49
 Info (12130): Elaborated megafunction instantiation "CONST_1:inst34|lpm_constant:LPM_CONSTANT_component" File: C:/Users/aviv_/Documents/SVProject/BattleCity_restored/CONST_1.v Line: 49
@@ -2897,7 +2848,7 @@ Info (12128): Elaborating entity "election_house" for hierarchy "election_house:
 Warning (10230): Verilog HDL assignment warning at election_house.sv(54): truncated value with size 32 to match size of target (11) File: C:/Users/aviv_/Documents/SVProject/BattleCity_restored/RTL/VGA/election_house.sv Line: 54
 Warning (10230): Verilog HDL assignment warning at election_house.sv(55): truncated value with size 32 to match size of target (11) File: C:/Users/aviv_/Documents/SVProject/BattleCity_restored/RTL/VGA/election_house.sv Line: 55
 Info (12128): Elaborating entity "election_house_counter" for hierarchy "election_house_counter:inst69"
-Warning (10036): Verilog HDL or VHDL warning at election_house_counter.sv(27): object "coolDownInSOF" assigned a value but never read File: C:/Users/aviv_/Documents/SVProject/BattleCity_restored/RTL/VGA/election_house_counter.sv Line: 27
+Warning (10036): Verilog HDL or VHDL warning at election_house_counter.sv(25): object "flag" assigned a value but never read File: C:/Users/aviv_/Documents/SVProject/BattleCity_restored/RTL/VGA/election_house_counter.sv Line: 25
 Info (12128): Elaborating entity "back_ground_draw" for hierarchy "back_ground_draw:inst12"
 Warning (10036): Verilog HDL or VHDL warning at back_ground_draw.sv(18): object "xFrameSize" assigned a value but never read File: C:/Users/aviv_/Documents/SVProject/BattleCity_restored/RTL/VGA/back_ground_draw.sv Line: 18
 Warning (10036): Verilog HDL or VHDL warning at back_ground_draw.sv(19): object "yFrameSize" assigned a value but never read File: C:/Users/aviv_/Documents/SVProject/BattleCity_restored/RTL/VGA/back_ground_draw.sv Line: 19
@@ -2917,7 +2868,7 @@ Info (12128): Elaborating entity "SEG7" for hierarchy "SEG7:inst10"
 Info (12128): Elaborating entity "missleBitMap" for hierarchy "missleBitMap:inst26"
 Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "object_colors" into its bus
 Info (11170): Starting IP generation for the debug fabric: alt_sld_fab.
-Info (11172): 2019.12.25.17:50:21 Progress: Loading slde1307ba8/alt_sld_fab_wrapper_hw.tcl
+Info (11172): 2019.12.26.12:11:13 Progress: Loading slde1307ba8/alt_sld_fab_wrapper_hw.tcl
 Info (11172): Alt_sld_fab.alt_sld_fab: SLD fabric agents which did not specify prefer_host were connected to JTAG
 Info (11172): Alt_sld_fab: Generating alt_sld_fab "alt_sld_fab" for QUARTUS_SYNTH
 Info (11172): Alt_sld_fab: "alt_sld_fab" instantiated alt_sld_fab "alt_sld_fab"
@@ -3008,7 +2959,6 @@ Critical Warning (18061): Ignored Power-Up Level option on the following registe
     Critical Warning (18010): Register randomCheck:inst62|randX[2] will power up to High File: C:/Users/aviv_/Documents/SVProject/BattleCity_restored/RTL/VGA/randomCheck.sv Line: 43
     Critical Warning (18010): Register randomCheck:inst62|randY[2] will power up to High File: C:/Users/aviv_/Documents/SVProject/BattleCity_restored/RTL/VGA/randomCheck.sv Line: 43
 Info (17049): 6 registers lost all their fanouts during netlist optimizations.
-Info (286031): Timing-Driven Synthesis is running on partition "sld_hub:auto_hub"
 Info (144001): Generated suppressed messages file C:/Users/aviv_/Documents/SVProject/BattleCity_restored/output_files/BattleCity.map.smsg
 Info (35026): Attempting to remove 142 I/O cell(s) that do not connect to top-level pins or have illegal connectivity
     Info (35027): Removed I/O cell "TOP_MSS_DEMO:inst9|audio_codec_controller:inst2|dacdata_left_ack~output"
@@ -3374,17 +3324,17 @@ Info (35003): Optimize away 265 nodes that do not fanout to OUTPUT or BIDIR pins
     Info (35004): Node: "TOP_MSS_DEMO:inst9|audio_codec_controller:inst2|adc2parallel:adc2parallel_right_inst|synch_fifo:adc_synch_fifo_inst|dcfifo:dcfifo_component|dcfifo_8il1:auto_generated|altdpram:fiforam|lpm_decode:wdecoder|decode_mpf:auto_generated|w_anode317w[3]" File: C:/Users/aviv_/Documents/SVProject/BattleCity_restored/RTL/audio_codec_controller/audio_codec_controller.qxp Line: -1
 Warning (21074): Design contains 1 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "AUD_ADCDAT"
-Info (21057): Implemented 6491 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 6402 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 8 input pins
     Info (21059): Implemented 41 output pins
     Info (21060): Implemented 4 bidirectional pins
-    Info (21061): Implemented 6435 logic cells
+    Info (21061): Implemented 6346 logic cells
     Info (21064): Implemented 2 RAM segments
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 140 warnings
-    Info: Peak virtual memory: 4936 megabytes
-    Info: Processing ended: Wed Dec 25 17:50:59 2019
-    Info: Elapsed time: 00:00:58
-    Info: Total CPU time (on all processors): 00:01:25
+    Info: Peak virtual memory: 4960 megabytes
+    Info: Processing ended: Thu Dec 26 12:11:52 2019
+    Info: Elapsed time: 00:01:06
+    Info: Total CPU time (on all processors): 00:01:36
 
 
 +------------------------------------------+
