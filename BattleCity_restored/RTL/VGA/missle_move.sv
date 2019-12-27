@@ -11,7 +11,8 @@ module	missle_move	(
 					input logic [1:0] tankDir,
 					output	logic	[10:0]	topLeftX,// output the top left corner 
 					output	logic	[10:0]	topLeftY,
-					output logic drawEn
+					output logic drawEn,
+					output logic [1:0] dir
 );
 
 
@@ -22,8 +23,8 @@ parameter int MOVEMENT_Y_SPEED = 300;
 
 const int	MULTIPLIER	=	64;
 
-const int halfTankWidth = 7 * MULTIPLIER; // middle index of tank
-const int halfTankHeight = 7 * MULTIPLIER;
+const int halfTankWidth = 0; // middle index of tank
+const int halfTankHeight = 0;
 
 int Xspeed, topLeftX_tmp; // local parameters 
 int Yspeed, topLeftY_tmp;
@@ -86,6 +87,7 @@ always_ff@(posedge clk or negedge resetN)
 begin
 	if(!resetN)
 	begin
+		dir <= 2'b00;
 		drawEn <= 1'b0;
 		flag <= 0;
 		topLeftX_tmp	<= tankTopLeftX * MULTIPLIER + halfTankWidth;
@@ -94,6 +96,7 @@ begin
 	else begin
 		// firing handling 
 		if(inputKeyPressed == 1'b1 && flag == 0) begin 
+			dir <= tankDir;
 			drawEn <= 1'b1;
 			flag <= 1;
 			topLeftX_tmp <= tankTopLeftX * MULTIPLIER + halfTankWidth;

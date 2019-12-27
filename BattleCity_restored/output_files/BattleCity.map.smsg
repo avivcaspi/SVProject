@@ -1,3 +1,4 @@
+Warning (10268): Verilog HDL information at numbers_square_object.sv(44): always construct contains both blocking and non-blocking assignments File: C:/Users/aviv_/Documents/SVProject/BattleCity_restored/RTL/VGA/numbers_square_object.sv Line: 44
 Warning (10268): Verilog HDL information at random.sv(23): always construct contains both blocking and non-blocking assignments File: C:/Users/aviv_/Documents/SVProject/BattleCity_restored/RTL/KEYBOARD/random.sv Line: 23
 Warning (10268): Verilog HDL information at lpf.sv(42): always construct contains both blocking and non-blocking assignments File: C:/Users/aviv_/Documents/SVProject/BattleCity_restored/RTL/KEYBOARD/lpf.sv Line: 42
 Warning (10268): Verilog HDL information at byterec.sv(68): always construct contains both blocking and non-blocking assignments File: C:/Users/aviv_/Documents/SVProject/BattleCity_restored/RTL/KEYBOARD/byterec.sv Line: 68
@@ -8,3 +9,4 @@ Warning (10268): Verilog HDL information at bricks_matrix.sv(119): always constr
 Warning (10268): Verilog HDL information at randomCheck.sv(31): always construct contains both blocking and non-blocking assignments File: C:/Users/aviv_/Documents/SVProject/BattleCity_restored/RTL/VGA/randomCheck.sv Line: 31
 Warning (10268): Verilog HDL information at timer.sv(15): always construct contains both blocking and non-blocking assignments File: C:/Users/aviv_/Documents/SVProject/BattleCity_restored/RTL/VGA/timer.sv Line: 15
 Warning (10268): Verilog HDL information at election_house.sv(40): always construct contains both blocking and non-blocking assignments File: C:/Users/aviv_/Documents/SVProject/BattleCity_restored/RTL/VGA/election_house.sv Line: 40
+Warning (10268): Verilog HDL information at missle_square_object.sv(39): always construct contains both blocking and non-blocking assignments File: C:/Users/aviv_/Documents/SVProject/BattleCity_restored/RTL/VGA/missle_square_object.sv Line: 39

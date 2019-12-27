@@ -24,8 +24,8 @@ int randX = 0;
 int randY = 0;
 int counter = 0;
 
-assign randomX = randX * 32 + matrixTopLeftX + 1;
-assign randomY = randY * 32 + matrixTopLeftY + 1;
+assign randomX = randX * 32 + matrixTopLeftX + 3;
+assign randomY = randY * 32 + matrixTopLeftY + 3;
 
 
 always_ff@(posedge clk or negedge resetN)

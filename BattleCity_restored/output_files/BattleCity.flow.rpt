@@ -1,5 +1,5 @@
 Flow report for BattleCity
-Thu Dec 26 12:14:40 2019
+Fri Dec 27 13:25:54 2019
 Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
 
 
@@ -41,15 +41,15 @@ agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Flow Summary                                                                  ;
 +---------------------------------+---------------------------------------------+
-; Flow Status                     ; Successful - Thu Dec 26 12:14:23 2019       ;
+; Flow Status                     ; Successful - Fri Dec 27 13:25:35 2019       ;
 ; Quartus Prime Version           ; 17.0.0 Build 595 04/25/2017 SJ Lite Edition ;
 ; Revision Name                   ; BattleCity                                  ;
 ; Top-level Entity Name           ; TOP_VGA                                     ;
 ; Family                          ; Cyclone V                                   ;
 ; Device                          ; 5CSXFC6D6F31C6                              ;
 ; Timing Models                   ; Final                                       ;
-; Logic utilization (in ALMs)     ; 3,430 / 41,910 ( 8 % )                      ;
-; Total registers                 ; 2658                                        ;
+; Logic utilization (in ALMs)     ; 3,971 / 41,910 ( 9 % )                      ;
+; Total registers                 ; 2726                                        ;
 ; Total pins                      ; 49 / 499 ( 10 % )                           ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 128 / 5,662,720 ( < 1 % )                   ;
@@ -68,7 +68,7 @@ agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 12/26/2019 12:10:47 ;
+; Start date & time ; 12/27/2019 13:21:43 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; BattleCity          ;
 +-------------------+---------------------+
@@ -79,7 +79,7 @@ agreement for further details.
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id ;
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
-; COMPILER_SIGNATURE_ID               ; 205103492090090.157735504613636        ; --            ; --          ; --         ;
+; COMPILER_SIGNATURE_ID               ; 205103492090090.157744570211396        ; --            ; --          ; --         ;
 ; ENABLE_SIGNALTAP                    ; On                                     ; --            ; --          ; --         ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                                     ; --            ; --          ; --         ;
 ; MIN_CORE_JUNCTION_TEMP              ; 0                                      ; --            ; --          ; --         ;
@@ -117,11 +117,11 @@ agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:01:04     ; 1.0                     ; 4960 MB             ; 00:01:34                           ;
-; Fitter                    ; 00:02:17     ; 1.1                     ; 6340 MB             ; 00:04:48                           ;
-; Assembler                 ; 00:00:10     ; 1.0                     ; 4883 MB             ; 00:00:10                           ;
-; TimeQuest Timing Analyzer ; 00:00:16     ; 1.5                     ; 5230 MB             ; 00:00:24                           ;
-; Total                     ; 00:03:47     ; --                      ; --                  ; 00:06:56                           ;
+; Analysis & Synthesis      ; 00:00:59     ; 1.0                     ; 4968 MB             ; 00:01:27                           ;
+; Fitter                    ; 00:02:38     ; 1.1                     ; 6351 MB             ; 00:05:16                           ;
+; Assembler                 ; 00:00:10     ; 1.0                     ; 4888 MB             ; 00:00:10                           ;
+; TimeQuest Timing Analyzer ; 00:00:18     ; 1.5                     ; 5237 MB             ; 00:00:26                           ;
+; Total                     ; 00:04:05     ; --                      ; --                  ; 00:07:19                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

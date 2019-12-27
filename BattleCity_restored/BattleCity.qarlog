@@ -1,7 +1,7 @@
 Quartus Prime Archive log --	C:/Users/aviv_/Documents/SVProject/BattleCity_restored/BattleCity.qarlog
 
 Archive:	C:/Users/aviv_/Documents/SVProject/BattleCity_restored/BattleCity.qar
-Date:		Thu Dec 26 12:15:05 2019
+Date:		Fri Dec 27 13:32:46 2019
 Quartus Prime		17.0.0 Build 595 04/25/2017 SJ Lite Edition
 
 	=========== Files Selected: ===========
@@ -45,14 +45,18 @@ C:/Users/aviv_/Documents/SVProject/BattleCity_restored/RTL/VGA/back_ground_draw.
 C:/Users/aviv_/Documents/SVProject/BattleCity_restored/RTL/VGA/brickBitMap.sv
 C:/Users/aviv_/Documents/SVProject/BattleCity_restored/RTL/VGA/bricks_contorller.sv
 C:/Users/aviv_/Documents/SVProject/BattleCity_restored/RTL/VGA/bricks_matrix.sv
+C:/Users/aviv_/Documents/SVProject/BattleCity_restored/RTL/VGA/electionBitMap.sv
 C:/Users/aviv_/Documents/SVProject/BattleCity_restored/RTL/VGA/election_house.sv
 C:/Users/aviv_/Documents/SVProject/BattleCity_restored/RTL/VGA/election_house_counter.sv
 C:/Users/aviv_/Documents/SVProject/BattleCity_restored/RTL/VGA/game_controller.sv
 C:/Users/aviv_/Documents/SVProject/BattleCity_restored/RTL/VGA/hit_detection.sv
 C:/Users/aviv_/Documents/SVProject/BattleCity_restored/RTL/VGA/missleBitMap.sv
 C:/Users/aviv_/Documents/SVProject/BattleCity_restored/RTL/VGA/missle_move.sv
+C:/Users/aviv_/Documents/SVProject/BattleCity_restored/RTL/VGA/missle_square_object.sv
+C:/Users/aviv_/Documents/SVProject/BattleCity_restored/RTL/VGA/numbers_square_object.sv
 C:/Users/aviv_/Documents/SVProject/BattleCity_restored/RTL/VGA/objects_mux.sv
 C:/Users/aviv_/Documents/SVProject/BattleCity_restored/RTL/VGA/one_sec_counter.sv
+C:/Users/aviv_/Documents/SVProject/BattleCity_restored/RTL/VGA/personBitMap.sv
 C:/Users/aviv_/Documents/SVProject/BattleCity_restored/RTL/VGA/randomCheck.sv
 C:/Users/aviv_/Documents/SVProject/BattleCity_restored/RTL/VGA/smileyBitMap.sv
 C:/Users/aviv_/Documents/SVProject/BattleCity_restored/RTL/VGA/smileyBitMap4Bit.sv
@@ -86,7 +90,7 @@ C:/Users/aviv_/Documents/SVProject/BattleCity_restored/tankDirConst.bsf
 C:/Users/aviv_/Documents/SVProject/BattleCity_restored/tankDirConst.qip
 C:/Users/aviv_/Documents/SVProject/BattleCity_restored/tankDirConst.v
 C:/Users/aviv_/Documents/SVProject/BattleCity_restored/tankDirConst_bb.v
-	======= Total: 81 files to archive =======
+	======= Total: 85 files to archive =======
 
 	================ Status: ===============
 All files archived successfully.

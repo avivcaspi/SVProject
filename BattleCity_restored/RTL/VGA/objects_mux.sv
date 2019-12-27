@@ -36,6 +36,16 @@ module	objects_mux	(
 		// election house 
 					input 	logic electionDrawingRequest,
 					input		logic [7:0] electionRGB,
+					
+		// digits
+					input		logic digit1DrawingRequest,
+					input 	logic [7:0] digit1RGB,
+					input		logic digit2DrawingRequest,
+					input 	logic [7:0] digit2RGB,
+					input		logic digit3DrawingRequest,
+					input 	logic [7:0] digit3RGB,
+					input		logic digit4DrawingRequest,
+					input 	logic [7:0] digit4RGB,
 										
 		// background 
 					input		logic	[7:0] backGroundRGB, 
@@ -83,6 +93,15 @@ begin
 			tmpRGB <= buff3RGB;
 			else if (buff4DrawingRequest == 1'b1 )   
 			tmpRGB <= buff4RGB;
+		
+		else if (digit1DrawingRequest == 1'b1)
+			tmpRGB <= digit1RGB;
+		else if (digit2DrawingRequest == 1'b1)
+			tmpRGB <= digit2RGB;
+		else if (digit3DrawingRequest == 1'b1)
+			tmpRGB <= digit3RGB;
+		else if (digit4DrawingRequest == 1'b1)
+			tmpRGB <= digit4RGB;
 		
 		else
 			tmpRGB <= backGroundRGB ; // last priority 

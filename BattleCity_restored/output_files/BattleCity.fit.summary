@@ -1,12 +1,12 @@
-Fitter Status : Successful - Thu Dec 26 12:14:10 2019
+Fitter Status : Successful - Fri Dec 27 13:25:22 2019
 Quartus Prime Version : 17.0.0 Build 595 04/25/2017 SJ Lite Edition
 Revision Name : BattleCity
 Top-level Entity Name : TOP_VGA
 Family : Cyclone V
 Device : 5CSXFC6D6F31C6
 Timing Models : Final
-Logic utilization (in ALMs) : 3,430 / 41,910 ( 8 % )
-Total registers : 2658
+Logic utilization (in ALMs) : 3,971 / 41,910 ( 9 % )
+Total registers : 2726
 Total pins : 49 / 499 ( 10 % )
 Total virtual pins : 0
 Total block memory bits : 128 / 5,662,720 ( < 1 % )
