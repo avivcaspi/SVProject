@@ -1,5 +1,5 @@
 Archive Project report for BattleCity
-Fri Dec 27 13:32:46 2019
+Sun Jan 05 13:50:21 2020
 Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
 
 
@@ -36,7 +36,7 @@ agreement for further details.
 +----------------------------------------------------------------+
 ; Archive Project Summary                                        ;
 +------------------------+---------------------------------------+
-; Archive Project Status ; Successful - Fri Dec 27 13:32:46 2019 ;
+; Archive Project Status ; Successful - Sun Jan 05 13:50:21 2020 ;
 ; Revision Name          ; BattleCity                            ;
 ; Top-level Entity Name  ; TOP_VGA                               ;
 ; Family                 ; Cyclone V                             ;
@@ -59,9 +59,9 @@ Info: ----------------------------------------------------------
 Info: Generated report 'BattleCity.archive.rpt'
 Info (23030): Evaluation of Tcl script c:/intelfpga_lite/17.0/quartus/common/tcl/apps/qpm/qar.tcl was successful
 Info: Quartus Prime Shell was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 4838 megabytes
-    Info: Processing ended: Fri Dec 27 13:32:46 2019
-    Info: Elapsed time: 00:00:02
+    Info: Peak virtual memory: 4837 megabytes
+    Info: Processing ended: Sun Jan 05 13:50:21 2020
+    Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:02
 
 
@@ -81,14 +81,6 @@ Info: Quartus Prime Shell was successful. 0 errors, 0 warnings
 ; CONST_1.qip                                           ;
 ; CONST_1.v                                             ;
 ; CONST_1_bb.v                                          ;
-; const_4.bsf                                           ;
-; const_4.qip                                           ;
-; const_4.v                                             ;
-; const_4_bb.v                                          ;
-; const_5.bsf                                           ;
-; const_5.qip                                           ;
-; const_5.v                                             ;
-; const_5_bb.v                                          ;
 ; matrixX.bsf                                           ;
 ; matrixX.qip                                           ;
 ; matrixX.v                                             ;
@@ -97,14 +89,6 @@ Info: Quartus Prime Shell was successful. 0 errors, 0 warnings
 ; matrixY.qip                                           ;
 ; matrixY.v                                             ;
 ; matrixY_bb.v                                          ;
-; MiddleX.bsf                                           ;
-; MiddleX.qip                                           ;
-; MiddleX.v                                             ;
-; MiddleX_bb.v                                          ;
-; MiddleY.bsf                                           ;
-; MiddleY.qip                                           ;
-; MiddleY.v                                             ;
-; MiddleY_bb.v                                          ;
 ; pin.tcl                                               ;
 ; RTL/audio_codec_controller/audio_codec_controller.qxp ;
 ; RTL/KEYBOARD/bitrec.sv                                ;
@@ -114,6 +98,7 @@ Info: Quartus Prime Shell was successful. 0 errors, 0 warnings
 ; RTL/KEYBOARD/keyToggle_decoder.sv                     ;
 ; RTL/KEYBOARD/lpf.sv                                   ;
 ; RTL/KEYBOARD/random.sv                                ;
+; RTL/KEYBOARD/random_map.sv                            ;
 ; RTL/KEYBOARD/TOP_KBD_DEMOALL.bdf                      ;
 ; RTL/MSS/addr_counter.sv                               ;
 ; RTL/MSS/data_conversion.sv                            ;
@@ -124,13 +109,17 @@ Info: Quartus Prime Shell was successful. 0 errors, 0 warnings
 ; RTL/Seg7/SEG7.SV                                      ;
 ; RTL/VGA/back_ground_draw.sv                           ;
 ; RTL/VGA/brickBitMap.sv                                ;
-; RTL/VGA/bricks_contorller.sv                          ;
 ; RTL/VGA/bricks_matrix.sv                              ;
+; RTL/VGA/buildBitmap.sv                                ;
+; RTL/VGA/didBitMap.sv                                  ;
 ; RTL/VGA/election_house.sv                             ;
 ; RTL/VGA/election_house_counter.sv                     ;
 ; RTL/VGA/electionBitMap.sv                             ;
+; RTL/VGA/enterBitmap.sv                                ;
+; RTL/VGA/finallyBitMap.sv                              ;
 ; RTL/VGA/game_controller.sv                            ;
 ; RTL/VGA/hit_detection.sv                              ;
+; RTL/VGA/immunityBitMap.sv                             ;
 ; RTL/VGA/missle_move.sv                                ;
 ; RTL/VGA/missle_square_object.sv                       ;
 ; RTL/VGA/missleBitMap.sv                               ;
@@ -138,11 +127,13 @@ Info: Quartus Prime Shell was successful. 0 errors, 0 warnings
 ; RTL/VGA/NumbersBitMap.sv                              ;
 ; RTL/VGA/objects_mux.sv                                ;
 ; RTL/VGA/one_sec_counter.sv                            ;
+; RTL/VGA/open_square_object.sv                         ;
+; RTL/VGA/openBitmap.sv                                 ;
 ; RTL/VGA/personBitMap.sv                               ;
+; RTL/VGA/player_square_object.sv                       ;
+; RTL/VGA/playerNumberBitMap.sv                         ;
 ; RTL/VGA/randomCheck.sv                                ;
-; RTL/VGA/smileyBitMap.sv                               ;
-; RTL/VGA/smileyBitMap4Bit.sv                           ;
-; RTL/VGA/smileyface_move.sv                            ;
+; RTL/VGA/score_controller.sv                           ;
 ; RTL/VGA/square_object.sv                              ;
 ; RTL/VGA/tank_move.sv                                  ;
 ; RTL/VGA/tank_square_object.sv                         ;
@@ -150,11 +141,10 @@ Info: Quartus Prime Shell was successful. 0 errors, 0 warnings
 ; RTL/VGA/timer.sv                                      ;
 ; RTL/VGA/TOP_VGA.bdf                                   ;
 ; RTL/VGA/VGA_Controller.sv                             ;
-; tankDirConst.bsf                                      ;
-; tankDirConst.qip                                      ;
-; tankDirConst.v                                        ;
-; tankDirConst_bb.v                                     ;
 ; Waveform.vwf                                          ;
+; Waveform1.vwf                                         ;
+; Waveform2.vwf                                         ;
+; Waveform3.vwf                                         ;
 +-------------------------------------------------------+
 
 

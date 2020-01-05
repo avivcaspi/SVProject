@@ -159,6 +159,65 @@ set_location_assignment PIN_V23 -to ADC_DOUT
 set_location_assignment PIN_W24 -to ADC_SCLK
 set_location_assignment PIN_Y24 -to AUD_I2C_SCLK
 set_location_assignment PIN_Y23 -to AUD_I2C_SDAT
+set_global_assignment -name ENABLE_SIGNALTAP ON
+set_global_assignment -name USE_SIGNALTAP_FILE stp1.stp
+set_global_assignment -name SYSTEMVERILOG_FILE RTL/VGA/playerNumberBitMap.sv
+set_global_assignment -name SYSTEMVERILOG_FILE RTL/VGA/numbers_square_object.sv
+set_global_assignment -name SYSTEMVERILOG_FILE RTL/VGA/one_sec_counter.sv
+set_global_assignment -name SYSTEMVERILOG_FILE RTL/Seg7/SEG7.SV
+set_global_assignment -name BDF_FILE RTL/MSS/TOP_MSS_DEMO.bdf
+set_global_assignment -name SYSTEMVERILOG_FILE RTL/MSS/ToneDecoder.sv
+set_global_assignment -name SYSTEMVERILOG_FILE RTL/MSS/SinTable.sv
+set_global_assignment -name SYSTEMVERILOG_FILE RTL/MSS/prescaler.sv
+set_global_assignment -name SYSTEMVERILOG_FILE RTL/MSS/data_conversion.sv
+set_global_assignment -name SYSTEMVERILOG_FILE RTL/MSS/addr_counter.sv
+set_global_assignment -name BDF_FILE RTL/KEYBOARD/TOP_KBD_DEMOALL.bdf
+set_global_assignment -name SYSTEMVERILOG_FILE RTL/KEYBOARD/random.sv
+set_global_assignment -name SYSTEMVERILOG_FILE RTL/KEYBOARD/lpf.sv
+set_global_assignment -name SYSTEMVERILOG_FILE RTL/KEYBOARD/keyToggle_decoder.sv
+set_global_assignment -name SYSTEMVERILOG_FILE RTL/KEYBOARD/keyPad_decoder.sv
+set_global_assignment -name BDF_FILE RTL/KEYBOARD/KBDINTF.bdf
+set_global_assignment -name SYSTEMVERILOG_FILE RTL/KEYBOARD/byterec.sv
+set_global_assignment -name SYSTEMVERILOG_FILE RTL/KEYBOARD/bitrec.sv
+set_global_assignment -name QXP_FILE RTL/audio_codec_controller/audio_codec_controller.qxp
+set_global_assignment -name SYSTEMVERILOG_FILE RTL/VGA/VGA_Controller.sv
+set_global_assignment -name BDF_FILE RTL/VGA/TOP_VGA.bdf
+set_global_assignment -name SYSTEMVERILOG_FILE RTL/VGA/square_object.sv
+set_global_assignment -name SYSTEMVERILOG_FILE RTL/VGA/objects_mux.sv
+set_global_assignment -name SYSTEMVERILOG_FILE RTL/VGA/NumbersBitMap.sv
+set_global_assignment -name SYSTEMVERILOG_FILE RTL/VGA/game_controller.sv
+set_global_assignment -name SYSTEMVERILOG_FILE RTL/VGA/back_ground_draw.sv
+set_global_assignment -name QIP_FILE Const_0.qip
+set_global_assignment -name TCL_SCRIPT_FILE pin.tcl
+set_global_assignment -name SYSTEMVERILOG_FILE RTL/VGA/tank_move.sv
+set_global_assignment -name SYSTEMVERILOG_FILE RTL/VGA/missle_move.sv
+set_global_assignment -name SYSTEMVERILOG_FILE RTL/VGA/tank_square_object.sv
+set_global_assignment -name SYSTEMVERILOG_FILE RTL/VGA/bricks_matrix.sv
+set_global_assignment -name QIP_FILE matrixX.qip
+set_global_assignment -name QIP_FILE matrixY.qip
+set_global_assignment -name SYSTEMVERILOG_FILE RTL/VGA/brickBitMap.sv
+set_global_assignment -name SYSTEMVERILOG_FILE RTL/VGA/tankBitMap.sv
+set_global_assignment -name SYSTEMVERILOG_FILE RTL/VGA/missleBitMap.sv
+set_global_assignment -name SYSTEMVERILOG_FILE RTL/VGA/hit_detection.sv
+set_global_assignment -name QIP_FILE CONST_1.qip
+set_global_assignment -name SYSTEMVERILOG_FILE RTL/VGA/randomCheck.sv
+set_global_assignment -name SYSTEMVERILOG_FILE RTL/VGA/timer.sv
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform.vwf
+set_global_assignment -name SYSTEMVERILOG_FILE RTL/VGA/election_house.sv
+set_global_assignment -name SYSTEMVERILOG_FILE RTL/VGA/election_house_counter.sv
+set_global_assignment -name SYSTEMVERILOG_FILE RTL/VGA/personBitMap.sv
+set_global_assignment -name SYSTEMVERILOG_FILE RTL/VGA/missle_square_object.sv
+set_global_assignment -name SYSTEMVERILOG_FILE RTL/VGA/electionBitMap.sv
+set_global_assignment -name SYSTEMVERILOG_FILE RTL/VGA/score_controller.sv
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform1.vwf
+set_global_assignment -name SYSTEMVERILOG_FILE RTL/KEYBOARD/random_map.sv
+set_global_assignment -name SYSTEMVERILOG_FILE RTL/VGA/openBitmap.sv
+set_global_assignment -name SYSTEMVERILOG_FILE RTL/VGA/open_square_object.sv
+set_global_assignment -name SYSTEMVERILOG_FILE RTL/VGA/enterBitmap.sv
+set_global_assignment -name SYSTEMVERILOG_FILE RTL/VGA/immunityBitMap.sv
+set_global_assignment -name SYSTEMVERILOG_FILE RTL/VGA/player_square_object.sv
+set_global_assignment -name SYSTEMVERILOG_FILE RTL/VGA/finallyBitMap.sv
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform2.vwf
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to altera_reserved_tck
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to altera_reserved_tdi
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to altera_reserved_tdo
@@ -212,65 +271,45 @@ set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to VGA_R[6]
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to VGA_R[7]
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to VGA_SYNC_N
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to VGA_VS
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX1[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX1[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX1[2]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX1[3]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX1[4]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX1[5]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX1[6]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX2[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX2[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX2[2]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX2[3]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX2[4]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX2[5]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX2[6]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX3[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX3[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX3[2]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX3[3]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX3[4]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX3[5]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX3[6]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX4[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX4[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX4[2]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX4[3]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX4[4]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX4[5]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX4[6]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX5[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX5[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX5[2]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX5[3]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX5[4]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX5[5]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX5[6]
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform3.vwf
+set_global_assignment -name SYSTEMVERILOG_FILE RTL/VGA/buildBitmap.sv
+set_global_assignment -name SYSTEMVERILOG_FILE RTL/VGA/didBitMap.sv
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
-set_global_assignment -name ENABLE_SIGNALTAP ON
-set_global_assignment -name USE_SIGNALTAP_FILE stp1.stp
-set_global_assignment -name SYSTEMVERILOG_FILE RTL/VGA/numbers_square_object.sv
-set_global_assignment -name SYSTEMVERILOG_FILE RTL/VGA/one_sec_counter.sv
-set_global_assignment -name SYSTEMVERILOG_FILE RTL/Seg7/SEG7.SV
-set_global_assignment -name BDF_FILE RTL/MSS/TOP_MSS_DEMO.bdf
-set_global_assignment -name SYSTEMVERILOG_FILE RTL/MSS/ToneDecoder.sv
-set_global_assignment -name SYSTEMVERILOG_FILE RTL/MSS/SinTable.sv
-set_global_assignment -name SYSTEMVERILOG_FILE RTL/MSS/prescaler.sv
-set_global_assignment -name SYSTEMVERILOG_FILE RTL/MSS/data_conversion.sv
-set_global_assignment -name SYSTEMVERILOG_FILE RTL/MSS/addr_counter.sv
-set_global_assignment -name BDF_FILE RTL/KEYBOARD/TOP_KBD_DEMOALL.bdf
-set_global_assignment -name SYSTEMVERILOG_FILE RTL/KEYBOARD/random.sv
-set_global_assignment -name SYSTEMVERILOG_FILE RTL/KEYBOARD/lpf.sv
-set_global_assignment -name SYSTEMVERILOG_FILE RTL/KEYBOARD/keyToggle_decoder.sv
-set_global_assignment -name SYSTEMVERILOG_FILE RTL/KEYBOARD/keyPad_decoder.sv
-set_global_assignment -name BDF_FILE RTL/KEYBOARD/KBDINTF.bdf
-set_global_assignment -name SYSTEMVERILOG_FILE RTL/KEYBOARD/byterec.sv
-set_global_assignment -name SYSTEMVERILOG_FILE RTL/KEYBOARD/bitrec.sv
-set_global_assignment -name QXP_FILE RTL/audio_codec_controller/audio_codec_controller.qxp
-set_global_assignment -name SYSTEMVERILOG_FILE RTL/VGA/VGA_Controller.sv
-set_global_assignment -name BDF_FILE RTL/VGA/TOP_VGA.bdf
-set_global_assignment -name SYSTEMVERILOG_FILE RTL/VGA/square_object.sv
-set_global_assignment -name SYSTEMVERILOG_FILE RTL/VGA/smileyface_move.sv
-set_global_assignment -name SYSTEMVERILOG_FILE RTL/VGA/smileyBitMap4Bit.sv
-set_global_assignment -name SYSTEMVERILOG_FILE RTL/VGA/smileyBitMap.sv
-set_global_assignment -name SYSTEMVERILOG_FILE RTL/VGA/objects_mux.sv
-set_global_assignment -name SYSTEMVERILOG_FILE RTL/VGA/NumbersBitMap.sv
-set_global_assignment -name SYSTEMVERILOG_FILE RTL/VGA/game_controller.sv
-set_global_assignment -name SYSTEMVERILOG_FILE RTL/VGA/back_ground_draw.sv
-set_global_assignment -name QIP_FILE Const_0.qip
-set_global_assignment -name TCL_SCRIPT_FILE pin.tcl
-set_global_assignment -name SYSTEMVERILOG_FILE RTL/VGA/tank_move.sv
-set_global_assignment -name QIP_FILE MiddleX.qip
-set_global_assignment -name QIP_FILE MiddleY.qip
-set_global_assignment -name SYSTEMVERILOG_FILE RTL/VGA/missle_move.sv
-set_global_assignment -name QIP_FILE tankDirConst.qip
-set_global_assignment -name SYSTEMVERILOG_FILE RTL/VGA/tank_square_object.sv
-set_global_assignment -name SYSTEMVERILOG_FILE RTL/VGA/bricks_matrix.sv
-set_global_assignment -name QIP_FILE matrixX.qip
-set_global_assignment -name QIP_FILE matrixY.qip
-set_global_assignment -name SIGNALTAP_FILE stp1.stp
-set_global_assignment -name SYSTEMVERILOG_FILE RTL/VGA/bricks_contorller.sv
-set_global_assignment -name SYSTEMVERILOG_FILE RTL/VGA/brickBitMap.sv
-set_global_assignment -name SYSTEMVERILOG_FILE RTL/VGA/tankBitMap.sv
-set_global_assignment -name SYSTEMVERILOG_FILE RTL/VGA/missleBitMap.sv
-set_global_assignment -name SYSTEMVERILOG_FILE RTL/VGA/hit_detection.sv
-set_global_assignment -name QIP_FILE CONST_1.qip
-set_global_assignment -name SYSTEMVERILOG_FILE RTL/VGA/randomCheck.sv
-set_global_assignment -name SYSTEMVERILOG_FILE RTL/VGA/timer.sv
-set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform.vwf
-set_global_assignment -name QIP_FILE const_5.qip
-set_global_assignment -name QIP_FILE const_4.qip
-set_global_assignment -name SYSTEMVERILOG_FILE RTL/VGA/election_house.sv
-set_global_assignment -name SYSTEMVERILOG_FILE RTL/VGA/election_house_counter.sv
-set_global_assignment -name SYSTEMVERILOG_FILE RTL/VGA/personBitMap.sv
-set_global_assignment -name SYSTEMVERILOG_FILE RTL/VGA/missle_square_object.sv
-set_global_assignment -name SYSTEMVERILOG_FILE RTL/VGA/electionBitMap.sv
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

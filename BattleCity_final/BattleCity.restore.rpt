@@ -1,0 +1,150 @@
+Restore Archived Project report for BattleCity
+Sun Jan 05 13:51:05 2020
+Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Restore Archived Project Summary
+  3. Restore Archived Project Messages
+  4. Files Restored
+  5. Files Not Restored
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2017  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel MegaCore Function License Agreement, or other 
+applicable license agreement, including, without limitation, 
+that your use is for the sole purpose of programming logic 
+devices manufactured by Intel and sold by Intel or its 
+authorized distributors.  Please refer to the applicable 
+agreement for further details.
+
+
+
++-------------------------------------------------------------------------+
+; Restore Archived Project Summary                                        ;
++---------------------------------+---------------------------------------+
+; Restore Archived Project Status ; Successful - Sun Jan 05 13:51:05 2020 ;
+; Revision Name                   ; BattleCity                            ;
+; Top-level Entity Name           ; TOP_VGA                               ;
+; Family                          ; Cyclone V                             ;
++---------------------------------+---------------------------------------+
+
+
++-----------------------------------+
+; Restore Archived Project Messages ;
++-----------------------------------+
+Info: Successfully restored 'C:/Users/aviv_/Documents/SVProject/BattleCity.qar' into the 'C:/Users/aviv_/Documents/SVProject/BattleCity_final/' directory
+Info: Generated report 'BattleCity.restore.rpt'
+Info (23030): Evaluation of Tcl script c:/intelfpga_lite/17.0/quartus/common/tcl/apps/qpm/qar.tcl was successful
+Info: Quartus Prime Shell was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 4825 megabytes
+    Info: Processing ended: Sun Jan 05 13:51:05 2020
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:01
+
+
++-------------------------------------------------------+
+; Files Restored                                        ;
++-------------------------------------------------------+
+; File Name                                             ;
++-------------------------------------------------------+
+; qar_info.json                                         ;
+; BattleCity.qpf                                        ;
+; BattleCity.qsf                                        ;
+; CONST_1.bsf                                           ;
+; CONST_1.qip                                           ;
+; CONST_1.v                                             ;
+; CONST_1_bb.v                                          ;
+; Const_0.bsf                                           ;
+; Const_0.qip                                           ;
+; Const_0.v                                             ;
+; Const_0_bb.v                                          ;
+; RTL/KEYBOARD/KBDINTF.bdf                              ;
+; RTL/KEYBOARD/TOP_KBD_DEMOALL.bdf                      ;
+; RTL/KEYBOARD/bitrec.sv                                ;
+; RTL/KEYBOARD/byterec.sv                               ;
+; RTL/KEYBOARD/keyPad_decoder.sv                        ;
+; RTL/KEYBOARD/keyToggle_decoder.sv                     ;
+; RTL/KEYBOARD/lpf.sv                                   ;
+; RTL/KEYBOARD/random.sv                                ;
+; RTL/KEYBOARD/random_map.sv                            ;
+; RTL/MSS/SinTable.sv                                   ;
+; RTL/MSS/TOP_MSS_DEMO.bdf                              ;
+; RTL/MSS/ToneDecoder.sv                                ;
+; RTL/MSS/addr_counter.sv                               ;
+; RTL/MSS/data_conversion.sv                            ;
+; RTL/MSS/prescaler.sv                                  ;
+; RTL/Seg7/SEG7.SV                                      ;
+; RTL/VGA/NumbersBitMap.sv                              ;
+; RTL/VGA/TOP_VGA.bdf                                   ;
+; RTL/VGA/VGA_Controller.sv                             ;
+; RTL/VGA/back_ground_draw.sv                           ;
+; RTL/VGA/brickBitMap.sv                                ;
+; RTL/VGA/bricks_matrix.sv                              ;
+; RTL/VGA/buildBitmap.sv                                ;
+; RTL/VGA/didBitMap.sv                                  ;
+; RTL/VGA/electionBitMap.sv                             ;
+; RTL/VGA/election_house.sv                             ;
+; RTL/VGA/election_house_counter.sv                     ;
+; RTL/VGA/enterBitmap.sv                                ;
+; RTL/VGA/finallyBitMap.sv                              ;
+; RTL/VGA/game_controller.sv                            ;
+; RTL/VGA/hit_detection.sv                              ;
+; RTL/VGA/immunityBitMap.sv                             ;
+; RTL/VGA/missleBitMap.sv                               ;
+; RTL/VGA/missle_move.sv                                ;
+; RTL/VGA/missle_square_object.sv                       ;
+; RTL/VGA/numbers_square_object.sv                      ;
+; RTL/VGA/objects_mux.sv                                ;
+; RTL/VGA/one_sec_counter.sv                            ;
+; RTL/VGA/openBitmap.sv                                 ;
+; RTL/VGA/open_square_object.sv                         ;
+; RTL/VGA/personBitMap.sv                               ;
+; RTL/VGA/playerNumberBitMap.sv                         ;
+; RTL/VGA/player_square_object.sv                       ;
+; RTL/VGA/randomCheck.sv                                ;
+; RTL/VGA/score_controller.sv                           ;
+; RTL/VGA/square_object.sv                              ;
+; RTL/VGA/tankBitMap.sv                                 ;
+; RTL/VGA/tank_move.sv                                  ;
+; RTL/VGA/tank_square_object.sv                         ;
+; RTL/VGA/timer.sv                                      ;
+; RTL/audio_codec_controller/audio_codec_controller.qxp ;
+; Waveform.vwf                                          ;
+; Waveform1.vwf                                         ;
+; Waveform2.vwf                                         ;
+; Waveform3.vwf                                         ;
+; assignment_defaults.qdf                               ;
+; matrixX.bsf                                           ;
+; matrixX.qip                                           ;
+; matrixX.v                                             ;
+; matrixX_bb.v                                          ;
+; matrixY.bsf                                           ;
+; matrixY.qip                                           ;
+; matrixY.v                                             ;
+; matrixY_bb.v                                          ;
+; pin.tcl                                               ;
++-------------------------------------------------------+
+
+
++--------------------+
+; Files Not Restored ;
++--------------------+
+; File Name          ;
++--------------------+
+
+

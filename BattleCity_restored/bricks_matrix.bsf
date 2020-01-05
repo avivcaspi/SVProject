@@ -21,9 +21,9 @@ agreement for further details.
 */
 (header "symbol" (version "1.1"))
 (symbol
-	(rect 16 16 272 224)
+	(rect 16 16 272 256)
 	(text "bricks_matrix" (rect 5 0 59 12)(font "Arial" ))
-	(text "inst" (rect 8 192 20 204)(font "Arial" ))
+	(text "inst" (rect 8 224 20 236)(font "Arial" ))
 	(port
 		(pt 0 32)
 		(input)
@@ -86,6 +86,27 @@ agreement for further details.
 		(text "collision" (rect 0 0 28 12)(font "Arial" ))
 		(text "collision" (rect 21 155 49 167)(font "Arial" ))
 		(line (pt 0 160)(pt 16 160)(line_width 1))
+	)
+	(port
+		(pt 0 176)
+		(input)
+		(text "mapNum[1..0]" (rect 0 0 56 12)(font "Arial" ))
+		(text "mapNum[1..0]" (rect 21 171 77 183)(font "Arial" ))
+		(line (pt 0 176)(pt 16 176)(line_width 3))
+	)
+	(port
+		(pt 0 192)
+		(input)
+		(text "changeMap" (rect 0 0 46 12)(font "Arial" ))
+		(text "changeMap" (rect 21 187 67 199)(font "Arial" ))
+		(line (pt 0 192)(pt 16 192)(line_width 1))
+	)
+	(port
+		(pt 0 208)
+		(input)
+		(text "randomMap" (rect 0 0 48 12)(font "Arial" ))
+		(text "randomMap" (rect 21 203 69 215)(font "Arial" ))
+		(line (pt 0 208)(pt 16 208)(line_width 1))
 	)
 	(port
 		(pt 256 32)
@@ -155,7 +176,7 @@ agreement for further details.
 		""
 		(type "PARAMETER_UNSIGNED_BIN")	)
 	(drawing
-		(rectangle (rect 16 16 240 192)(line_width 1))
+		(rectangle (rect 16 16 240 224)(line_width 1))
 	)
 	(annotation_block (parameter)(rect 272 -64 372 16))
 )

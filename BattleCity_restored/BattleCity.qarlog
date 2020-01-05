@@ -1,7 +1,7 @@
 Quartus Prime Archive log --	C:/Users/aviv_/Documents/SVProject/BattleCity_restored/BattleCity.qarlog
 
 Archive:	C:/Users/aviv_/Documents/SVProject/BattleCity_restored/BattleCity.qar
-Date:		Fri Dec 27 13:32:46 2019
+Date:		Sun Jan 05 13:50:21 2020
 Quartus Prime		17.0.0 Build 595 04/25/2017 SJ Lite Edition
 
 	=========== Files Selected: ===========
@@ -15,14 +15,6 @@ C:/Users/aviv_/Documents/SVProject/BattleCity_restored/Const_0.bsf
 C:/Users/aviv_/Documents/SVProject/BattleCity_restored/Const_0.qip
 C:/Users/aviv_/Documents/SVProject/BattleCity_restored/Const_0.v
 C:/Users/aviv_/Documents/SVProject/BattleCity_restored/Const_0_bb.v
-C:/Users/aviv_/Documents/SVProject/BattleCity_restored/MiddleX.bsf
-C:/Users/aviv_/Documents/SVProject/BattleCity_restored/MiddleX.qip
-C:/Users/aviv_/Documents/SVProject/BattleCity_restored/MiddleX.v
-C:/Users/aviv_/Documents/SVProject/BattleCity_restored/MiddleX_bb.v
-C:/Users/aviv_/Documents/SVProject/BattleCity_restored/MiddleY.bsf
-C:/Users/aviv_/Documents/SVProject/BattleCity_restored/MiddleY.qip
-C:/Users/aviv_/Documents/SVProject/BattleCity_restored/MiddleY.v
-C:/Users/aviv_/Documents/SVProject/BattleCity_restored/MiddleY_bb.v
 C:/Users/aviv_/Documents/SVProject/BattleCity_restored/RTL/KEYBOARD/KBDINTF.bdf
 C:/Users/aviv_/Documents/SVProject/BattleCity_restored/RTL/KEYBOARD/TOP_KBD_DEMOALL.bdf
 C:/Users/aviv_/Documents/SVProject/BattleCity_restored/RTL/KEYBOARD/bitrec.sv
@@ -31,6 +23,7 @@ C:/Users/aviv_/Documents/SVProject/BattleCity_restored/RTL/KEYBOARD/keyPad_decod
 C:/Users/aviv_/Documents/SVProject/BattleCity_restored/RTL/KEYBOARD/keyToggle_decoder.sv
 C:/Users/aviv_/Documents/SVProject/BattleCity_restored/RTL/KEYBOARD/lpf.sv
 C:/Users/aviv_/Documents/SVProject/BattleCity_restored/RTL/KEYBOARD/random.sv
+C:/Users/aviv_/Documents/SVProject/BattleCity_restored/RTL/KEYBOARD/random_map.sv
 C:/Users/aviv_/Documents/SVProject/BattleCity_restored/RTL/MSS/SinTable.sv
 C:/Users/aviv_/Documents/SVProject/BattleCity_restored/RTL/MSS/TOP_MSS_DEMO.bdf
 C:/Users/aviv_/Documents/SVProject/BattleCity_restored/RTL/MSS/ToneDecoder.sv
@@ -43,24 +36,30 @@ C:/Users/aviv_/Documents/SVProject/BattleCity_restored/RTL/VGA/TOP_VGA.bdf
 C:/Users/aviv_/Documents/SVProject/BattleCity_restored/RTL/VGA/VGA_Controller.sv
 C:/Users/aviv_/Documents/SVProject/BattleCity_restored/RTL/VGA/back_ground_draw.sv
 C:/Users/aviv_/Documents/SVProject/BattleCity_restored/RTL/VGA/brickBitMap.sv
-C:/Users/aviv_/Documents/SVProject/BattleCity_restored/RTL/VGA/bricks_contorller.sv
 C:/Users/aviv_/Documents/SVProject/BattleCity_restored/RTL/VGA/bricks_matrix.sv
+C:/Users/aviv_/Documents/SVProject/BattleCity_restored/RTL/VGA/buildBitmap.sv
+C:/Users/aviv_/Documents/SVProject/BattleCity_restored/RTL/VGA/didBitMap.sv
 C:/Users/aviv_/Documents/SVProject/BattleCity_restored/RTL/VGA/electionBitMap.sv
 C:/Users/aviv_/Documents/SVProject/BattleCity_restored/RTL/VGA/election_house.sv
 C:/Users/aviv_/Documents/SVProject/BattleCity_restored/RTL/VGA/election_house_counter.sv
+C:/Users/aviv_/Documents/SVProject/BattleCity_restored/RTL/VGA/enterBitmap.sv
+C:/Users/aviv_/Documents/SVProject/BattleCity_restored/RTL/VGA/finallyBitMap.sv
 C:/Users/aviv_/Documents/SVProject/BattleCity_restored/RTL/VGA/game_controller.sv
 C:/Users/aviv_/Documents/SVProject/BattleCity_restored/RTL/VGA/hit_detection.sv
+C:/Users/aviv_/Documents/SVProject/BattleCity_restored/RTL/VGA/immunityBitMap.sv
 C:/Users/aviv_/Documents/SVProject/BattleCity_restored/RTL/VGA/missleBitMap.sv
 C:/Users/aviv_/Documents/SVProject/BattleCity_restored/RTL/VGA/missle_move.sv
 C:/Users/aviv_/Documents/SVProject/BattleCity_restored/RTL/VGA/missle_square_object.sv
 C:/Users/aviv_/Documents/SVProject/BattleCity_restored/RTL/VGA/numbers_square_object.sv
 C:/Users/aviv_/Documents/SVProject/BattleCity_restored/RTL/VGA/objects_mux.sv
 C:/Users/aviv_/Documents/SVProject/BattleCity_restored/RTL/VGA/one_sec_counter.sv
+C:/Users/aviv_/Documents/SVProject/BattleCity_restored/RTL/VGA/openBitmap.sv
+C:/Users/aviv_/Documents/SVProject/BattleCity_restored/RTL/VGA/open_square_object.sv
 C:/Users/aviv_/Documents/SVProject/BattleCity_restored/RTL/VGA/personBitMap.sv
+C:/Users/aviv_/Documents/SVProject/BattleCity_restored/RTL/VGA/playerNumberBitMap.sv
+C:/Users/aviv_/Documents/SVProject/BattleCity_restored/RTL/VGA/player_square_object.sv
 C:/Users/aviv_/Documents/SVProject/BattleCity_restored/RTL/VGA/randomCheck.sv
-C:/Users/aviv_/Documents/SVProject/BattleCity_restored/RTL/VGA/smileyBitMap.sv
-C:/Users/aviv_/Documents/SVProject/BattleCity_restored/RTL/VGA/smileyBitMap4Bit.sv
-C:/Users/aviv_/Documents/SVProject/BattleCity_restored/RTL/VGA/smileyface_move.sv
+C:/Users/aviv_/Documents/SVProject/BattleCity_restored/RTL/VGA/score_controller.sv
 C:/Users/aviv_/Documents/SVProject/BattleCity_restored/RTL/VGA/square_object.sv
 C:/Users/aviv_/Documents/SVProject/BattleCity_restored/RTL/VGA/tankBitMap.sv
 C:/Users/aviv_/Documents/SVProject/BattleCity_restored/RTL/VGA/tank_move.sv
@@ -68,15 +67,10 @@ C:/Users/aviv_/Documents/SVProject/BattleCity_restored/RTL/VGA/tank_square_objec
 C:/Users/aviv_/Documents/SVProject/BattleCity_restored/RTL/VGA/timer.sv
 C:/Users/aviv_/Documents/SVProject/BattleCity_restored/RTL/audio_codec_controller/audio_codec_controller.qxp
 C:/Users/aviv_/Documents/SVProject/BattleCity_restored/Waveform.vwf
+C:/Users/aviv_/Documents/SVProject/BattleCity_restored/Waveform1.vwf
+C:/Users/aviv_/Documents/SVProject/BattleCity_restored/Waveform2.vwf
+C:/Users/aviv_/Documents/SVProject/BattleCity_restored/Waveform3.vwf
 C:/Users/aviv_/Documents/SVProject/BattleCity_restored/assignment_defaults.qdf
-C:/Users/aviv_/Documents/SVProject/BattleCity_restored/const_4.bsf
-C:/Users/aviv_/Documents/SVProject/BattleCity_restored/const_4.qip
-C:/Users/aviv_/Documents/SVProject/BattleCity_restored/const_4.v
-C:/Users/aviv_/Documents/SVProject/BattleCity_restored/const_4_bb.v
-C:/Users/aviv_/Documents/SVProject/BattleCity_restored/const_5.bsf
-C:/Users/aviv_/Documents/SVProject/BattleCity_restored/const_5.qip
-C:/Users/aviv_/Documents/SVProject/BattleCity_restored/const_5.v
-C:/Users/aviv_/Documents/SVProject/BattleCity_restored/const_5_bb.v
 C:/Users/aviv_/Documents/SVProject/BattleCity_restored/matrixX.bsf
 C:/Users/aviv_/Documents/SVProject/BattleCity_restored/matrixX.qip
 C:/Users/aviv_/Documents/SVProject/BattleCity_restored/matrixX.v
@@ -86,11 +80,7 @@ C:/Users/aviv_/Documents/SVProject/BattleCity_restored/matrixY.qip
 C:/Users/aviv_/Documents/SVProject/BattleCity_restored/matrixY.v
 C:/Users/aviv_/Documents/SVProject/BattleCity_restored/matrixY_bb.v
 C:/Users/aviv_/Documents/SVProject/BattleCity_restored/pin.tcl
-C:/Users/aviv_/Documents/SVProject/BattleCity_restored/tankDirConst.bsf
-C:/Users/aviv_/Documents/SVProject/BattleCity_restored/tankDirConst.qip
-C:/Users/aviv_/Documents/SVProject/BattleCity_restored/tankDirConst.v
-C:/Users/aviv_/Documents/SVProject/BattleCity_restored/tankDirConst_bb.v
-	======= Total: 85 files to archive =======
+	======= Total: 75 files to archive =======
 
 	================ Status: ===============
 All files archived successfully.

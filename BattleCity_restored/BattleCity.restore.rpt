@@ -1,5 +1,5 @@
 Restore Archived Project report for BattleCity
-Wed Dec 25 11:47:51 2019
+Wed Jan 01 15:49:43 2020
 Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
 
 
@@ -37,7 +37,7 @@ agreement for further details.
 +-------------------------------------------------------------------------+
 ; Restore Archived Project Summary                                        ;
 +---------------------------------+---------------------------------------+
-; Restore Archived Project Status ; Successful - Wed Dec 25 11:47:51 2019 ;
+; Restore Archived Project Status ; Successful - Wed Jan 01 15:49:43 2020 ;
 ; Revision Name                   ; BattleCity                            ;
 ; Top-level Entity Name           ; TOP_VGA                               ;
 ; Family                          ; Cyclone V                             ;
@@ -51,10 +51,10 @@ Info: Successfully restored 'C:/Users/aviv_/Documents/SVProject/BattleCity.qar' 
 Info: Generated report 'BattleCity.restore.rpt'
 Info (23030): Evaluation of Tcl script c:/intelfpga_lite/17.0/quartus/common/tcl/apps/qpm/qar.tcl was successful
 Info: Quartus Prime Shell was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 4832 megabytes
-    Info: Processing ended: Wed Dec 25 11:47:51 2019
-    Info: Elapsed time: 00:00:01
-    Info: Total CPU time (on all processors): 00:00:01
+    Info: Peak virtual memory: 4834 megabytes
+    Info: Processing ended: Wed Jan 01 15:49:43 2020
+    Info: Elapsed time: 00:00:02
+    Info: Total CPU time (on all processors): 00:00:02
 
 
 +-------------------------------------------------------+
@@ -89,6 +89,7 @@ Info: Quartus Prime Shell was successful. 0 errors, 0 warnings
 ; RTL/KEYBOARD/keyToggle_decoder.sv                     ;
 ; RTL/KEYBOARD/lpf.sv                                   ;
 ; RTL/KEYBOARD/random.sv                                ;
+; RTL/KEYBOARD/random_map.sv                            ;
 ; RTL/MSS/SinTable.sv                                   ;
 ; RTL/MSS/TOP_MSS_DEMO.bdf                              ;
 ; RTL/MSS/ToneDecoder.sv                                ;
@@ -103,15 +104,24 @@ Info: Quartus Prime Shell was successful. 0 errors, 0 warnings
 ; RTL/VGA/brickBitMap.sv                                ;
 ; RTL/VGA/bricks_contorller.sv                          ;
 ; RTL/VGA/bricks_matrix.sv                              ;
+; RTL/VGA/electionBitMap.sv                             ;
 ; RTL/VGA/election_house.sv                             ;
 ; RTL/VGA/election_house_counter.sv                     ;
+; RTL/VGA/enterBitmap.sv                                ;
 ; RTL/VGA/game_controller.sv                            ;
 ; RTL/VGA/hit_detection.sv                              ;
+; RTL/VGA/immunityBitMap.sv                             ;
 ; RTL/VGA/missleBitMap.sv                               ;
 ; RTL/VGA/missle_move.sv                                ;
+; RTL/VGA/missle_square_object.sv                       ;
+; RTL/VGA/numbers_square_object.sv                      ;
 ; RTL/VGA/objects_mux.sv                                ;
 ; RTL/VGA/one_sec_counter.sv                            ;
+; RTL/VGA/openBitmap.sv                                 ;
+; RTL/VGA/open_square_object.sv                         ;
+; RTL/VGA/personBitMap.sv                               ;
 ; RTL/VGA/randomCheck.sv                                ;
+; RTL/VGA/score_controller.sv                           ;
 ; RTL/VGA/smileyBitMap.sv                               ;
 ; RTL/VGA/smileyBitMap4Bit.sv                           ;
 ; RTL/VGA/smileyface_move.sv                            ;
@@ -122,7 +132,12 @@ Info: Quartus Prime Shell was successful. 0 errors, 0 warnings
 ; RTL/VGA/timer.sv                                      ;
 ; RTL/audio_codec_controller/audio_codec_controller.qxp ;
 ; Waveform.vwf                                          ;
+; Waveform1.vwf                                         ;
 ; assignment_defaults.qdf                               ;
+; const_2bit.bsf                                        ;
+; const_2bit.qip                                        ;
+; const_2bit.v                                          ;
+; const_2bit_bb.v                                       ;
 ; const_4.bsf                                           ;
 ; const_4.qip                                           ;
 ; const_4.v                                             ;
